@@ -79,8 +79,6 @@ public class loginPage{
     	Wait<WebDriver> wait = new WebDriverWait(driver, Duration.ofSeconds(10));
     	wait.until(ExpectedConditions.elementToBeClickable(By.id("userProfileDropdown"))).click();
     	wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//span[contains(text(),'Logout')]"))).click();
-    	//new WebDriverWait(driver, 20).until(ExpectedConditions.elementToBeClickable(By.xpath("//span[contains(text(),'Logout')]"))).click();
-		//driver.findElement(By.xpath("//span[contains(text(),'Logout')]")).click();
     }
     		
 }

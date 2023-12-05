@@ -8,30 +8,26 @@ import java.util.List;
 import java.util.concurrent.TimeUnit;
 
 import org.apache.commons.io.FileUtils;
-import org.apache.commons.io.FilenameUtils;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.ITestResult;
 import org.testng.annotations.AfterTest;
-import org.testng.annotations.BeforeTest;
-import com.aventstack.extentreports.ExtentReports;
-import com.aventstack.extentreports.ExtentTest;
-import com.aventstack.extentreports.reporter.ExtentSparkReporter;
+
 import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.ObjectMapper;
-
-import Pages.CUDPage;
+import Pages.SideNavigationMenuPage;
+import Pages.UserDomainPage;
 import Pages.loginPage;
-//import jdk.internal.org.jline.utils.Log;
-//import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class BaseTest {
 
 	public static WebDriver driver = new ChromeDriver();
 	
 	public loginPage  loginPage;
-	public CUDPage cudPage;
+	public SideNavigationMenuPage sidenavPage;
+	public UserDomainPage userdomain;
 
 	public WebDriver getDriver() {
 		return driver;
@@ -52,6 +48,15 @@ public class BaseTest {
 	driver.manage().window().maximize();
 	driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 	driver.get("http://10.10.10.250:4848/prohance/"); 
+	return driver;
+	}
+	
+	public WebDriver initializeDriver3333() {
+		System.setProperty("webdriver.chrome.driver","C:\\Users\\jayanti.p.JAMOCHAHQ\\Downloads\\chromedriver-win64\\chromedriver.exe");
+	//driver = new ChromeDriver();
+	driver.manage().window().maximize();
+	driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+	driver.get("http://10.10.10.210:3333/prohance"); 
 	return driver;
 	}
 	 
@@ -85,4 +90,16 @@ public class BaseTest {
 		return data;
 		
 	}
+
+	public void onTestStart(ITestResult result, String Message) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	public void testStepDescription(String Message) {
+		// TODO Auto-generated method stub
+		
+	}
+	
+	
 }

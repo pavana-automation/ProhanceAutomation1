@@ -6,12 +6,18 @@
   </listeners>
   <test thread-count="5" name="Test(failed)">
     <classes>
-      <class name="test.Login">
+      <class name="test.AOSAddNew">
         <methods>
           <include name="teardown"/>
-          <include name="login" invocation-numbers="1"/>
+          <include name="addNewFunction"/>
         </methods>
-      </class> <!-- test.Login -->
+      </class> <!-- test.AOSAddNew -->
+      <class name="test.AOSDeleteFunction">
+        <methods>
+          <include name="teardown"/>
+          <include name="aosDeleteFunction"/>
+        </methods>
+      </class> <!-- test.AOSDeleteFunction -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

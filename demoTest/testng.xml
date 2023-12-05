@@ -5,10 +5,17 @@
 		<listener class-name="test.Listeners"></listener>
 	</listeners>
 	
-  <test thread-count="5" name="Test">
+  <test thread-count="7" name="Test">
     <classes>
-      <class name="test.EnableDiasbleChkInCud"/>
-      <class name="test.Login"/>
+		<class name="test.UserDomainAddFunction"/>
+		<class name="test.UserDomainModify"/>
+		<class name="test.UserDomainDeleteFunction"/>
+		<class name="test.UserDomainSortingFuncton"/>
+		<class name="test.UserDomainExcelValidation"/>
+		<class name="test.AOSAddNew"/>
+		<class name="test.UserDomainPDFValidation"/>
+		<class name="test.AOSModifyFunction"/>
+		<class name="test.AOSDeleteFunction"></class>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

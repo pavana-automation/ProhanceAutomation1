@@ -6,6 +6,7 @@ import org.openqa.selenium.WebDriver;
 import org.testng.ITestContext;
 import org.testng.ITestListener;
 import org.testng.ITestResult;
+import org.testng.Reporter;
 
 import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.ExtentTest;
@@ -20,6 +21,7 @@ public class Listeners extends BaseTest implements ITestListener{
 	@Override
 	public void onTestSuccess(ITestResult result) {
 		extentTest.get().log(Status.PASS, "Successfull");
+		
 	}
 
 	@Override
@@ -42,13 +44,14 @@ public class Listeners extends BaseTest implements ITestListener{
 	}
 
 	@Override
-	public void onStart(ITestContext context) {
-		// TODO Auto-generated method stub
-		//ITestListener.super.onStart(context);
+	public void testStepDescription(String Message) {
+		extentTest.get().log(Status.INFO,Message);
 	}
 
 	@Override
 	public void onFinish(ITestContext context) {
+		//long endTime= System.currentTimeMillis();
+		//System.out.println("Inform all the suite have finished execution at"+ endTime);
 		extent.flush();
 	}
 
@@ -57,6 +60,12 @@ public class Listeners extends BaseTest implements ITestListener{
 		test=extent.createTest(result.getMethod().getMethodName());
 		extentTest.set(test);
 	}
+	
+	public void onTestFinish(String Message) {
+		extentTest.get().log(Status.INFO,Message);
+	}
+	
+	
 
 	@Override
 	public void onTestSkipped(ITestResult result) {
