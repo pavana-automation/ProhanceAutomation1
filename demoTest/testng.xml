@@ -7,6 +7,7 @@
 	
   <test thread-count="7" name="Test">
     <classes>
+
 		<class name="test.UserDomainAddFunction"/>
 		<class name="test.UserDomainModify"/>
 		<class name="test.UserDomainDeleteFunction"/>
@@ -16,6 +17,11 @@
 		<class name="test.UserDomainPDFValidation"/>
 		<class name="test.AOSModifyFunction"/>
 		<class name="test.AOSDeleteFunction"></class>
+     	<class name="test.DataAggregation"/>
+     	<class name="test.DataAggregationForAllType"/>
+      	<class name="test.DataAggregationForModificationOnSettingsTab"/>
+     	<class name="test.DataAggregationForModificationOnSettingsTabForClearButton"/> 
+
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

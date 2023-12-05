@@ -5,6 +5,9 @@ import java.io.File;
 import java.io.FileInputStream;
 import java.io.IOException;
 import java.io.InputStream;
+
+import java.lang.reflect.Method;
+
 import java.net.URL;
 import java.nio.file.Path;
 import java.nio.file.Paths;
@@ -13,15 +16,31 @@ import java.util.Arrays;
 import java.util.List;
 import java.util.Optional;
 
+import java.util.Set;
+import java.util.TreeSet;
+
+
 import org.apache.pdfbox.pdmodel.PDDocument;
 import org.apache.pdfbox.text.PDFTextStripper;
 import org.apache.poi.EncryptedDocumentException;
+
 import org.apache.poi.ss.usermodel.CellType;
 import org.apache.poi.ss.usermodel.Sheet;
 import org.apache.poi.ss.usermodel.Workbook;
 import org.apache.poi.ss.usermodel.WorkbookFactory;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.PageFactory;
+
+import org.apache.poi.ss.usermodel.Cell;
+import org.apache.poi.ss.usermodel.CellType;
+import org.apache.poi.ss.usermodel.DataFormatter;
+import org.apache.poi.ss.usermodel.Name;
+import org.apache.poi.ss.usermodel.Row;
+import org.apache.poi.ss.usermodel.Sheet;
+import org.apache.poi.ss.usermodel.Workbook;
+import org.apache.poi.ss.usermodel.WorkbookFactory;
+import org.apache.poi.xssf.usermodel.XSSFWorkbook;
+
 import org.testng.annotations.DataProvider;
 
 import test.BaseTest;
@@ -38,7 +57,7 @@ public class ReadXLSdata extends BaseTest {
 		PageFactory.initElements(driver, this);
 	}
 
-	public List<String> getData() throws EncryptedDocumentException, IOException, InterruptedException {
+	public List<String> getDataFromExcel() throws EncryptedDocumentException, IOException, InterruptedException {
 		Thread.sleep(2000);
 		File f = new File(getRecentFilePath());
 		FileInputStream fis = new FileInputStream(f);
@@ -96,6 +115,55 @@ public class ReadXLSdata extends BaseTest {
 
 			return "folder is empty!";
 		}
-
 	}
-}
+	
+
+	
+	  public List<String> getData() throws EncryptedDocumentException, IOException,
+	  InterruptedException { Thread.sleep(2000); File f = new
+	  File(getRecentFilePath()); FileInputStream fis = new FileInputStream(f);
+	  Workbook wb = WorkbookFactory.create(fis); Sheet sheetName =
+	  wb.getSheetAt(0); List<String> excelDataList = new ArrayList(); int totalRows
+	  = sheetName.getLastRowNum(); System.out.println("row" +totalRows); for(int
+	  i=2;i<=totalRows;i++){ int cellcount=sheetName.getRow(i).getLastCellNum();
+	  for(int j=0;j<cellcount-2;j++){ excelDataList.add(
+	  sheetName.getRow(i).getCell(j).getStringCellValue().toString().replaceAll(
+	  "\\s+","")); } } System.out.print(excelDataList); return excelDataList; }
+	 
+	public Set<String> getAllWorkProfilesConfig() throws EncryptedDocumentException, IOException, InterruptedException {
+		Thread.sleep(2000);
+		File f = new File(getRecentFilePath());
+		FileInputStream fis = new FileInputStream(f);
+		Workbook wb = WorkbookFactory.create(fis);
+		Sheet sheetName = wb.getSheetAt(0);
+		Set<String> excelDataList1 =  new TreeSet();
+		int totalRows = sheetName.getLastRowNum();
+		System.out.println("row" +totalRows);
+		for(int i=5;i<=totalRows;i++){
+            int cellcount=sheetName.getRow(i).getLastCellNum();   
+           // System.out.println("cellcount"+cellcount);
+            for(int j=1;j<cellcount-7;j++){
+            	// System.out.print(sheetName.getRow(i).getCell(j).getStringCellValue().toString());
+                excelDataList1.add( sheetName.getRow(i).getCell(j).getStringCellValue().toString().replaceAll("\\s+",""));
+            }
+        }
+		System.out.print("list"+excelDataList1);
+		return excelDataList1;
+	}
+	public String getPDFdata() throws IOException
+	{
+		String path = "C:\\Users\\dipankar.d\\Downloads\\Work Profiles.pdf";
+		URL pdfUrl = new URL("file:///" +path);
+	    InputStream in = pdfUrl.openStream();
+	    BufferedInputStream bf = new BufferedInputStream(in);
+	    PDDocument doc = PDDocument.load(bf);
+	    int numberOfPages = doc.getNumberOfPages();
+	    System.out.println("The total number of pages "+numberOfPages);
+	    String content = new PDFTextStripper().getText(doc);
+	    System.out.println("The total number of pages "+content);
+	    doc.close();
+
+	    return content;
+	}
+	}
+

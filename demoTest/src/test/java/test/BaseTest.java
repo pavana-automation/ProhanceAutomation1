@@ -33,17 +33,17 @@ public class BaseTest {
 		return driver;
 	}
 
-	public WebDriver initializeDriver6688() {
-		System.setProperty("webdriver.chrome.driver","C:\\Users\\jayanti.p.JAMOCHAHQ\\Downloads\\chromedriver-win64\\chromedriver.exe");
+	public WebDriver initializeDriver3333() {
+		System.setProperty("webdriver.chrome.driver","C:\\drivers\\chromedriver-win64\\chromedriver.exe");
 	//driver = new ChromeDriver();
 	driver.manage().window().maximize();
 	driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-	driver.get("http://10.10.10.250:6688/prohance/"); 
+	driver.get("http://10.10.10.210:3333/prohance/"); 
 	return driver;
 	}
 
 	public WebDriver initializeDriver4848() {
-		System.setProperty("webdriver.chrome.driver","C:\\Users\\jayanti.p.JAMOCHAHQ\\Downloads\\chromedriver-win64\\chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver","C:\\drivers\\chromedriver-win64\\chromedriver.exe");
 	//driver = new ChromeDriver();
 	driver.manage().window().maximize();
 	driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
@@ -51,19 +51,16 @@ public class BaseTest {
 	return driver;
 	}
 	
-	public WebDriver initializeDriver3333() {
-		System.setProperty("webdriver.chrome.driver","C:\\Users\\jayanti.p.JAMOCHAHQ\\Downloads\\chromedriver-win64\\chromedriver.exe");
-	//driver = new ChromeDriver();
-	driver.manage().window().maximize();
-	driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-	driver.get("http://10.10.10.210:3333/prohance"); 
-	return driver;
-	}
-	 
+	/*
+	 * public WebDriver initializeDriver3333() {
+	 * System.setProperty("webdriver.chrome.driver",
+	 * "C:\\Users\\jayanti.p.JAMOCHAHQ\\Downloads\\chromedriver-win64\\chromedriver.exe"
+	 * ); //driver = new ChromeDriver(); driver.manage().window().maximize();
+	 * driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+	 * driver.get("http://10.10.10.210:3333/prohance"); return driver; }
+	 */
 	@AfterTest
 	public void teardown() {
-		// Log.info("Tests are ending!");
-		//extent.flush();
 		driver.quit();
 	}
 	
@@ -91,6 +88,7 @@ public class BaseTest {
 		
 	}
 
+
 	public void onTestStart(ITestResult result, String Message) {
 		// TODO Auto-generated method stub
 		
@@ -100,6 +98,5 @@ public class BaseTest {
 		// TODO Auto-generated method stub
 		
 	}
-	
-	
+
 }

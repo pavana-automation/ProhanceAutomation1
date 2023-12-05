@@ -2,8 +2,10 @@ package Pages;
 
 import java.time.Duration;
 
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
+
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -14,7 +16,6 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 public class SideNavigationMenuPage {
 	
 	WebDriver driver;
-	
 	@FindBy(id = "arrow-top")
 	WebElement sideNavigationBtn;
 	
@@ -24,9 +25,13 @@ public class SideNavigationMenuPage {
 	@FindBy(xpath = "//li[contains(text(),'Data Aggregation')]")
 	WebElement dataAggregationBtn;
 	
+	@FindBy(xpath ="//ul[@id='menu-content']/li[2]/a/span")
+	WebElement closeOrganizationTab;
+	
 	@FindBy(xpath = "//li[contains(text(),'User Domain')]")
 	WebElement userDomainBtn;
 	
+
 	@FindBy(xpath = "//a[contains(text(),'Activities')]")
 	WebElement activitiesBtn;
 	
@@ -44,6 +49,19 @@ public class SideNavigationMenuPage {
 	        PageFactory.initElements(driver,this); 
 	             
 	}
+	@FindBy(xpath ="//a[contains(text(),'Activities')]")
+	WebElement activityTab;
+	
+	@FindBy(xpath ="//li[contains(text(),'Work Profiles')]")
+	WebElement workProfilesTab;
+	/*
+	 * public SideNavigationMenuPage(WebDriver driver) {
+	 * 
+	 * this.driver=driver; PageFactory.initElements(driver,this);
+	 * 
+	 * }
+	 */
+
 	
 	public void clickSideNavigationBtn()
 	{
@@ -86,6 +104,20 @@ public class SideNavigationMenuPage {
 	 
 			jsexecutour.executeScript("arguments[0].scrollIntoView(true);", locator);
 		}
-	
+
+	public void clickActivityTab()
+	{
+		this.activityTab.click();
+	}
+	public void clickWorkProfilestab()
+	{
+		this.workProfilesTab.click();
+	}
+	public void ClickOnOrganizationBtnToClose()
+	{
+		this.closeOrganizationTab.click();
+		 
+	}
+
 
 }
