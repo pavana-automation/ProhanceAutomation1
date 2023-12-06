@@ -6,6 +6,7 @@ import java.util.ArrayList;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
@@ -53,6 +54,26 @@ public class AOSPage {
 	@FindBy(xpath="//*[@id='alertModal']/div/div/div[3]/button")
 	WebElement signatureOkBtn;
 	
+	@FindBy(xpath="//label[contains(text(),'MORE ACTION')]")
+	WebElement moreActionBtn;
+	
+	@FindBy(xpath="//a[contains(text(),'UNKNOWN APPLICATIONS')]")
+	WebElement unknownApplicationBtn;
+	
+	@FindBy(xpath="//div[@id='s2id_appList']")
+	WebElement configureUnkownApplicationDrpdwn;
+	
+	@FindBy(xpath="//table/thead/tr/th[contains(text(),'Q')]")
+	WebElement qButton;
+	
+	@FindBy(xpath="//table[@id ='CommonDataTableId']/tbody/tr/td[8]")
+	WebElement chkBox;
+	
+	@FindBy(xpath="//input[@title='Add Selected Applications']")
+	WebElement addBtn;
+	
+	@FindBy(xpath="//input[@value='SUBMIT']")
+	WebElement submitBtn;
 	
 
 	
@@ -111,6 +132,51 @@ public class AOSPage {
 	 public void clickModifyBtn()
 	 {
 		 this.modifyBtn.click();
+	 }
+	 
+	 public void clickMoreActionBtn() {
+		 WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(30));
+		 wait.until(ExpectedConditions.elementToBeClickable(moreActionBtn));
+		 this.moreActionBtn.click();
+	 }
+	 
+	 public void clickUnknownApplicationBtn() {
+		 WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(30));
+		 wait.until(ExpectedConditions.elementToBeClickable(unknownApplicationBtn));
+		 this.unknownApplicationBtn.click();
+	 }
+	 
+	 public void selectConfigureUnknownApplicationDrpDwn() throws InterruptedException {
+		 this.configureUnkownApplicationDrpdwn.click();
+		 WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(30));
+		 wait.until(ExpectedConditions.elementToBeClickable(driver.findElement(By.id("appList"))));
+		 Select drpUnknownApp = new Select(driver.findElement(By.id("appList")));
+		drpUnknownApp.selectByValue("49");
+	 }
+	 
+	 public void clickQBtn() throws InterruptedException
+	 {
+		 this.qButton.click();
+		 WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(30));
+		 wait.until(ExpectedConditions.visibilityOf(qButton));
+		 this.qButton.click();
+	 }
+	 
+	 public void selectChkBox()
+	 {
+		 this.chkBox.click();;
+	 }
+	 
+	 public void clickAddBtn()
+	 {
+		 WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(30));
+		 wait.until(ExpectedConditions.visibilityOf(addBtn));
+		 this.addBtn.click();
+	 }
+	 
+	 public void clickSubmitBtn()
+	 {
+		 this.submitBtn.click();
 	 }
 	 
 	
