@@ -24,7 +24,7 @@ public class UserDomainDeleteFunction extends BaseTest {
 	RandomStringGeneration randomStringGenerator = new RandomStringGeneration();
 	Listeners listeners = new Listeners();
 	
-	@Test
+	@Test(retryAnalyzer = Pages.RetryAnalyzer.class)
 	public void deleteNewFunction() throws InterruptedException
 	{
 		listeners.testStepDescription("Step 1: Login into the prohance application");

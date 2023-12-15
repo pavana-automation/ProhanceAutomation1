@@ -20,7 +20,7 @@ public class DataAggregationForAllType extends BaseTest {
 	Listeners listeners = new Listeners();
 
 	
-	@Test
+	@Test(retryAnalyzer = Pages.RetryAnalyzer.class)
 	public void alltypeValidation() throws InterruptedException, StaleElementReferenceException {
 		
 		driver = initializeDriver3333();

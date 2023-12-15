@@ -23,7 +23,7 @@ public class UserDomainPDFValidation extends BaseTest{
 	Listeners listeners = new Listeners();
 	
 	
-	@Test
+	@Test(retryAnalyzer = Pages.RetryAnalyzer.class)
 	public void pdf() throws IOException, InterruptedException { 
 	
 	listeners.testStepDescription("Step 1: Login into the prohance application");

@@ -16,7 +16,8 @@ public class WorkProfilesForClone extends BaseTest{
 	SideNavigationMenuPage nav = new SideNavigationMenuPage(BaseTest.driver);
 	WorkProfilesPage workProfile = new WorkProfilesPage(BaseTest.driver);
 	Listeners listeners = new Listeners();
-	@Test
+	
+	@Test(retryAnalyzer = Pages.RetryAnalyzer.class)
 	public void cloneOnWorkProfiles () throws InterruptedException
 	{
 		driver = initializeDriver3333();

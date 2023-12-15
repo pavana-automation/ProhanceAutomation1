@@ -66,7 +66,7 @@ public class DataAggregationPage {
 	@FindBy(id = "userAggregationNoteDiv")
 	WebElement runAggregationForAllUsers;
 	
-	@FindBy(xpath = "//table[@id='CommonDataTableId']/tbody/tr/td[3]/div[contains(text(),'adminaish')]/../../td[2]/div")
+	@FindBy(xpath = "//table[@id='CommonDataTableId']/tbody/tr/td[3]/div[contains(text(),'Aishwarya')]/../../td[2]/div")
 	List<WebElement> aggregationStarted;
 	
 	@FindBy(xpath = "//table[@id=\"CommonDataTableId\"]/tbody/tr/td[3]/div[contains(text(),'Aishwarya')]/../../td[2]/div")

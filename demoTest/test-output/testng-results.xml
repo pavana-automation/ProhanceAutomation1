@@ -1,0 +1,311 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results retried="3" ignored="21" total="46" passed="22" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2023-12-15T15:02:21 IST" name="Suite" finished-at="2023-12-15T15:10:04 IST" duration-ms="463915">
+    <groups>
+    </groups>
+    <test started-at="2023-12-15T15:02:21 IST" name="Test" finished-at="2023-12-15T15:10:04 IST" duration-ms="463915">
+      <class name="test.WorkProfileForAddingNew">
+        <test-method signature="AddingNewWorkProfiles()[pri:0, instance:test.WorkProfileForAddingNew@5c534b5b]" started-at="2023-12-15T15:07:47 IST" name="AddingNewWorkProfiles" finished-at="2023-12-15T15:07:59 IST" duration-ms="11512" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AddingNewWorkProfiles -->
+      </class> <!-- test.WorkProfileForAddingNew -->
+      <class name="test.WorkProfileForDelete">
+        <test-method signature="deletionOnWorkProfiles()[pri:0, instance:test.WorkProfileForDelete@62573c86]" started-at="2023-12-15T15:08:18 IST" name="deletionOnWorkProfiles" finished-at="2023-12-15T15:08:28 IST" duration-ms="10175" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- deletionOnWorkProfiles -->
+      </class> <!-- test.WorkProfileForDelete -->
+      <class name="test.WorkProfilesExcelValidation">
+        <test-method signature="cloneOnWorkProfiles()[pri:0, instance:test.WorkProfilesExcelValidation@2ab0702e]" started-at="2023-12-15T15:08:28 IST" name="cloneOnWorkProfiles" finished-at="2023-12-15T15:08:43 IST" duration-ms="14871" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- cloneOnWorkProfiles -->
+      </class> <!-- test.WorkProfilesExcelValidation -->
+      <class name="test.WorkProfileValidateWithTeams">
+        <test-method signature="cloneOnWorkProfiles()[pri:0, instance:test.WorkProfileValidateWithTeams@10f19647]" started-at="2023-12-15T15:08:51 IST" name="cloneOnWorkProfiles" finished-at="2023-12-15T15:09:05 IST" duration-ms="14210" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- cloneOnWorkProfiles -->
+      </class> <!-- test.WorkProfileValidateWithTeams -->
+      <class name="test.AOSAddNew">
+        <test-method signature="addNewFunction()[pri:0, instance:test.AOSAddNew@6778aea6]" started-at="2023-12-15T15:05:27 IST" name="addNewFunction" finished-at="2023-12-15T15:05:44 IST" duration-ms="16776" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addNewFunction -->
+      </class> <!-- test.AOSAddNew -->
+      <class name="test.WorkProfileForModification">
+        <test-method signature="modificationOnWorkProfiles()[pri:0, instance:test.WorkProfileForModification@396639b]" started-at="2023-12-15T15:07:59 IST" name="modificationOnWorkProfiles" finished-at="2023-12-15T15:08:07 IST" duration-ms="8451" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- modificationOnWorkProfiles -->
+      </class> <!-- test.WorkProfileForModification -->
+      <class name="test.AOSUnknownApplicationAddingtoExisting">
+        <test-method signature="aosUnknownApplicationAddingtoExisting()[pri:0, instance:test.AOSUnknownApplicationAddingtoExisting@7a7cc52c]" started-at="2023-12-15T15:05:44 IST" name="aosUnknownApplicationAddingtoExisting" finished-at="2023-12-15T15:06:05 IST" duration-ms="21483" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- aosUnknownApplicationAddingtoExisting -->
+      </class> <!-- test.AOSUnknownApplicationAddingtoExisting -->
+      <class name="test.DataAggregation">
+        <test-method retried="true" signature="aggregationForSingleType()[pri:0, instance:test.DataAggregation@102efc59]" started-at="2023-12-15T15:09:05 IST" name="aggregationForSingleType" finished-at="2023-12-15T15:09:24 IST" duration-ms="18253" status="SKIP">
+          <exception class="org.openqa.selenium.StaleElementReferenceException">
+            <message>
+              <![CDATA[stale element reference: stale element not found
+  (Session info: chrome=120.0.6099.72)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
+Build info: version: '4.13.0', revision: 'ba948ece5b*'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.8.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [31a646b68873bef55a90c1be4680baf3, clickElement {id=B15EF7BDBBAEDC1CA745A5C0A4571993_element_5522}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 120.0.6099.72, chrome: {chromedriverVersion: 120.0.6099.71 (9729082fe617..., userDataDir: C:\Users\pavana.c\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:54640}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:54640/devtoo..., se:cdpVersion: 120.0.6099.72, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (31a646b68873bef55a90c1be4680baf3)] -> xpath: //input[@value ="FETCH"]]
+Session ID: 31a646b68873bef55a90c1be4680baf3]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.StaleElementReferenceException: stale element reference: stale element not found
+  (Session info: chrome=120.0.6099.72)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
+Build info: version: '4.13.0', revision: 'ba948ece5b*'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.8.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [31a646b68873bef55a90c1be4680baf3, clickElement {id=B15EF7BDBBAEDC1CA745A5C0A4571993_element_5522}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 120.0.6099.72, chrome: {chromedriverVersion: 120.0.6099.71 (9729082fe617..., userDataDir: C:\Users\pavana.c\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:54640}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:54640/devtoo..., se:cdpVersion: 120.0.6099.72, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (31a646b68873bef55a90c1be4680baf3)] -> xpath: //input[@value ="FETCH"]]
+Session ID: 31a646b68873bef55a90c1be4680baf3
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:224)
+at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
+at jdk.internal.reflect.GeneratedMethodAccessor1.invoke(Unknown Source)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+at jdk.proxy2/jdk.proxy2.$Proxy16.click(Unknown Source)
+at Pages.DataAggregationPage.clickFetchBtn(DataAggregationPage.java:386)
+at test.DataAggregation.aggregationForSingleType(DataAggregation.java:55)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.StaleElementReferenceException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- aggregationForSingleType -->
+        <test-method signature="aggregationForSingleType()[pri:0, instance:test.DataAggregation@102efc59]" started-at="2023-12-15T15:09:24 IST" name="aggregationForSingleType" finished-at="2023-12-15T15:09:42 IST" duration-ms="18102" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- aggregationForSingleType -->
+      </class> <!-- test.DataAggregation -->
+      <class name="test.AOSUnknownApplicationAddingtoCreateNew">
+        <test-method signature="aosUnknownApplicationAddingtoCreateNew()[pri:0, instance:test.AOSUnknownApplicationAddingtoCreateNew@77eb5790]" started-at="2023-12-15T15:02:21 IST" name="aosUnknownApplicationAddingtoCreateNew" finished-at="2023-12-15T15:03:36 IST" duration-ms="75718" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- aosUnknownApplicationAddingtoCreateNew -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:test.AOSUnknownApplicationAddingtoCreateNew@77eb5790]" started-at="2023-12-15T15:10:03 IST" name="teardown" finished-at="2023-12-15T15:10:04 IST" duration-ms="1262" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- test.AOSUnknownApplicationAddingtoCreateNew -->
+      <class name="test.AOSModifyFunction">
+        <test-method retried="true" signature="a0sModifyFunction()[pri:0, instance:test.AOSModifyFunction@524a2ffb]" started-at="2023-12-15T15:06:31 IST" name="a0sModifyFunction" finished-at="2023-12-15T15:06:47 IST" duration-ms="16296" status="SKIP">
+          <exception class="java.lang.AssertionError">
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError
+at org.junit.Assert.fail(Assert.java:86)
+at org.junit.Assert.assertTrue(Assert.java:41)
+at org.junit.Assert.assertTrue(Assert.java:52)
+at test.AOSModifyFunction.a0sModifyFunction(AOSModifyFunction.java:60)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- a0sModifyFunction -->
+        <test-method retried="true" signature="a0sModifyFunction()[pri:0, instance:test.AOSModifyFunction@524a2ffb]" started-at="2023-12-15T15:06:47 IST" name="a0sModifyFunction" finished-at="2023-12-15T15:07:04 IST" duration-ms="16491" status="SKIP">
+          <exception class="java.lang.AssertionError">
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError
+at org.junit.Assert.fail(Assert.java:86)
+at org.junit.Assert.assertTrue(Assert.java:41)
+at org.junit.Assert.assertTrue(Assert.java:52)
+at test.AOSModifyFunction.a0sModifyFunction(AOSModifyFunction.java:60)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.retryFailed(TestInvoker.java:213)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:58)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- a0sModifyFunction -->
+        <test-method signature="a0sModifyFunction()[pri:0, instance:test.AOSModifyFunction@524a2ffb]" started-at="2023-12-15T15:07:04 IST" name="a0sModifyFunction" finished-at="2023-12-15T15:07:20 IST" duration-ms="16677" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- a0sModifyFunction -->
+      </class> <!-- test.AOSModifyFunction -->
+      <class name="test.DataAggregationForModificationOnSettingsTab">
+        <test-method signature="modificationOnSettingsTab()[pri:0, instance:test.DataAggregationForModificationOnSettingsTab@56913163]" started-at="2023-12-15T15:07:32 IST" name="modificationOnSettingsTab" finished-at="2023-12-15T15:07:42 IST" duration-ms="9915" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- modificationOnSettingsTab -->
+      </class> <!-- test.DataAggregationForModificationOnSettingsTab -->
+      <class name="test.DataAggregationForAllType">
+        <test-method signature="alltypeValidation()[pri:0, instance:test.DataAggregationForAllType@3936df72]" started-at="2023-12-15T15:09:42 IST" name="alltypeValidation" finished-at="2023-12-15T15:10:03 IST" duration-ms="21389" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- alltypeValidation -->
+      </class> <!-- test.DataAggregationForAllType -->
+      <class name="test.UserDomainExcelValidation">
+        <test-method signature="excelValidation()[pri:0, instance:test.UserDomainExcelValidation@3e15bb06]" started-at="2023-12-15T15:05:16 IST" name="excelValidation" finished-at="2023-12-15T15:05:27 IST" duration-ms="11419" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- excelValidation -->
+      </class> <!-- test.UserDomainExcelValidation -->
+      <class name="test.UserDomainModify">
+        <test-method signature="modifyFunction()[pri:0, instance:test.UserDomainModify@4b3fe06e]" started-at="2023-12-15T15:04:38 IST" name="modifyFunction" finished-at="2023-12-15T15:04:50 IST" duration-ms="11942" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- modifyFunction -->
+      </class> <!-- test.UserDomainModify -->
+      <class name="test.WorkProfilesForClone">
+        <test-method signature="cloneOnWorkProfiles()[pri:0, instance:test.WorkProfilesForClone@7158daf2]" started-at="2023-12-15T15:08:43 IST" name="cloneOnWorkProfiles" finished-at="2023-12-15T15:08:51 IST" duration-ms="8101" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- cloneOnWorkProfiles -->
+      </class> <!-- test.WorkProfilesForClone -->
+      <class name="test.WorkProfilesDeleteWithDependency">
+        <test-method signature="cloneOnWorkProfiles()[pri:0, instance:test.WorkProfilesDeleteWithDependency@2b22a1cc]" started-at="2023-12-15T15:08:07 IST" name="cloneOnWorkProfiles" finished-at="2023-12-15T15:08:18 IST" duration-ms="10695" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- cloneOnWorkProfiles -->
+      </class> <!-- test.WorkProfilesDeleteWithDependency -->
+      <class name="test.UserDomainAddFunction">
+        <test-method signature="addNewFunction()[pri:0, instance:test.UserDomainAddFunction@199bc830]" started-at="2023-12-15T15:03:36 IST" name="addNewFunction" finished-at="2023-12-15T15:04:38 IST" duration-ms="61857" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addNewFunction -->
+      </class> <!-- test.UserDomainAddFunction -->
+      <class name="test.UserDomainDeleteFunction">
+        <test-method signature="deleteNewFunction()[pri:0, instance:test.UserDomainDeleteFunction@27b45ea]" started-at="2023-12-15T15:04:50 IST" name="deleteNewFunction" finished-at="2023-12-15T15:05:02 IST" duration-ms="12320" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- deleteNewFunction -->
+      </class> <!-- test.UserDomainDeleteFunction -->
+      <class name="test.AOSDeleteFunction">
+        <test-method signature="aosDeleteFunction()[pri:0, instance:test.AOSDeleteFunction@5853495b]" started-at="2023-12-15T15:06:05 IST" name="aosDeleteFunction" finished-at="2023-12-15T15:06:31 IST" duration-ms="25484" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- aosDeleteFunction -->
+      </class> <!-- test.AOSDeleteFunction -->
+      <class name="test.UserDomainSortingFuncton">
+        <test-method signature="sortingFunction()[pri:0, instance:test.UserDomainSortingFuncton@3e17a0a1]" started-at="2023-12-15T15:05:02 IST" name="sortingFunction" finished-at="2023-12-15T15:05:16 IST" duration-ms="13034" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- sortingFunction -->
+      </class> <!-- test.UserDomainSortingFuncton -->
+      <class name="test.UserDomainPDFValidation">
+        <test-method signature="pdf()[pri:0, instance:test.UserDomainPDFValidation@2f61d591]" started-at="2023-12-15T15:07:20 IST" name="pdf" finished-at="2023-12-15T15:07:32 IST" duration-ms="11505" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- pdf -->
+      </class> <!-- test.UserDomainPDFValidation -->
+      <class name="test.DataAggregationForModificationOnSettingsTabForClearButton">
+        <test-method signature="modificationOnSettingsTabForClearButton()[pri:0, instance:test.DataAggregationForModificationOnSettingsTabForClearButton@702b06fb]" started-at="2023-12-15T15:07:42 IST" name="modificationOnSettingsTabForClearButton" finished-at="2023-12-15T15:07:47 IST" duration-ms="5769" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- modificationOnSettingsTabForClearButton -->
+      </class> <!-- test.DataAggregationForModificationOnSettingsTabForClearButton -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>

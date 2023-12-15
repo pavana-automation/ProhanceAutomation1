@@ -30,7 +30,7 @@ public class AOSAddNew extends BaseTest{
 	public void addNewFunction() throws InterruptedException
 	{
 		listeners.testStepDescription("Step 1: Login into the prohance application");
-		driver=initializeDriver6688();
+		driver=initializeDriver3333();
 
 		loginPage.clickLogin("adminp","1");
 

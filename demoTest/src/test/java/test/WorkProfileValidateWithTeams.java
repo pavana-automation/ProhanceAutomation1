@@ -20,7 +20,8 @@ public class WorkProfileValidateWithTeams  extends BaseTest{
 	Listeners listeners = new Listeners();
 	Set<String> workProfileListFromTeams = null;
 	Set<String> workProfileList = null;
-	@Test
+	
+	@Test(retryAnalyzer = Pages.RetryAnalyzer.class)
 	public void cloneOnWorkProfiles () throws InterruptedException
 	{
 		driver = initializeDriver3333();

@@ -52,6 +52,15 @@ public class BaseTest {
 	return driver;
 	}
 	
+	public WebDriver initializeDriver6969() {
+		System.setProperty("webdriver.chrome.driver","C:\\drivers\\chromedriver-win64\\chromedriver.exe");
+	//driver = new ChromeDriver();
+	driver.manage().window().maximize();
+	driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+	driver.get("http://10.10.10.128:6969/prohance/"); 
+	return driver;
+	}
+	
 	
 	
 	  public WebDriver initializeDriver6688() {

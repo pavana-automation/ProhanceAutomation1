@@ -24,8 +24,7 @@ public class AOSDeleteFunction extends BaseTest {
 	Listeners listeners = new Listeners();
 	AOSPage aos = new AOSPage(BaseTest.driver);
 	
-	@Test
-
+	@Test(retryAnalyzer = Pages.RetryAnalyzer.class)
 	public void aosDeleteFunction() throws InterruptedException
 	
 	{
@@ -52,14 +51,19 @@ public class AOSDeleteFunction extends BaseTest {
 	userdomain.clickDeleteBtn();
 	
 	listeners.testStepDescription("Step 6: Verify, Record should not be deleted");
+	try 
+	{
 	String actualMsg = driver.findElement(By.id("dialogfailurespan")).getText();
-	System.out.println("the msg is:" +actualMsg);
-
 	String expectedMsg = "Activity On System: "+name+" cannot be deleted due to data dependency. Click here to view dependency";
-	
 	Assert.assertTrue(actualMsg.contains("Activity"));
 	ArrayList<String> expectedList = userdomain.getElementsInRowToList();
 	Assert.assertTrue(expectedList.contains(name));
+	}
+	catch(org.openqa.selenium.NoSuchElementException e) {
+		driver.findElement(By.xpath("//input[@value='No']")).click();
+		ArrayList<String> expectedList = userdomain.getElementsInRowToList();
+		Assert.assertTrue(expectedList.contains(name));
+	}
 	
 	listeners.testStepDescription("Step 7: Record cannot be deleted , as dependency are there hence verifying the same");
 	

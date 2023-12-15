@@ -18,7 +18,6 @@
 		<class name="test.AOSDeleteFunction"></class>
 		<class name="test.AOSModifyFunction"/>
 		<class name="test.UserDomainPDFValidation"/>
-		<class name="test.AOSDeleteFunction"/>
       	<class name="test.DataAggregationForModificationOnSettingsTab"/>
      	<class name="test.DataAggregationForModificationOnSettingsTabForClearButton"/>
 		<class name="test.WorkProfileForAddingNew"/> 

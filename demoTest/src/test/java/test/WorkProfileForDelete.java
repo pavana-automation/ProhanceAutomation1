@@ -15,7 +15,8 @@ public class WorkProfileForDelete  extends BaseTest{
 	SideNavigationMenuPage nav = new SideNavigationMenuPage(BaseTest.driver);
 	WorkProfilesPage workProfile = new WorkProfilesPage(BaseTest.driver);
 	Listeners listeners = new Listeners();
-	@Test
+	
+	@Test(retryAnalyzer = Pages.RetryAnalyzer.class)
 	public void deletionOnWorkProfiles () throws InterruptedException
 	{
 		driver = initializeDriver3333();

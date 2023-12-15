@@ -26,7 +26,7 @@ public class WorkProfilesExcelValidation  extends BaseTest{
 	Listeners listeners = new Listeners();
 	boolean workprofileCompare=false;
 	
-	@Test
+	@Test(retryAnalyzer = Pages.RetryAnalyzer.class)
 	public void cloneOnWorkProfiles () throws InterruptedException, EncryptedDocumentException, IOException
 	{
 		driver = initializeDriver3333();

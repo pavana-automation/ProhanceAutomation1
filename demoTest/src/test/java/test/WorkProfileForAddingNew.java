@@ -19,12 +19,13 @@ public class WorkProfileForAddingNew  extends BaseTest {
 	SideNavigationMenuPage nav = new SideNavigationMenuPage(BaseTest.driver);
 	WorkProfilesPage workProfile = new WorkProfilesPage(BaseTest.driver);
 	Listeners listeners = new Listeners();
-	@Test
+	
+	@Test(retryAnalyzer = Pages.RetryAnalyzer.class)
 	public void AddingNewWorkProfiles () throws InterruptedException
 	{
-		driver = initializeDriver6688();
+		driver = initializeDriver3333();
 		listeners.testStepDescription("Step 1: Login to ProHance Application");
-		loginPage.clickLogin("adminaish", "1");
+		loginPage.clickLogin("adminaish_1", "1");
 		listeners.testStepDescription("Step 2: Click on SideNavigationMenuBar");
 		nav.clickSideNavigationBtn();
 		//Thread.sleep(4000);

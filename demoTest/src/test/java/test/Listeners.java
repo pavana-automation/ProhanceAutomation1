@@ -47,8 +47,6 @@ public class Listeners  extends TestListenerAdapter implements ITestListener {
 	@Override
 	public void onTestFailure(ITestResult result) {
 		WebDriver driver = null;
-		
-	
 			extentTest.get().fail(result.getThrowable());
 			Object testObject = result.getInstance();
 			Class clazz = result.getTestClass().getRealClass();
@@ -102,10 +100,6 @@ public class Listeners  extends TestListenerAdapter implements ITestListener {
 		// long endTime= System.currentTimeMillis();
 		// System.out.println("Inform all the suite have finished execution at"+
 		// endTime);
-		
-		
-		
-		
 		extent.flush();
 	}
 
