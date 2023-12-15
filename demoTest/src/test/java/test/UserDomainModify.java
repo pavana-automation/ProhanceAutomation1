@@ -1,3 +1,4 @@
+
 package test;
 
 import java.util.ArrayList;
@@ -21,7 +22,7 @@ public class UserDomainModify extends BaseTest
 	RandomStringGeneration randomStringGenerator = new RandomStringGeneration();
 	Listeners listeners = new Listeners();
 	
-	@Test(retryAnalyzer = Pages.RetryAnalyzer.class)
+	@Test
 	public void modifyFunction() throws InterruptedException
 	{
 		listeners.testStepDescription("Step 1: Login into the prohance application");
@@ -58,3 +59,4 @@ public class UserDomainModify extends BaseTest
 	}
 
 }
+

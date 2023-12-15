@@ -28,13 +28,15 @@ public class Login extends BaseTest {
 	WebDriver driver;
 	loginPage loginPage = new loginPage(BaseTest.driver);
 	
-	@DataProvider
-	public Object[][] getData() throws IOException
-	{
-		List<HashMap<String, String>> data= getJsonDataToMap(System.getProperty("user.dir")+"//src//test//java//data//adminLogin4848.json");
-		return new Object[][] {{data.get(0)},{data.get(1)}};
-		
-	}
+	/*
+	 * @DataProvider public Object[][] getData() throws IOException {
+	 * List<HashMap<String, String>> data=
+	 * getJsonDataToMap(System.getProperty("user.dir")+
+	 * "//src//test//java//data//adminLogin4848.json"); return new Object[][]
+	 * {{data.get(0)},{data.get(1)}};
+	 * 
+	 * }
+	 */
 	
 	@Test(dataProvider="getData", groups= {"adminLogin4848"})
 	public void login(HashMap<String, String> input) throws IOException, InterruptedException

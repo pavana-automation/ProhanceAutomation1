@@ -1,3 +1,4 @@
+
 package test;
 
 import java.util.ArrayList;
@@ -29,7 +30,7 @@ public class AOSAddNew extends BaseTest{
 	public void addNewFunction() throws InterruptedException
 	{
 		listeners.testStepDescription("Step 1: Login into the prohance application");
-		driver=initializeDriver3333();
+		driver=initializeDriver6688();
 
 		loginPage.clickLogin("adminp","1");
 

@@ -1,3 +1,4 @@
+
 package test;
 
 import org.openqa.selenium.StaleElementReferenceException;
@@ -17,10 +18,10 @@ public class DataAggregationForModificationOnSettingsTabForClearButton extends B
 	DataAggregationPage aggregation = new DataAggregationPage(BaseTest.driver);
 	Listeners listeners = new Listeners();
 	
-	@Test(retryAnalyzer = Pages.RetryAnalyzer.class)
+	@Test
 	public void modificationOnSettingsTabForClearButton() throws InterruptedException, StaleElementReferenceException {
 		driver = initializeDriver3333();
-		listeners.testStepDescription("Step 1: Login to Prohance Application");
+		listeners.testStepDescription("Step 1: Login to ProHance Application");
 		loginPage.clickLogin("adminaish_1", "1");
 		listeners.testStepDescription("Step 2: Open Side NavigationMenuBar");
 		nav.clickSideNavigationBtn();

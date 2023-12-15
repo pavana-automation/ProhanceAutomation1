@@ -3,6 +3,7 @@ package utilities;
 import java.io.BufferedInputStream;
 import java.io.File;
 import java.io.FileInputStream;
+import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.InputStream;
 
@@ -116,10 +117,7 @@ public class ReadXLSdata extends BaseTest {
 			return "folder is empty!";
 		}
 	}
-	
-
-	
-	  public List<String> getData() throws EncryptedDocumentException, IOException,
+	public List<String> getData() throws EncryptedDocumentException, IOException,
 	  InterruptedException { Thread.sleep(2000); File f = new
 	  File(getRecentFilePath()); FileInputStream fis = new FileInputStream(f);
 	  Workbook wb = WorkbookFactory.create(fis); Sheet sheetName =
@@ -139,6 +137,8 @@ public class ReadXLSdata extends BaseTest {
 		Set<String> excelDataList1 =  new TreeSet();
 		int totalRows = sheetName.getLastRowNum();
 		System.out.println("row" +totalRows);
+		
+		
 		for(int i=5;i<=totalRows;i++){
             int cellcount=sheetName.getRow(i).getLastCellNum();   
            // System.out.println("cellcount"+cellcount);
@@ -147,9 +147,52 @@ public class ReadXLSdata extends BaseTest {
                 excelDataList1.add( sheetName.getRow(i).getCell(j).getStringCellValue().toString().replaceAll("\\s+",""));
             }
         }
+		
+		
 		System.out.print("list"+excelDataList1);
 		return excelDataList1;
 	}
+	public Set<String> getAllUsers() throws EncryptedDocumentException, IOException, InterruptedException {
+		Thread.sleep(2000);
+		File f = new File(getRecentFilePath());
+		FileInputStream fis = new FileInputStream(f);
+		Workbook wb = new XSSFWorkbook(fis);
+		Sheet sheetName = wb.getSheetAt(0);
+		Set<String> excelDataList1 =  new TreeSet();
+		int totalRows = sheetName.getLastRowNum()-sheetName.getFirstRowNum();
+		System.out.println("row :" +totalRows);
+		try {
+		for(int i=3;i<totalRows;i++){
+			sheetName.getRow(3).getCell(1).setCellValue("MOD");
+			
+			sheetName.getRow(3).getCell(3).setCellValue("xxxxxx");
+			FileOutputStream fileOut = new FileOutputStream(f);
+			wb.write(fileOut);
+	        fileOut.flush();
+	        fileOut.close();
+            //int cellcount=sheetName.getRow(i).getLastCellNum();   
+            
+          //  System.out.println("cellcount"+cellcount);
+           // for(int j=3;j<cellcount;j++){
+            	//if(sheetName.getRow(i).getCell(28).getStringCellValue().toString().equals("")) {
+            	//	if(sheetName.getRow(i).getCell(30).getStringCellValue().toString().equals("")) {
+            			System.out.println(sheetName.getRow(i).getCell(1).getStringCellValue().toString());
+            			System.out.println(i);
+            		//}
+            	//}
+                //excelDataList1.add( sheetName.getRow(i).getCell(j).getStringCellValue().toString());
+                
+               // System.out.print("\n");
+            //}
+           // System.out.print("\n");
+
+        }}catch(Exception e) {
+        	System.out.println();
+        }
+		
+		return excelDataList1;
+	}
+	
 	public String getPDFdata() throws IOException
 	{
 		String path = "C:\\Users\\dipankar.d\\Downloads\\Work Profiles.pdf";

@@ -1,3 +1,4 @@
+
 package test;
 
 import java.util.ArrayList;
@@ -21,7 +22,7 @@ public class UserDomainAddFunction extends BaseTest{
 	Listeners listeners = new Listeners();
 	
 	
-	@Test(retryAnalyzer = Pages.RetryAnalyzer.class)
+	@Test()
 	public void addNewFunction() throws InterruptedException
 	{
 		listeners.testStepDescription("Step 1: Login into the prohance application");
@@ -59,3 +60,4 @@ public class UserDomainAddFunction extends BaseTest{
 	}
 	
 }
+

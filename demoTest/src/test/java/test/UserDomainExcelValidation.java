@@ -1,3 +1,4 @@
+
 package test;
 
 import java.io.IOException;
@@ -22,7 +23,7 @@ public class UserDomainExcelValidation extends BaseTest{
 	ReadXLSdata ReadXLSdata = new ReadXLSdata(BaseTest.driver);
 	Listeners listeners = new Listeners();
 	
-	@Test(retryAnalyzer = Pages.RetryAnalyzer.class)
+	@Test
 	public void excelValidation() throws InterruptedException, IOException {
 		
 		listeners.testStepDescription("Step 1: Login into the prohance application");
@@ -56,3 +57,4 @@ public class UserDomainExcelValidation extends BaseTest{
 	}
 
 }
+

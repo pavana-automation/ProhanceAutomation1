@@ -32,7 +32,7 @@ public class WorkProfilesPage {
 	WebElement name;
 
 	
-	@FindBy(xpath= "//div[@id ='adminBodyContent']/form/div[2]/div/div/table/tbody/tr[2]/td[2]/div/textarea[@id ='workProfileDescription']")
+	@FindBy(xpath= "//td/div/textarea[@id='workProfileDescription']")
 	WebElement description;
 	
 	@FindBy(xpath= "//span[contains(text(),'Activities On System')]")
@@ -92,33 +92,17 @@ public class WorkProfilesPage {
 	@FindBy(xpath ="//table[@id =\"CommonDataTableId\"]/tbody/tr[1]/td/a[1]/i")
 	WebElement modifyBtn;
 	
-	@FindBy(xpath ="//table[@id =\"CommonDataTableId\"]/tbody/tr[1]/td/a[2]/i")
+	@FindBy(xpath ="//td/div[contains(text(),\"0\")]/../../td[1]/a[2]/i")
 	WebElement deleteBtn;
 	
-	@FindBy(xpath ="//table[@id =\"CommonDataTableId\"]/tbody/tr[3]/td/a[2]/i")
+	@FindBy(xpath ="//table[@id=\"CommonDataTableId\"]/tbody/tr[1]/td[1]/a[2]/i")
 	WebElement dependencyDeleteBtn;
 	
 	@FindBy(xpath ="//table[@id =\"CommonDataTableId\"]/tbody/tr[1]/td/a[3]/i")
 	WebElement cloneBtn;
 	
-	@FindBy(xpath="//td[contains(text(),\"Citrix\")]/../td[1]/i")
-	WebElement deleteAOSApplicationName;
-	
 	@FindBy(xpath ="//button[contains(text(),\"OK\")]")
 	WebElement activitytagPopUP;
-	
-	@FindBy(xpath ="//span[contains(text(),'Work Profile: auto_test modified successfully')]")
-	WebElement successMessageForModify;
-	
-	@FindBy(xpath ="//span[contains(text(),'Work Profile: auto_test added successfully')]")
-	WebElement successMessageForAdd;
-	
-	@FindBy(xpath ="//span[contains(text(),'Work Profile: auto_test_clone added successfully')]")
-	WebElement successMessageForClone;
-	
-	@FindBy(xpath ="//span[contains(text(),'Work Profile: auto_test deleted successfully')]")
-	WebElement successMessageForDelete;
-	
 	
 	@FindBy(linkText = "×")
 	WebElement closeAggregationPopUp;
@@ -135,10 +119,10 @@ public class WorkProfilesPage {
 	@FindBy(xpath ="//li[2][contains(text(),\"Teams\")]")
 	WebElement teamsBtn;
 	
-	@FindBy(xpath ="//td[contains(text(),\"Activity Goals Demo\")]/../td/a[1]/i")
+	@FindBy(xpath ="//table[@id =\"CommonDataTableId\"]/tbody/tr[1]/td[1]/a[1]/i")
 	WebElement teamsModifyBtn;
 	
-	@FindBy(xpath ="//div/select[@id =\"workProfileId\"]")
+	@FindBy(xpath ="//select[@id =\"workProfileId\"]/option")
 	List<WebElement> workProfilesName;
 	
 	@FindBy(xpath ="//span[contains(text() ,'All Work Profiles Configuration')]")
@@ -153,13 +137,17 @@ public class WorkProfilesPage {
 	@FindBy(xpath ="//img[@src=\"/prohance/images/pdf.png\"]")
 	WebElement pdf;
 	
-	@FindBy(xpath ="//span[contains(text(),'Work Profile: auto_test cannot be added as it already exists')]")
-	WebElement alreadyExists;
-	
 	@FindBy(xpath ="//table[@id =\"CommonDataTableId\"]/tbody/tr/td[4]")
 	List<WebElement> teams;
 	
-	
+	@FindBy(xpath ="//li/label[contains(text(),\"BACK\")]")
+	WebElement backBtn;
+
+	@FindBy(xpath ="//div[@id=\"arrow-bot\"]/i")
+	WebElement bottomArrom;
+	//th[contains(text(),"#Teams")]
+	@FindBy(xpath ="//th[contains(text(),\"#Teams\")]")
+	WebElement teamsSorting;
 	
 	public WorkProfilesPage(WebDriver driver) {
 		  
@@ -200,7 +188,11 @@ public class WorkProfilesPage {
 		WebDriverWait wait = new WebDriverWait(driver,Duration.ofSeconds(30));
 		wait.until(ExpectedConditions.visibilityOf(this.description)).sendKeys(des);
 	}
-	
+	public void clearDescription()
+	{
+		WebDriverWait wait = new WebDriverWait(driver,Duration.ofSeconds(30));
+		wait.until(ExpectedConditions.visibilityOf(this.description)).clear();
+	}
 	public void clickSaveBtn()
 	{
 		this.saveBtn.click();
@@ -238,7 +230,7 @@ public class WorkProfilesPage {
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		this.activitiesAwayFromSystem.click();
 	}
-	public void selectAWFS(String name)
+	public void selectAWFS()
 	{
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 //		Select appName = new Select(this.awfs);
@@ -314,11 +306,7 @@ public class WorkProfilesPage {
 		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 		this.applicationNameForModify.click();
 	}
-	public void clickDeleteAOSApplicationName()
-	{
-		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
-		this.deleteAOSApplicationName.click();
-	}
+	
 	public void clickAwfsForModify()
 	{
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
@@ -329,46 +317,7 @@ public class WorkProfilesPage {
 		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 		this.activitytagPopUP.click();
 	}
-	
-	public void displayAddSuccessMessage() 
-	{
-		String saveMsg = this.successMessageForAdd.getText();
-		if (saveMsg.equals("Work Profile: auto_test added successfully")) 
-		{
-			message = true;
-		}
 
-		Assert.assertTrue(message);
-	}
-	
-	public void displayModificationSuccessMessage() 
-	{
-		  String saveMsg =this.successMessageForModify.getText();
-		  if(saveMsg.equals("Work Profile: auto_test modified successfully")) 
-		  { 
-			  message=true;
-		  } 
-		 Assert.assertTrue(message);
-	}
-	public void displayCloneSuccessMessage() 
-	{
-		  String saveMsg =this.successMessageForClone.getText();
-		  if(saveMsg.equals("Work Profile: auto_test_clone added successfully")) 
-		  { 
-			  message=true;
-		  } 
-		 Assert.assertTrue(message);
-	 }
-	
-	public void displayDeleteSuccessMessage() 
-	{
-		  String saveMsg =this.successMessageForDelete.getText();
-		  if(saveMsg.equals("Work Profile: auto_test deleted successfully")) 
-		  { 
-			  message=true;
-		  } 
-		 Assert.assertTrue(message);
-	 }
 	 public void clickCloseAggregationPopUp()
 	 {
 		 driver.manage().timeouts().implicitlyWait(80, TimeUnit.SECONDS);
@@ -409,17 +358,19 @@ public class WorkProfilesPage {
 		 WebDriverWait wait = new WebDriverWait(driver,Duration.ofSeconds(40));
 			wait.until(ExpectedConditions.visibilityOf(this.teamsModifyBtn)).click();;
 	 }
-	 public void getWorkProfilesName()
+	 public  Set<String> getWorkProfilesName()
 	 {
 		 List <WebElement> col = null;
-		 boolean msg = false;
+		 Set<String> teamsList = new TreeSet();
 		 col = this.workProfilesName;
 		 int len = col.size();
-		  for(int i = 0;i<len;i++)
+		  for(int i = 1;i<len;i++)
 		  {
-			  msg = this.workProfilesName.get(i).getText().contains("auto_test");
+			  teamsList.add(this.workProfilesName.get(i).getText().replaceAll("\\s+",""));
+			 
 		  }
-		  Assert.assertTrue(msg);
+		 // System.out.println(teamsList);
+		  return teamsList;
 	 }
 	 public void clickAllWorkProfileExcel()
 	 {
@@ -435,17 +386,28 @@ public class WorkProfilesPage {
 		 for(int i = 0;i<col.size();i++)
 		  {
 			 name.add(this.nameList.get(i).getText().replaceAll("\\s+",""));
+			 
 		  }
-		 System.out.println("\n"+name);
+		// System.out.println("\n"+name);
 		return name;
 	 }
 	 public void clickPDFBtn()
 	 {
 		 this.pdf.click();
 	 }
-	 public void getAlreadyExists()
+	 public void clickBackBtn()
 	 {
-		 this.alreadyExists.click();
+		 this.backBtn.click();
+	 }
+	 public void clickBottomArrom()
+	 {
+		 this.bottomArrom.click();
+	 }
+	 public void clickTeamsSorting()
+	 {
+		 
+		 this.teamsSorting.click();
+		 this.teamsSorting.click();
 	 }
 	
 }

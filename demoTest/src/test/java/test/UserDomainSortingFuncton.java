@@ -23,13 +23,12 @@ public class UserDomainSortingFuncton extends BaseTest{
 	RandomStringGeneration randomStringGenerator = new RandomStringGeneration();
 	Listeners listeners = new Listeners();
 	
-	@Test(retryAnalyzer = Pages.RetryAnalyzer.class)
+	@Test
 	public void sortingFunction() throws InterruptedException
 	{
 		listeners.testStepDescription("Step 1: Login into the prohance application");
 		driver=initializeDriver3333();
 		loginPage.clickLogin("adminp","1");
-		
 		listeners.testStepDescription("Step 2: Click SideNavigation Page");
 		sidenavPage.clickSideNavigationBtn();
 		
@@ -54,3 +53,4 @@ public class UserDomainSortingFuncton extends BaseTest{
 	}
 		
 }
+

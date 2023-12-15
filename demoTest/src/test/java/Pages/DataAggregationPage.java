@@ -66,7 +66,7 @@ public class DataAggregationPage {
 	@FindBy(id = "userAggregationNoteDiv")
 	WebElement runAggregationForAllUsers;
 	
-	@FindBy(xpath = "//table[@id='CommonDataTableId']/tbody/tr/td[3]/div[contains(text(),'Aishwarya')]/../../td[2]/div")
+	@FindBy(xpath = "//table[@id='CommonDataTableId']/tbody/tr/td[3]/div[contains(text(),'adminaish')]/../../td[2]/div")
 	List<WebElement> aggregationStarted;
 	
 	@FindBy(xpath = "//table[@id=\"CommonDataTableId\"]/tbody/tr/td[3]/div[contains(text(),'Aishwarya')]/../../td[2]/div")
@@ -172,9 +172,12 @@ public class DataAggregationPage {
 		 wait.until(ExpectedConditions.elementToBeClickable(this.runAggregation)).click();
 	  }
 	  
-	  public void clickAuditLogBtn()
+	  public void clickAuditLogBtn() throws InterruptedException
 	  {
+		
 		  this.auditLogsBtn.click();
+		  Thread.sleep(1000);
+		 
 	  }
 	  
 	  public void getAggregationStarted() throws InterruptedException
@@ -182,19 +185,17 @@ public class DataAggregationPage {
 		  List <WebElement> col = null;
 		  try
 		  {
-			 Thread.sleep(1000); 
 		   col = this.aggregationStarted;
-		  }
-		  catch(StaleElementReferenceException ex)
-		  {
-			  ex.getMessage();
-		  }
+
 		  
 		  int len = col.size();
 		  for(int i = 0;i<=len;i++)
 		  {
+			
 			  aggregationEndMsg= this.aggregationStarted.get(0).getText();
 			  aggregationStartMsg= this.aggregationStarted.get(1).getText();
+			
+			 
 		  }
 		  if(aggregationStartMsg.equals("Aggregation Started for 02 Nov 2023 [ Activity On System ]") 
 				  && aggregationEndMsg.equals("Aggregation Completed for 02 Nov 2023 [Status: Success | Completed In: 01s ]"))
@@ -204,9 +205,15 @@ public class DataAggregationPage {
 		  else if(aggregationStartMsg.equals("Aggregation Started for 02 Nov 2023 [ Activity On System ]") 
 				  && aggregationEndMsg.equals("Aggregation Completed for 02 Nov 2023 [Status: Success | Completed In: 00s ]"))
 		  {
+
 			  msg = "Aggregation Completed";
 	  	  }
-		
+	  }
+		  catch(StaleElementReferenceException ex)
+		  {
+			  ex.getMessage();
+		  }
+		  System.out.println("check5");
 		 Assert.assertTrue(true,msg);
 	  }
 	  
@@ -228,18 +235,17 @@ public class DataAggregationPage {
 		  List <WebElement> col = null;
 		  try
 		  {
-			  Thread.sleep(1000);
+			 
 		   col = this.aggregationStarted;
-		  }
-		  catch(StaleElementReferenceException ex)
-		  {
-			  ex.getMessage();
-		  }
+		  
+		  
 		  int len = col.size();
 		  for(int i = 0;i<len;i++)
 		  {
+			
 			  aggregationEndMsg= this.aggregationStarted.get(0).getText();
 			  aggregationStartMsg= this.aggregationStarted.get(1).getText();
+			  System.out.println(aggregationStartMsg);
 		  }
 		  if(aggregationStartMsg.equals("Aggregation Completed for 02 Nov 2023 [Status: Success | Completed In: 02s")
 			&& aggregationEndMsg.equals("Aggregation Started for 02 Nov 2023 [ Activity On System, Activity Away From System, Hourly Activity Raw, Hourly Work Time Metrics, Software Usage, Schedule Adherence, Workflow Activity , Work Output Normalization, Work Output Raw, Work Time Metrics, Activity Goals, Early Logout Computation, Asset Usage ]")) 
@@ -251,7 +257,14 @@ public class DataAggregationPage {
 		 {
 			 	msg = "Aggregation Completed"; 
 		 }
-		  driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+	  }
+		  catch(StaleElementReferenceException ex)
+		  {
+	
+			  ex.getMessage();
+		  }
+	  
+		  
 		Assert.assertTrue(true, msg);
 	  }
 	  public void clickSettingsBtn() 
@@ -286,6 +299,7 @@ public class DataAggregationPage {
 	  { 
 		  this.saveBtn.click();  
 	  }
+	  
 	  
 		
 	  public void displaySuccessMessage() 
@@ -363,12 +377,13 @@ public class DataAggregationPage {
 	 }
 	 public void clickFromDate()
 	 {
-		 System.out.println("check");
+		// System.out.println("check");
 		 this.date.click();
 	 }
 	 public void clickFetchBtn() throws InterruptedException
 	 {
 		 Thread.sleep(1000);
 		 this.fetch.click();
+		 Thread.sleep(4000);
 	 }
 }

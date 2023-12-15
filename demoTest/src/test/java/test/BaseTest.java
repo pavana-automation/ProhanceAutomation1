@@ -1,3 +1,4 @@
+
 package test;
 
 import java.io.File;
@@ -51,14 +52,15 @@ public class BaseTest {
 	return driver;
 	}
 	
-	/*
-	 * public WebDriver initializeDriver3333() {
-	 * System.setProperty("webdriver.chrome.driver",
-	 * "C:\\Users\\jayanti.p.JAMOCHAHQ\\Downloads\\chromedriver-win64\\chromedriver.exe"
-	 * ); //driver = new ChromeDriver(); driver.manage().window().maximize();
-	 * driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-	 * driver.get("http://10.10.10.210:3333/prohance"); return driver; }
-	 */
+	
+	
+	  public WebDriver initializeDriver6688() {
+		  
+		  System.setProperty("webdriver.chrome.driver","C:\\drivers\\chromedriver-win64\\chromedriver.exe"); //driver = new ChromeDriver(); driver.manage().window().maximize();
+		  driver.manage().window().maximize();
+		  driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+		  driver.get("http://10.10.10.250:6688/prohance"); return driver; }
+	 
 	@AfterTest
 	public void teardown() {
 		driver.quit();
@@ -75,18 +77,17 @@ public class BaseTest {
 		
 	}
 	
-	public List<HashMap<String,String>> getJsonDataToMap(String filepath) throws IOException
-	{
-		//reading json to string
-		String jsonContent = FileUtils.readFileToString(new File(filepath),StandardCharsets.UTF_8);
-		
-		//String to Hashmap 
-		ObjectMapper mapper = new ObjectMapper();
-		List<HashMap<String, String>> data=mapper.readValue(jsonContent, new TypeReference<List<HashMap<String, String>>>() {
-		});
-		return data;
-		
-	}
+	/*
+	 * public List<HashMap<String,String>> getJsonDataToMap(String filepath) throws
+	 * IOException { //reading json to string String jsonContent =
+	 * FileUtils.readFileToString(new File(filepath),StandardCharsets.UTF_8);
+	 * 
+	 * //String to Hashmap ObjectMapper mapper = new ObjectMapper();
+	 * List<HashMap<String, String>> data=mapper.readValue(jsonContent, new
+	 * TypeReference<List<HashMap<String, String>>>() { }); return data;
+	 * 
+	 * }
+	 */
 
 
 	public void onTestStart(ITestResult result, String Message) {
@@ -94,6 +95,10 @@ public class BaseTest {
 		
 	}
 
-	
+	public void testStepDescription(String Message) {
+		// TODO Auto-generated method stub
+		
+	}
 
 }
+

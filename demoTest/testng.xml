@@ -1,28 +1,36 @@
-<?xml version="1.0" encoding="UTF-8"?>
+
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite  name="Suite">
 		<listeners>
-			<listener class-name="test.Listeners"/>
-			<listener class-name="utilities.RetryListener"/>
-		</listeners>
-		
+		<listener class-name="test.Listeners"></listener>
+	</listeners>
+	
   <test thread-count="7" name="Test">
     <classes>
-		<class name="test.UserDomainAddFunction"></class>
+		<class name="test.AOSUnknownApplicationAddingtoCreateNew"/>
+		<class name="test.UserDomainAddFunction"/>
 		<class name="test.UserDomainModify"/>
 		<class name="test.UserDomainDeleteFunction"/>
 		<class name="test.UserDomainSortingFuncton"/>
 		<class name="test.UserDomainExcelValidation"/>
 		<class name="test.AOSAddNew"/>
-		<class name="test.UserDomainPDFValidation"/>
-		<class name="test.AOSModifyFunction"/>
+		<class name="test.AOSUnknownApplicationAddingtoExisting"/>
 		<class name="test.AOSDeleteFunction"></class>
-		<class name="test.AOSUnknownApplicationAddingtoExisting"></class>
-		<class name="test.AOSUnknownApplicationAddingtoCreateNew"></class>
-     	<class name="test.DataAggregation"/>
-     	<class name="test.DataAggregationForAllType"/>
+		<class name="test.AOSModifyFunction"/>
+		<class name="test.UserDomainPDFValidation"/>
+		<class name="test.AOSDeleteFunction"/>
       	<class name="test.DataAggregationForModificationOnSettingsTab"/>
-     	<class name="test.DataAggregationForModificationOnSettingsTabForClearButton"/> 
+     	<class name="test.DataAggregationForModificationOnSettingsTabForClearButton"/>
+		<class name="test.WorkProfileForAddingNew"/> 
+		<class name="test.WorkProfileForModification"/> 
+		<class name="test.WorkProfilesDeleteWithDependency"/> 
+		<class name="test.WorkProfileForDelete"/> 
+		<class name="test.WorkProfilesExcelValidation"/> 
+		<class name="test.WorkProfilesForClone"/> 
+		<class name="test.WorkProfileValidateWithTeams"/>
+		<class name="test.DataAggregation"/>
+		<class name="test.DataAggregationForAllType"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->
+

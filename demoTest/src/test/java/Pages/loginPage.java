@@ -33,6 +33,7 @@ public class loginPage{
 	@FindBy(xpath= "//input[@value='Yes']")
 	WebElement yesBtn;
 	
+	
 	 public loginPage(WebDriver driver)
 	    {
 	 
@@ -49,6 +50,7 @@ public class loginPage{
     public void setPassword(String password){
          this.password.sendKeys(password);
     }
+    
     
   //Click on login button
     public boolean clickLogin(String username, String password){

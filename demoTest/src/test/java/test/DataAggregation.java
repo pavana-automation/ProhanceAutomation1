@@ -1,3 +1,4 @@
+
 package test;
 
 import java.io.IOException;
@@ -31,7 +32,7 @@ public class DataAggregation extends BaseTest {
 	@Test(retryAnalyzer = Pages.RetryAnalyzer.class)
 	public void aggregationForSingleType() throws InterruptedException, StaleElementReferenceException {
 		driver = initializeDriver3333();
-		listeners.testStepDescription("Step 1: Login to Prohance Application");
+		listeners.testStepDescription("Step 1: Login to ProHance Application");
 		loginPage.clickLogin("adminaish_1", "1");
 		listeners.testStepDescription("Step 2: Open Side NavigationMenuBar");
 		nav.clickSideNavigationBtn();
@@ -61,3 +62,4 @@ public class DataAggregation extends BaseTest {
 	}
 
 }
+

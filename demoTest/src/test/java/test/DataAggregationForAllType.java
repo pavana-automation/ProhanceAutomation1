@@ -1,3 +1,4 @@
+
 package test;
 
 import org.openqa.selenium.StaleElementReferenceException;
@@ -19,11 +20,11 @@ public class DataAggregationForAllType extends BaseTest {
 	Listeners listeners = new Listeners();
 
 	
-	@Test(retryAnalyzer = Pages.RetryAnalyzer.class)
+	@Test
 	public void alltypeValidation() throws InterruptedException, StaleElementReferenceException {
 		
 		driver = initializeDriver3333();
-		listeners.testStepDescription("Step 1: Login into ProHance Application");
+		listeners.testStepDescription("Step 1: Login to ProHance Application");
 		loginPage.clickLogin("adminaish_1", "1");
 		listeners.testStepDescription("Step 2: Open Side NavigationMenuBar");
 		nav.clickSideNavigationBtn();
@@ -50,3 +51,4 @@ public class DataAggregationForAllType extends BaseTest {
 	}
 
 }
+
