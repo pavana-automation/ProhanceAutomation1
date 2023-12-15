@@ -22,7 +22,7 @@ public class UserDomainExcelValidation extends BaseTest{
 	ReadXLSdata ReadXLSdata = new ReadXLSdata(BaseTest.driver);
 	Listeners listeners = new Listeners();
 	
-	@Test
+	@Test(retryAnalyzer = Pages.RetryAnalyzer.class)
 	public void excelValidation() throws InterruptedException, IOException {
 		
 		listeners.testStepDescription("Step 1: Login into the prohance application");

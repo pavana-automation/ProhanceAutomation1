@@ -17,7 +17,7 @@ public class DataAggregationForModificationOnSettingsTabForClearButton extends B
 	DataAggregationPage aggregation = new DataAggregationPage(BaseTest.driver);
 	Listeners listeners = new Listeners();
 	
-	@Test
+	@Test(retryAnalyzer = Pages.RetryAnalyzer.class)
 	public void modificationOnSettingsTabForClearButton() throws InterruptedException, StaleElementReferenceException {
 		driver = initializeDriver3333();
 		listeners.testStepDescription("Step 1: Login to Prohance Application");

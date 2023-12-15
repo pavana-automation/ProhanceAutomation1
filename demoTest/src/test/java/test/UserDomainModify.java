@@ -21,7 +21,7 @@ public class UserDomainModify extends BaseTest
 	RandomStringGeneration randomStringGenerator = new RandomStringGeneration();
 	Listeners listeners = new Listeners();
 	
-	@Test
+	@Test(retryAnalyzer = Pages.RetryAnalyzer.class)
 	public void modifyFunction() throws InterruptedException
 	{
 		listeners.testStepDescription("Step 1: Login into the prohance application");

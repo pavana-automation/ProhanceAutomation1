@@ -9,7 +9,7 @@ import org.testng.ITestResult;
 public class RetryAnalyzer implements IRetryAnalyzer{
 	
 	int counter = 0;
-	int retryLimit = 3;
+	int retryLimit = 2;
 	
 	@Override
 	public boolean retry(ITestResult result) {
@@ -17,13 +17,12 @@ public class RetryAnalyzer implements IRetryAnalyzer{
 		
 		if(counter < retryLimit)
 		{
-			System.out.println("Retry the failed case");
+			System.out.println("Retry the failed case"+result.getName() +" with status");
 			counter++;
 			return true;
 		}
 		return false;
 	}
-
-	}
+}
 
 

@@ -22,12 +22,13 @@ public class UserDomainDeleteFunction extends BaseTest {
 	RandomStringGeneration randomStringGenerator = new RandomStringGeneration();
 	Listeners listeners = new Listeners();
 	
-	@Test
+	@Test(retryAnalyzer = Pages.RetryAnalyzer.class)
 	public void deleteNewFunction() throws InterruptedException
 	{
 		listeners.testStepDescription("Step 1: Login into the prohance application");
 		driver=initializeDriver3333();
 		loginPage.clickLogin("adminp","1");
+		//Assert.assertFalse("Fail", true);
 		
 		listeners.testStepDescription("Step 2: Click on sideNavigation Page");
 		sidenavPage.clickSideNavigationBtn();

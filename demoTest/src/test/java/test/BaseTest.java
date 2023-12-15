@@ -61,7 +61,7 @@ public class BaseTest {
 	 */
 	@AfterTest
 	public void teardown() {
-		//driver.quit();
+		driver.quit();
 	}
 	
 	public String getScreenshotPath(String TestCaseName, WebDriver driver) throws IOException
@@ -94,9 +94,6 @@ public class BaseTest {
 		
 	}
 
-	public void testStepDescription(String Message) {
-		// TODO Auto-generated method stub
-		
-	}
+	
 
 }

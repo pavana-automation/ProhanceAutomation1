@@ -21,7 +21,7 @@ public class AOSUnknownApplicationAddingtoCreateNew extends BaseTest{
 	Listeners listeners = new Listeners();
 	AOSPage aos = new AOSPage(BaseTest.driver);
 	
-	@Test
+	@Test(retryAnalyzer = Pages.RetryAnalyzer.class)
 	public void aosUnknownApplicationAddingtoCreateNew() throws InterruptedException
 	
 	{
@@ -53,10 +53,15 @@ public class AOSUnknownApplicationAddingtoCreateNew extends BaseTest{
 	
 	listeners.testStepDescription("Step 8: Click on Add button");
 	aos.clickAddBtn();
+	Thread.sleep(2000);
 	
 	listeners.testStepDescription("Step 9: Create New and add application to that");
-	driver.findElement(By.id("configType2")).click();
+
+	driver.findElement(By.xpath("//label[contains(text(),'Create a new application')]")).click();
+	Thread.sleep(1000);
+
 	aos.clickSubmitBtn();
+
 	String result = randomStringGenerator.randomStringGenerator();
 	aos.sendApplicationNameTxt(result);
 	

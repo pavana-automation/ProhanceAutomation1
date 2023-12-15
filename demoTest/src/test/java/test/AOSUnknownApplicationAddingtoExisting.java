@@ -21,7 +21,7 @@ public class AOSUnknownApplicationAddingtoExisting extends BaseTest{
 	Listeners listeners = new Listeners();
 	AOSPage aos = new AOSPage(BaseTest.driver);
 	
-	@Test
+	@Test(retryAnalyzer = Pages.RetryAnalyzer.class)
 	public void aosUnknownApplicationAddingtoExisting() throws InterruptedException
 	
 	{

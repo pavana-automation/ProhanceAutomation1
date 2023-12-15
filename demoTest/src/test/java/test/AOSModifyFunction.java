@@ -25,7 +25,7 @@ public class AOSModifyFunction extends BaseTest{
 	Listeners listeners = new Listeners();
 	
 	
-	@Test
+	@Test(retryAnalyzer = Pages.RetryAnalyzer.class)
 	public void a0sModifyFunction() throws InterruptedException
 	{
 		

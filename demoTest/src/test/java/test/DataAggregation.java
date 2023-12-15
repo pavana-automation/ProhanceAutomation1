@@ -28,7 +28,7 @@ public class DataAggregation extends BaseTest {
 	DataAggregationPage aggregation = new DataAggregationPage(BaseTest.driver);
 	Listeners listeners = new Listeners();
 
-	@Test
+	@Test(retryAnalyzer = Pages.RetryAnalyzer.class)
 	public void aggregationForSingleType() throws InterruptedException, StaleElementReferenceException {
 		driver = initializeDriver3333();
 		listeners.testStepDescription("Step 1: Login to Prohance Application");

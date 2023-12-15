@@ -21,7 +21,7 @@ public class UserDomainAddFunction extends BaseTest{
 	Listeners listeners = new Listeners();
 	
 	
-	@Test()
+	@Test(retryAnalyzer = Pages.RetryAnalyzer.class)
 	public void addNewFunction() throws InterruptedException
 	{
 		listeners.testStepDescription("Step 1: Login into the prohance application");

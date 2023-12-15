@@ -17,6 +17,5 @@ public class ExtentReporterNG {
 		extent.attachReporter(reporter);
 		extent.setSystemInfo("Tester", "Pavana");
 		return extent;
-	}
-
+	}	
 }

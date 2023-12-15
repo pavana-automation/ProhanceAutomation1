@@ -3,12 +3,12 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="test.AOSUnknownApplicationAdding">
+      <class name="test.AOSUnknownApplicationAddingtoCreateNew">
         <methods>
           <include name="teardown"/>
-          <include name="aosUnknownApplicationAdding"/>
+          <include name="aosUnknownApplicationAddingtoCreateNew"/>
         </methods>
-      </class> <!-- test.AOSUnknownApplicationAdding -->
+      </class> <!-- test.AOSUnknownApplicationAddingtoCreateNew -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
