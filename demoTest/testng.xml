@@ -29,6 +29,10 @@
 		<class name="test.WorkProfileValidateWithTeams"/>
 		<class name="test.DataAggregation"/>
 		<class name="test.DataAggregationForAllType"/>
+		<class name="test.AOSUnknownApplicationAddingtoExistingProcessName"></class>
+		<class name="test.AOSUnknownApplicationAddingtoExistingQualifierText"></class>
+		<class name="test.AOSUnknownApplicationAddingtoCreateNewProcessName"></class>
+		<class name="test.AOSUnknownApplicationAddingtoCreateNewQualifierText"></class>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

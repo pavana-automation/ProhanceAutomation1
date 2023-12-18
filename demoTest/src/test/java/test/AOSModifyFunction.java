@@ -57,6 +57,7 @@ public class AOSModifyFunction extends BaseTest{
 		Thread.sleep(2000);
 		
 		ArrayList<String> ActualList = userdomain.getElementsInRowToList();
+		Thread.sleep(1000);
 		Assert.assertTrue(ActualList.contains(result));
 		
 	}

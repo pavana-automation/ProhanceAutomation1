@@ -67,8 +67,9 @@ public class AOSAddNew extends BaseTest{
 		listeners.testStepDescription("Step 9: Check whether the newly added record in present in the list");
 		//test.info("Check whether the newly added record in present in the list");
 		ArrayList<String> ActualList = userdomain.getElementsInRowToList();
+		Thread.sleep(1000);
 		Assert.assertTrue(ActualList.contains(result));
 		
-		listeners.testStepDescription("Step 10: AOS added new one succeefully");
+		listeners.testStepDescription("Step 10: AOS added new one successfully");
 	}
 }
