@@ -1,0 +1,164 @@
+<html>
+<head>
+<title>TestNG:  Test</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Test</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>17/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Tue Jan 09 13:37:11 IST 2024</td>
+</tr>
+<tr><td>Total time:</td><td>264 seconds (264947 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='test.UserDomain.UserDomainPDFValidation.pdf()'><b>pdf</b><br>Test class: test.UserDomain.UserDomainPDFValidation</td>
+<td></td>
+<td>12</td>
+<td>test.UserDomain.UserDomainPDFValidation@199bc830</td></tr>
+<tr>
+<td title='test.UserDomain.UserDomainAddFunction.addNewFunction()'><b>addNewFunction</b><br>Test class: test.UserDomain.UserDomainAddFunction</td>
+<td></td>
+<td>62</td>
+<td>test.UserDomain.UserDomainAddFunction@71ad3d8a</td></tr>
+<tr>
+<td title='test.UserDomain.UserDomainExcelValidation.excelValidation()'><b>excelValidation</b><br>Test class: test.UserDomain.UserDomainExcelValidation</td>
+<td></td>
+<td>11</td>
+<td>test.UserDomain.UserDomainExcelValidation@7139bd31</td></tr>
+<tr>
+<td title='test.WorkProfile.WorkProfileForModification.modificationOnWorkProfiles()'><b>modificationOnWorkProfiles</b><br>Test class: test.WorkProfile.WorkProfileForModification</td>
+<td></td>
+<td>8</td>
+<td>test.WorkProfile.WorkProfileForModification@34b27915</td></tr>
+<tr>
+<td title='test.UserDomain.UserDomainModify.modifyFunction()'><b>modifyFunction</b><br>Test class: test.UserDomain.UserDomainModify</td>
+<td></td>
+<td>13</td>
+<td>test.UserDomain.UserDomainModify@68e7c8c3</td></tr>
+<tr>
+<td title='test.WorkProfile.WorkProfileValidateWithTeams.cloneOnWorkProfiles()'><b>cloneOnWorkProfiles</b><br>Test class: test.WorkProfile.WorkProfileValidateWithTeams</td>
+<td></td>
+<td>13</td>
+<td>test.WorkProfile.WorkProfileValidateWithTeams@1dd7796b</td></tr>
+<tr>
+<td title='test.WorkProfile.WorkProfilesExcelValidation.cloneOnWorkProfiles()'><b>cloneOnWorkProfiles</b><br>Test class: test.WorkProfile.WorkProfilesExcelValidation</td>
+<td></td>
+<td>15</td>
+<td>test.WorkProfile.WorkProfilesExcelValidation@1b9776f5</td></tr>
+<tr>
+<td title='test.WorkProfile.WorkProfileForDelete.deletionOnWorkProfiles()'><b>deletionOnWorkProfiles</b><br>Test class: test.WorkProfile.WorkProfileForDelete</td>
+<td></td>
+<td>10</td>
+<td>test.WorkProfile.WorkProfileForDelete@56913163</td></tr>
+<tr>
+<td title='test.WorkProfile.WorkProfilesForClone.cloneOnWorkProfiles()'><b>cloneOnWorkProfiles</b><br>Test class: test.WorkProfile.WorkProfilesForClone</td>
+<td></td>
+<td>8</td>
+<td>test.WorkProfile.WorkProfilesForClone@3d5790ea</td></tr>
+<tr>
+<td title='test.UserDomain.UserDomainDeleteFunction.deleteNewFunction()'><b>deleteNewFunction</b><br>Test class: test.UserDomain.UserDomainDeleteFunction</td>
+<td></td>
+<td>12</td>
+<td>test.UserDomain.UserDomainDeleteFunction@319c3a25</td></tr>
+<tr>
+<td title='test.DataAggregation.DataAggregationForModificationOnSettingsTabForClearButton.modificationOnSettingsTabForClearButton()'><b>modificationOnSettingsTabForClearButton</b><br>Test class: test.DataAggregation.DataAggregationForModificationOnSettingsTabForClearButton</td>
+<td></td>
+<td>5</td>
+<td>test.DataAggregation.DataAggregationForModificationOnSettingsTabForClearButton@710d89e2</td></tr>
+<tr>
+<td title='test.WorkProfile.WorkProfileForAddingNew.AddingNewWorkProfiles()'><b>AddingNewWorkProfiles</b><br>Test class: test.WorkProfile.WorkProfileForAddingNew</td>
+<td></td>
+<td>11</td>
+<td>test.WorkProfile.WorkProfileForAddingNew@4fc142ec</td></tr>
+<tr>
+<td title='test.WorkProfile.WorkProfilesDeleteWithDependency.cloneOnWorkProfiles()'><b>cloneOnWorkProfiles</b><br>Test class: test.WorkProfile.WorkProfilesDeleteWithDependency</td>
+<td></td>
+<td>11</td>
+<td>test.WorkProfile.WorkProfilesDeleteWithDependency@29eda4f8</td></tr>
+<tr>
+<td title='test.DataAggregation.DataAggregationForModificationOnSettingsTab.modificationOnSettingsTab()'><b>modificationOnSettingsTab</b><br>Test class: test.DataAggregation.DataAggregationForModificationOnSettingsTab</td>
+<td></td>
+<td>10</td>
+<td>test.DataAggregation.DataAggregationForModificationOnSettingsTab@6d303498</td></tr>
+<tr>
+<td title='test.DataAggregation.DataAggregationForAllType.alltypeValidation()'><b>alltypeValidation</b><br>Test class: test.DataAggregation.DataAggregationForAllType</td>
+<td></td>
+<td>18</td>
+<td>test.DataAggregation.DataAggregationForAllType@57402ba1</td></tr>
+<tr>
+<td title='test.UserDomain.UserDomainSortingFuncton.sortingFunction()'><b>sortingFunction</b><br>Test class: test.UserDomain.UserDomainSortingFuncton</td>
+<td></td>
+<td>13</td>
+<td>test.UserDomain.UserDomainSortingFuncton@238bfd6c</td></tr>
+<tr>
+<td title='test.DataAggregation.DataAggregation.aggregationForSingleType()'><b>aggregationForSingleType</b><br>Test class: test.DataAggregation.DataAggregation</td>
+<td></td>
+<td>24</td>
+<td>test.DataAggregation.DataAggregation@67a3bd51</td></tr>
+</table><p>
+</body>
+</html>

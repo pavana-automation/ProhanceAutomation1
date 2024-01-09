@@ -14,6 +14,7 @@ import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.ITestResult;
+import org.testng.annotations.AfterMethod;
 import org.testng.annotations.AfterTest;
 
 import com.fasterxml.jackson.core.type.TypeReference;
@@ -75,16 +76,17 @@ public class BaseTest {
 		driver.quit();
 	}
 	
-	public String getScreenshotPath(String TestCaseName, WebDriver driver) throws IOException
+	/*public String getScreenshotPath(String TestCaseName, WebDriver driver) throws IOException
 	{
 		TakesScreenshot ts=(TakesScreenshot)driver;
+		System.out.println("It entered this part of code");
 		File source=ts.getScreenshotAs(OutputType.FILE);
 		String destpath = System.getProperty("user.dir")+"\\reports\\"+TestCaseName+".png";
 		File file = new File(destpath);
 		FileUtils.copyFile(source, file);
 		return destpath;
 		
-	}
+	}*/
 	
 	/*
 	 * public List<HashMap<String,String>> getJsonDataToMap(String filepath) throws

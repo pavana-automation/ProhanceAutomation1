@@ -6,42 +6,24 @@
   </listeners>
   <test thread-count="5" name="Test(failed)">
     <classes>
-      <class name="test.WorkProfilesExcelValidation">
+      <class name="test.AOS.AOSModifyFunction">
         <methods>
           <include name="teardown"/>
-          <include name="cloneOnWorkProfiles"/>
+          <include name="a0sModifyFunction"/>
         </methods>
-      </class> <!-- test.WorkProfilesExcelValidation -->
-      <class name="test.AOSAddNew">
+      </class> <!-- test.AOS.AOSModifyFunction -->
+      <class name="test.AOS.AOSUnknownApplicationAddingtoExistingProcessName">
+        <methods>
+          <include name="teardown"/>
+          <include name="aosUnknownApplicationAddingtoExistingProcessName"/>
+        </methods>
+      </class> <!-- test.AOS.AOSUnknownApplicationAddingtoExistingProcessName -->
+      <class name="test.AOS.AOSAddNew">
         <methods>
           <include name="teardown"/>
           <include name="addNewFunction"/>
         </methods>
-      </class> <!-- test.AOSAddNew -->
-      <class name="test.DataAggregation">
-        <methods>
-          <include name="teardown"/>
-          <include name="aggregationForSingleType"/>
-        </methods>
-      </class> <!-- test.DataAggregation -->
-      <class name="test.AOSUnknownApplicationAddingtoCreateNewQualifierText">
-        <methods>
-          <include name="teardown"/>
-          <include name="aosUnknownApplicationAddingtoCreateNewQualifierText"/>
-        </methods>
-      </class> <!-- test.AOSUnknownApplicationAddingtoCreateNewQualifierText -->
-      <class name="test.WorkProfileForModification">
-        <methods>
-          <include name="teardown"/>
-          <include name="modificationOnWorkProfiles"/>
-        </methods>
-      </class> <!-- test.WorkProfileForModification -->
-      <class name="test.WorkProfileForDelete">
-        <methods>
-          <include name="teardown"/>
-          <include name="deletionOnWorkProfiles"/>
-        </methods>
-      </class> <!-- test.WorkProfileForDelete -->
+      </class> <!-- test.AOS.AOSAddNew -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

@@ -47,8 +47,9 @@ public class Listeners  extends TestListenerAdapter implements ITestListener {
 	@Override
 	public void onTestFailure(ITestResult result) {
 		WebDriver driver = null;
+		//WebDriver driver;
 			extentTest.get().fail(result.getThrowable());
-			Object testObject = result.getInstance();
+			/*Object testObject = result.getInstance();
 			Class clazz = result.getTestClass().getRealClass();
 			try {
 				driver = (WebDriver) clazz.getDeclaredField("driver").get(testObject);
@@ -60,11 +61,11 @@ public class Listeners  extends TestListenerAdapter implements ITestListener {
 				
 			} catch (IOException e) {
 				// TODO Auto-generated catch block
-				e.printStackTrace();
+				e.printStackTrace();*/
 			}
-	}
 
-	public void testStepDescription(String Message) {
+	public void testStepDescription(String Message) 
+	{
 		extentTest.get().log(Status.INFO, Message);
 	}
 

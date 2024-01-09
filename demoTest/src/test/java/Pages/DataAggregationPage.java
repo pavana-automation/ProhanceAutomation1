@@ -50,6 +50,9 @@ public class DataAggregationPage {
 	
 	@FindBy(xpath= "//td[@id=\"2_10_2023_D\"]/div//input")
 	WebElement DateChkBoxChkBox;
+	
+	@FindBy(xpath= "//table[@class =\"calheadertable\"]/tbody/tr/td[2]/span/span/div/span")
+	WebElement calender;
 
 	@FindBy(xpath = "//label[contains(text(),'Activity On System')]")
 	WebElement TypeChkBox;
@@ -66,7 +69,7 @@ public class DataAggregationPage {
 	@FindBy(id = "userAggregationNoteDiv")
 	WebElement runAggregationForAllUsers;
 	
-	@FindBy(xpath = "//table[@id='CommonDataTableId']/tbody/tr/td[3]/div[contains(text(),'Aishwarya')]/../../td[2]/div")
+	@FindBy(xpath = "//table[@id='CommonDataTableId']/tbody/tr/td[3]/div[contains(text(),'adminaish')]/../../td[2]/div")
 	List<WebElement> aggregationStarted;
 	
 	@FindBy(xpath = "//table[@id=\"CommonDataTableId\"]/tbody/tr/td[3]/div[contains(text(),'Aishwarya')]/../../td[2]/div")
@@ -110,6 +113,15 @@ public class DataAggregationPage {
 	
 	@FindBy(id = "fNotification")
 	WebElement emailFailNotification;
+	
+	@FindBy(id = "selectedMonthYear")
+	WebElement selectYear;
+	
+	@FindBy(id = "selectedMonth")
+	WebElement selectMonth;
+	
+	@FindBy(xpath = "//input[@name=\"GO\"]")
+	WebElement go;
 	
 	@FindBy(xpath = "//body[@id ='dataAggScreen']/div[4]/div/div/div[3]/button[contains(text(),'OK')]")
 	WebElement alertBox;
@@ -197,17 +209,12 @@ public class DataAggregationPage {
 			
 			 
 		  }
-		  if(aggregationStartMsg.equals("Aggregation Started for 02 Nov 2023 [ Activity On System ]") 
-				  && aggregationEndMsg.equals("Aggregation Completed for 02 Nov 2023 [Status: Success | Completed In: 01s ]"))
+		  if(aggregationStartMsg.equals(aggregationStartMsg) 
+				  && aggregationEndMsg.equals(aggregationStartMsg))
 		  {
 			  msg = "Aggregation Completed";
 	  	  }
-		  else if(aggregationStartMsg.equals("Aggregation Started for 02 Nov 2023 [ Activity On System ]") 
-				  && aggregationEndMsg.equals("Aggregation Completed for 02 Nov 2023 [Status: Success | Completed In: 00s ]"))
-		  {
-
-			  msg = "Aggregation Completed";
-	  	  }
+		  
 	  }
 		  catch(StaleElementReferenceException ex)
 		  {
@@ -385,5 +392,25 @@ public class DataAggregationPage {
 		 Thread.sleep(1000);
 		 this.fetch.click();
 		 Thread.sleep(4000);
+	 }
+	 public void clickcalenderBtn()
+	 {
+		 this.calender.click();
+	 }
+	 
+	 public void selectYear(String year)
+	 {
+		 Select intervalToChance= new Select(this. selectYear);
+		 intervalToChance.selectByVisibleText(year);
+	 }
+	 
+	 public void selectMonth(String month)
+	 {
+		 Select intervalToChance= new Select(this. selectMonth);
+		 intervalToChance.selectByVisibleText(month);
+	 }
+	 public void clickGoBtn()
+	 {
+		 this.go.click();
 	 }
 }

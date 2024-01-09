@@ -1,17 +1,28 @@
 package Pages;
 
+import java.io.FileInputStream;
+import java.io.FileOutputStream;
+import java.io.IOException;
 import java.time.Duration;
 import java.util.ArrayList;
+import java.util.List;
 
+import org.apache.poi.ss.usermodel.Cell;
+import org.apache.poi.ss.usermodel.Row;
+import org.apache.poi.ss.usermodel.Sheet;
+import org.apache.poi.ss.usermodel.Workbook;
+import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
+
+import utilities.ReadXLSdata;
 
 
 
@@ -19,7 +30,9 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 public class AOSPage {
 	
 	WebDriver driver;
-	
+	ReadXLSdata xls = new ReadXLSdata(driver);
+	RandomStringGeneration randomStringGenerator = new RandomStringGeneration();
+	String result = randomStringGenerator.randomStringGenerator();
 	
 	@FindBy(xpath="//label[contains(text(),'ADD NEW')]")
 	public WebElement addnewBtn;
@@ -74,6 +87,21 @@ public class AOSPage {
 	
 	@FindBy(xpath="//input[@value='SUBMIT']")
 	WebElement submitBtn;
+	
+	@FindBy(xpath="//span[contains(text(),'Click here')]")
+	WebElement clickHereBtn;
+	
+	@FindBy(id="applicationXLUpload")
+	WebElement chooseFileInBulkUploadinput;
+	
+	@FindBy(xpath="//input[@value='UPLOAD']")
+	WebElement bulkUploadBtn;
+	
+	@FindBy(xpath="//label[contains(text(),'BACK')]")
+	WebElement backBtnAosPage;
+	
+	@FindBy(xpath="//label[contains(text(),\"Search\")]")
+	WebElement searchBtn;
 	
 
 	
@@ -179,6 +207,290 @@ public class AOSPage {
 		 this.submitBtn.click();
 	 }
 	 
-	
-	
+	 public void clickOnClickHereBtn()
+	 {
+		 this.clickHereBtn.click();
+	 }
+	 
+	/* public void addActivityTagExcelBulckUpload() throws InterruptedException, IOException
+	 {
+		 List<String> addBulkUploadData = new ArrayList<String>();
+		 Thread.sleep(1000);
+		 addBulkUploadData.add("ADD");
+		 addBulkUploadData.add(result);
+		 addBulkUploadData.add("Test Done");
+		 addBulkUploadData.add("Business");
+		 
+		 String path = xls.getRecentFilePath();
+		 FileInputStream file = new FileInputStream(path);
+		 
+		 //Workbook workbook = new XSSFWorkbook(file);
+		 
+		 //Worksheet wsLargestCities = workbook.getWorksheets().get(0);
+		 
+		 //wsLargestCities.getCells().importArrayList();
+		 
+		 try (Workbook workbook = new XSSFWorkbook(file))
+		 {
+			 Sheet sheet = workbook.getSheetAt(0);
+				sheet.getLastRowNum();
+				for (int i = 2; i <= 2; i++)
+				{
+					Row row = sheet.getRow(i);
+					int k = 0;
+					
+					for (int j = 1; j < cellcount; j++)
+					{
+						if (j == 2)
+						{
+							continue;
+						}
+						Cell cell = row.createCell(j);
+						cell.setCellValue(addBulkUploadData.get(k));
+						k++;
+					}
+				}
+				
+				FileOutputStream fos = new FileOutputStream(path);
+				workbook.write(fos);
+				fos.close();
+		 }
+		 
+	 }*/
+	 
+	 public String addActivityTagExcelBulckUpload() throws IOException, InterruptedException
+		{
+		 List<String> addBulkUploadData = new ArrayList<String>();
+			Thread.sleep(1000);
+			addBulkUploadData.add("ADD");
+			addBulkUploadData.add(result);
+			addBulkUploadData.add("Test Done");
+			addBulkUploadData.add("Business");
+			//addBulckUploadData.add("Yes");
+
+			String path = xls.getRecentFilePath();
+			FileInputStream file = new FileInputStream(path);
+
+			try (Workbook workbook = new XSSFWorkbook(file))
+			{
+				Sheet sheet = workbook.getSheetAt(0);
+				sheet.getLastRowNum();
+				for (int i = 2; i <= 2; i++)
+				{
+					Row row = sheet.getRow(i);
+					int cellcount = sheet.getRow(i).getLastCellNum() -1;
+					int k = 0;
+					for (int j = 1; j < cellcount; j++)
+					{
+						if (j == 2)
+						{
+							continue;
+						}
+						Cell cell = row.createCell(j);
+						cell.setCellValue(addBulkUploadData.get(k));
+						k++;
+					}
+				}
+				FileOutputStream fos = new FileOutputStream(path);
+				workbook.write(fos);
+				fos.close();
+			}
+			return result;
+		}
+	 
+	 
+	 public void addActivityTagExcelBulckUploadAOSSignature() throws IOException, InterruptedException
+		{
+		 
+		 List<String> addBulkUploadData = new ArrayList<String>();
+			Thread.sleep(1000);
+			addBulkUploadData.add("ADD");
+			addBulkUploadData.add(result);
+			addBulkUploadData.add("Starts With");
+			addBulkUploadData.add("www");
+			addBulkUploadData.add("Starts With");
+			addBulkUploadData.add("www");
+			//addBulckUploadData.add("Yes");
+
+			String path = xls.getRecentFilePath();
+			FileInputStream file = new FileInputStream(path);
+
+			try (Workbook workbook = new XSSFWorkbook(file))
+			{
+				Sheet sheet = workbook.getSheetAt(1);
+				sheet.getLastRowNum();
+				for (int i = 2; i <= 2; i++)
+				{
+					Row row = sheet.getRow(i);
+					int cellcount = sheet.getRow(i).getLastCellNum() - 1;
+					int k = 0;
+					for (int j = 1; j < cellcount; j++)
+					{
+						if (j == 2)
+						{
+							continue;
+						}
+						Cell cell = row.createCell(j);
+						cell.setCellValue(addBulkUploadData.get(k));
+						k++;
+					}
+				}
+				FileOutputStream fos = new FileOutputStream(path);
+				workbook.write(fos);
+				fos.close();
+			}
+		}
+	 
+	 public void addActivityTagExcelBulckUploadWorkProfile() throws IOException, InterruptedException
+		{
+		 
+		 List<String> addBulckUploadData = new ArrayList<String>();
+			Thread.sleep(1000);
+			addBulckUploadData.add("ADD");
+			addBulckUploadData.add(result);
+			addBulckUploadData.add("Business");
+			addBulckUploadData.add("5");
+			//addBulckUploadData.add("Yes");
+
+			String path = xls.getRecentFilePath();
+			FileInputStream file = new FileInputStream(path);
+
+			try (Workbook workbook = new XSSFWorkbook(file))
+			{
+				Sheet sheet = workbook.getSheetAt(2);
+				sheet.getLastRowNum();
+				for (int i = 2; i <= 2; i++)
+				{
+					Row row = sheet.getRow(i);
+					int cellcount = sheet.getRow(i).getLastCellNum() - 1;
+					int k = 0;
+					for (int j = 1; j < cellcount; j++)
+					{
+						if (j == 2)
+						{
+							continue;
+						}
+						Cell cell = row.createCell(j);
+						cell.setCellValue(addBulckUploadData.get(k));
+						k++;
+					}
+				}
+				FileOutputStream fos = new FileOutputStream(path);
+				workbook.write(fos);
+				fos.close();
+			}
+		}
+	 
+	 public String addActivityTagExcelBulkUploadWorkProfileModify() throws IOException, InterruptedException
+		{
+		 
+		 List<String> addBulkUploadData = new ArrayList<String>();
+			Thread.sleep(1000);
+			String random = "test";
+			String modify = random+result;
+			addBulkUploadData.add("MOD");
+			addBulkUploadData.add(modify);
+			addBulkUploadData.add("Test Done");
+			addBulkUploadData.add("Business");
+			//addBulckUploadData.add("Yes");
+
+			String path = xls.getRecentFilePath();
+			FileInputStream file = new FileInputStream(path);
+
+			try (Workbook workbook = new XSSFWorkbook(file))
+			{
+				Sheet sheet = workbook.getSheetAt(0);
+				sheet.getLastRowNum();
+				for (int i = 2; i <= 2; i++)
+				{
+					Row row = sheet.getRow(i);
+					int cellcount = sheet.getRow(i).getLastCellNum() - 1;
+					int k = 0;
+					for (int j = 1; j < cellcount; j++)
+					{
+						if (j == 2)
+						{
+							continue;
+						}
+						Cell cell = row.createCell(j);
+						cell.setCellValue(addBulkUploadData.get(k));
+						k++;
+					}
+				}
+				FileOutputStream fos = new FileOutputStream(path);
+				workbook.write(fos);
+				fos.close();
+			}
+			return modify;
+			
+		}
+	 
+	 public void addActivityTagExcelBulkUploadWorkProfileDelete() throws IOException, InterruptedException
+		{
+		 
+		 List<String> addBulkUploadData = new ArrayList<String>();
+			Thread.sleep(1000);
+			//String random = "test";
+			//String modify = random+result;
+			addBulkUploadData.add("DEL");
+			addBulkUploadData.add("");
+			addBulkUploadData.add("Test Done");
+			addBulkUploadData.add("Business");
+			//addBulckUploadData.add("Yes");
+
+			String path = xls.getRecentFilePath();
+			FileInputStream file = new FileInputStream(path);
+
+			try (Workbook workbook = new XSSFWorkbook(file))
+			{
+				Sheet sheet = workbook.getSheetAt(0);
+				sheet.getLastRowNum();
+				for (int i = 2; i <= 2; i++)
+				{
+					Row row = sheet.getRow(i);
+					int cellcount = sheet.getRow(i).getLastCellNum() - 1;
+					int k = 0;
+					for (int j = 1; j < cellcount; j++)
+					{
+						if (j == 2)
+						{
+							continue;
+						}
+						Cell cell = row.createCell(j);
+						cell.setCellValue(addBulkUploadData.get(k));
+						k++;
+					}
+				}
+				FileOutputStream fos = new FileOutputStream(path);
+				workbook.write(fos);
+				fos.close();
+			}
+			
+		}
+
+	 public void clickChooseFileInBulkUpload()
+		{
+			//commons.waitForElementNotVisible(Duration.ofSeconds(30), driver, loadingIcon);
+			this.chooseFileInBulkUploadinput.sendKeys(xls.getRecentFilePath());
+			// his.bulkUploadBtn.click();
+			JavascriptExecutor executor = (JavascriptExecutor) driver;
+			executor.executeScript("arguments[0].click();", bulkUploadBtn);
+			
+		}
+	 
+	 public void clickBackBtnAosPage()
+	 {
+		 this.backBtnAosPage.click();
+	 }
+	 
+	/* public String returnResult()
+	 {
+		return result;
+		 
+	 }*/
+	 
+	 public void clickSearchBtn(String name)
+	 {
+		 this.searchBtn.sendKeys(name);
+	 }
 }
