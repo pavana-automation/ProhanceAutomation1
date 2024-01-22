@@ -6,18 +6,24 @@
   </listeners>
   <test thread-count="7" name="Test(failed)">
     <classes>
+      <class name="test.UserDomain.UserDomainModify">
+        <methods>
+          <include name="teardown"/>
+          <include name="modifyFunction"/>
+        </methods>
+      </class> <!-- test.UserDomain.UserDomainModify -->
       <class name="test.WorkProfile.WorkProfileForDelete">
         <methods>
           <include name="teardown"/>
           <include name="deletionOnWorkProfiles"/>
         </methods>
       </class> <!-- test.WorkProfile.WorkProfileForDelete -->
-      <class name="test.DataAggregation.DataAggregationForAllType">
+      <class name="test.WorkProfile.WorkProfileForAddingNew">
         <methods>
           <include name="teardown"/>
-          <include name="alltypeValidation"/>
+          <include name="AddingNewWorkProfiles"/>
         </methods>
-      </class> <!-- test.DataAggregation.DataAggregationForAllType -->
+      </class> <!-- test.WorkProfile.WorkProfileForAddingNew -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [MultipleSuite] -->

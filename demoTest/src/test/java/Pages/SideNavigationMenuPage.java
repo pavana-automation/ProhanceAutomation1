@@ -35,8 +35,14 @@ public class SideNavigationMenuPage {
 	@FindBy(xpath = "//a[contains(text(),'Activities')]")
 	WebElement activitiesBtn;
 	
-	@FindBy(xpath="//li[contains(text(),'Activities On System')]")
+	@FindBy(xpath="//*[@id='level2_108']/li[3]")
 	WebElement aosBtn;
+	
+	@FindBy(xpath="//a[contains(text(),'Users')]")
+	WebElement UsersBtn;
+	
+	@FindBy(xpath="//li[contains(text(),'User Roles')]")
+	WebElement UserRoleBtn;
 	
 	@FindBy(xpath="//div[@class='slimScrollBar']")
 	public
@@ -86,7 +92,7 @@ public class SideNavigationMenuPage {
 	
 	public void clickAOSBtn()
 	{
-		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(30));
+		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(40));
 		wait.until(ExpectedConditions.visibilityOf(aosBtn));
 		this.aosBtn.click();
 	}
@@ -117,6 +123,17 @@ public class SideNavigationMenuPage {
 	{
 		this.closeOrganizationTab.click();
 		 
+	}
+	
+	public void ClickOnUserRoleBtn() throws InterruptedException
+	{
+		JavascriptExecutor js = (JavascriptExecutor) driver;
+		WebElement Element = driver.findElement(By.xpath("//a[contains(text(),'Business Hierarchy')]"));
+		js.executeScript("arguments[0].scrollIntoView(true);", Element);
+		//this.activitiesBtn.click();
+		this.UsersBtn.click();
+		Thread.sleep(2000);
+		this.UserRoleBtn.click();
 	}
 
 

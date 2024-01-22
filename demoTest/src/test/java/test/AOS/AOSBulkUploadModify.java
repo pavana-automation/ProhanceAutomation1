@@ -45,7 +45,7 @@ public class AOSBulkUploadModify extends BaseTest {
 		sidenavPage.clickAOSBtn();
 		driver.switchTo().frame("contentFrame");
 		
-		Thread.sleep(2000);
+		Thread.sleep(3000);
 
 		//listeners.testStepDescription("Step 5: Click on More Action");
 		aos.clickMoreActionBtn();
@@ -70,6 +70,7 @@ public class AOSBulkUploadModify extends BaseTest {
 		//ArrayList<String> ActualList1 = userdomain.getElementsInRowToList();
 		//System.out.println("the actual list is******"+ActualList1);
 		//Assert.assertTrue(ActualList1.contains(result1));
+		Thread.sleep(2000);
 		
 		aos.clickSearchBtn(result1);
 		Thread.sleep(2000);

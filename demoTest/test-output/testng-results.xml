@@ -1,117 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="16" total="33" passed="17" failed="0" skipped="0">
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-01-09T13:37:11 IST" name="MultipleSuite" finished-at="2024-01-09T13:41:36 IST" duration-ms="264947">
+  <suite started-at="2024-01-22T10:47:26 IST" name="Default suite" finished-at="2024-01-22T10:47:53 IST" duration-ms="26545">
     <groups>
     </groups>
-    <test started-at="2024-01-09T13:37:11 IST" name="Test" finished-at="2024-01-09T13:41:36 IST" duration-ms="264947">
-      <class name="test.DataAggregation.DataAggregationForModificationOnSettingsTabForClearButton">
-        <test-method signature="modificationOnSettingsTabForClearButton()[pri:0, instance:test.DataAggregation.DataAggregationForModificationOnSettingsTabForClearButton@710d89e2]" started-at="2024-01-09T13:39:27 IST" name="modificationOnSettingsTabForClearButton" finished-at="2024-01-09T13:39:33 IST" duration-ms="5379" status="PASS">
+    <test started-at="2024-01-22T10:47:26 IST" name="Default test" finished-at="2024-01-22T10:47:53 IST" duration-ms="26545">
+      <class name="UserRoles.UserRolesBulkUpdateMember">
+        <test-method signature="userRolesBulkUpdateMember()[pri:0, instance:UserRoles.UserRolesBulkUpdateMember@3ae9d1e2]" started-at="2024-01-22T10:47:26 IST" name="userRolesBulkUpdateMember" finished-at="2024-01-22T10:47:53 IST" duration-ms="26461" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- modificationOnSettingsTabForClearButton -->
-      </class> <!-- test.DataAggregation.DataAggregationForModificationOnSettingsTabForClearButton -->
-      <class name="test.UserDomain.UserDomainAddFunction">
-        <test-method signature="addNewFunction()[pri:0, instance:test.UserDomain.UserDomainAddFunction@71ad3d8a]" started-at="2024-01-09T13:37:11 IST" name="addNewFunction" finished-at="2024-01-09T13:38:14 IST" duration-ms="62841" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- addNewFunction -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:test.UserDomain.UserDomainAddFunction@71ad3d8a]" started-at="2024-01-09T13:41:34 IST" name="teardown" finished-at="2024-01-09T13:41:36 IST" duration-ms="1610" status="PASS">
+        </test-method> <!-- userRolesBulkUpdateMember -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:UserRoles.UserRolesBulkUpdateMember@3ae9d1e2]" started-at="2024-01-22T10:47:53 IST" name="teardown" finished-at="2024-01-22T10:47:53 IST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
-      </class> <!-- test.UserDomain.UserDomainAddFunction -->
-      <class name="test.UserDomain.UserDomainSortingFuncton">
-        <test-method signature="sortingFunction()[pri:0, instance:test.UserDomain.UserDomainSortingFuncton@238bfd6c]" started-at="2024-01-09T13:38:39 IST" name="sortingFunction" finished-at="2024-01-09T13:38:53 IST" duration-ms="13554" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- sortingFunction -->
-      </class> <!-- test.UserDomain.UserDomainSortingFuncton -->
-      <class name="test.WorkProfile.WorkProfilesExcelValidation">
-        <test-method signature="cloneOnWorkProfiles()[pri:0, instance:test.WorkProfile.WorkProfilesExcelValidation@1b9776f5]" started-at="2024-01-09T13:40:03 IST" name="cloneOnWorkProfiles" finished-at="2024-01-09T13:40:19 IST" duration-ms="15657" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- cloneOnWorkProfiles -->
-      </class> <!-- test.WorkProfile.WorkProfilesExcelValidation -->
-      <class name="test.UserDomain.UserDomainModify">
-        <test-method signature="modifyFunction()[pri:0, instance:test.UserDomain.UserDomainModify@68e7c8c3]" started-at="2024-01-09T13:38:14 IST" name="modifyFunction" finished-at="2024-01-09T13:38:27 IST" duration-ms="13218" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- modifyFunction -->
-      </class> <!-- test.UserDomain.UserDomainModify -->
-      <class name="test.UserDomain.UserDomainPDFValidation">
-        <test-method signature="pdf()[pri:0, instance:test.UserDomain.UserDomainPDFValidation@199bc830]" started-at="2024-01-09T13:39:05 IST" name="pdf" finished-at="2024-01-09T13:39:17 IST" duration-ms="12366" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- pdf -->
-      </class> <!-- test.UserDomain.UserDomainPDFValidation -->
-      <class name="test.DataAggregation.DataAggregationForAllType">
-        <test-method signature="alltypeValidation()[pri:0, instance:test.DataAggregation.DataAggregationForAllType@57402ba1]" started-at="2024-01-09T13:41:05 IST" name="alltypeValidation" finished-at="2024-01-09T13:41:24 IST" duration-ms="18377" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- alltypeValidation -->
-      </class> <!-- test.DataAggregation.DataAggregationForAllType -->
-      <class name="test.WorkProfile.WorkProfileForModification">
-        <test-method signature="modificationOnWorkProfiles()[pri:0, instance:test.WorkProfile.WorkProfileForModification@34b27915]" started-at="2024-01-09T13:39:44 IST" name="modificationOnWorkProfiles" finished-at="2024-01-09T13:39:52 IST" duration-ms="8427" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- modificationOnWorkProfiles -->
-      </class> <!-- test.WorkProfile.WorkProfileForModification -->
-      <class name="test.DataAggregation.DataAggregationForModificationOnSettingsTab">
-        <test-method signature="modificationOnSettingsTab()[pri:0, instance:test.DataAggregation.DataAggregationForModificationOnSettingsTab@6d303498]" started-at="2024-01-09T13:39:17 IST" name="modificationOnSettingsTab" finished-at="2024-01-09T13:39:27 IST" duration-ms="10053" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- modificationOnSettingsTab -->
-      </class> <!-- test.DataAggregation.DataAggregationForModificationOnSettingsTab -->
-      <class name="test.WorkProfile.WorkProfilesDeleteWithDependency">
-        <test-method signature="cloneOnWorkProfiles()[pri:0, instance:test.WorkProfile.WorkProfilesDeleteWithDependency@29eda4f8]" started-at="2024-01-09T13:39:52 IST" name="cloneOnWorkProfiles" finished-at="2024-01-09T13:40:03 IST" duration-ms="11216" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- cloneOnWorkProfiles -->
-      </class> <!-- test.WorkProfile.WorkProfilesDeleteWithDependency -->
-      <class name="test.WorkProfile.WorkProfileForAddingNew">
-        <test-method signature="AddingNewWorkProfiles()[pri:0, instance:test.WorkProfile.WorkProfileForAddingNew@4fc142ec]" started-at="2024-01-09T13:39:33 IST" name="AddingNewWorkProfiles" finished-at="2024-01-09T13:39:44 IST" duration-ms="11151" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- AddingNewWorkProfiles -->
-      </class> <!-- test.WorkProfile.WorkProfileForAddingNew -->
-      <class name="test.UserDomain.UserDomainExcelValidation">
-        <test-method signature="excelValidation()[pri:0, instance:test.UserDomain.UserDomainExcelValidation@7139bd31]" started-at="2024-01-09T13:38:53 IST" name="excelValidation" finished-at="2024-01-09T13:39:05 IST" duration-ms="11877" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- excelValidation -->
-      </class> <!-- test.UserDomain.UserDomainExcelValidation -->
-      <class name="test.UserDomain.UserDomainDeleteFunction">
-        <test-method signature="deleteNewFunction()[pri:0, instance:test.UserDomain.UserDomainDeleteFunction@319c3a25]" started-at="2024-01-09T13:38:27 IST" name="deleteNewFunction" finished-at="2024-01-09T13:38:39 IST" duration-ms="12374" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- deleteNewFunction -->
-      </class> <!-- test.UserDomain.UserDomainDeleteFunction -->
-      <class name="test.WorkProfile.WorkProfilesForClone">
-        <test-method signature="cloneOnWorkProfiles()[pri:0, instance:test.WorkProfile.WorkProfilesForClone@3d5790ea]" started-at="2024-01-09T13:40:19 IST" name="cloneOnWorkProfiles" finished-at="2024-01-09T13:40:27 IST" duration-ms="8105" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- cloneOnWorkProfiles -->
-      </class> <!-- test.WorkProfile.WorkProfilesForClone -->
-      <class name="test.WorkProfile.WorkProfileValidateWithTeams">
-        <test-method signature="cloneOnWorkProfiles()[pri:0, instance:test.WorkProfile.WorkProfileValidateWithTeams@1dd7796b]" started-at="2024-01-09T13:40:27 IST" name="cloneOnWorkProfiles" finished-at="2024-01-09T13:40:41 IST" duration-ms="13926" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- cloneOnWorkProfiles -->
-      </class> <!-- test.WorkProfile.WorkProfileValidateWithTeams -->
-      <class name="test.DataAggregation.DataAggregation">
-        <test-method signature="aggregationForSingleType()[pri:0, instance:test.DataAggregation.DataAggregation@67a3bd51]" started-at="2024-01-09T13:40:41 IST" name="aggregationForSingleType" finished-at="2024-01-09T13:41:05 IST" duration-ms="24203" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- aggregationForSingleType -->
-      </class> <!-- test.DataAggregation.DataAggregation -->
-      <class name="test.WorkProfile.WorkProfileForDelete">
-        <test-method signature="deletionOnWorkProfiles()[pri:0, instance:test.WorkProfile.WorkProfileForDelete@56913163]" started-at="2024-01-09T13:41:24 IST" name="deletionOnWorkProfiles" finished-at="2024-01-09T13:41:34 IST" duration-ms="10467" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- deletionOnWorkProfiles -->
-      </class> <!-- test.WorkProfile.WorkProfileForDelete -->
-    </test> <!-- Test -->
-  </suite> <!-- MultipleSuite -->
+      </class> <!-- UserRoles.UserRolesBulkUpdateMember -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>

@@ -12,18 +12,12 @@
           <include name="a0sModifyFunction"/>
         </methods>
       </class> <!-- test.AOS.AOSModifyFunction -->
-      <class name="test.AOS.AOSUnknownApplicationAddingtoExistingProcessName">
+      <class name="test.AOS.AOSUnknownApplicationAddingtoCreateNewProcessName">
         <methods>
           <include name="teardown"/>
-          <include name="aosUnknownApplicationAddingtoExistingProcessName"/>
+          <include name="aosUnknownApplicationAddingtoCreateNewProcessName"/>
         </methods>
-      </class> <!-- test.AOS.AOSUnknownApplicationAddingtoExistingProcessName -->
-      <class name="test.AOS.AOSAddNew">
-        <methods>
-          <include name="teardown"/>
-          <include name="addNewFunction"/>
-        </methods>
-      </class> <!-- test.AOS.AOSAddNew -->
+      </class> <!-- test.AOS.AOSUnknownApplicationAddingtoCreateNewProcessName -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

@@ -243,6 +243,28 @@ public class UserDomainPage {
 	 {
 		 this.domainAliasHeaderBtn.click();
 	 }
+	 
+	 public ArrayList<String> getElementsInRowToList1() throws InterruptedException
+	 {
+		Thread.sleep(2000); 
+		 int rowCount = driver.findElements(By.xpath("//*[@id='CommonDataTableId']/tbody/tr")).size();
+		 System.out.println("total rows in table "+rowCount);
+			
+			int j=0;
+			ArrayList<String> getElements = new ArrayList<String>(rowCount);
+			for(int i=1;i<rowCount+1;i++)
+			{
+				
+				WebElement names =driver.findElement(By.xpath("//table[@id='CommonDataTableId']/tbody/tr["+i+"]/td[3]"));
+				if(j<rowCount)
+				{
+					getElements.add(names.getText());
+					j++;
+				}
+			}
+			Collections.sort(getElements, Collections.reverseOrder());
+			return getElements;
+	 }
 	
 
 }

@@ -3,12 +3,12 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="test.AOS.AOSBulkUploadDelete">
+      <class name="UserRoles.UserRolesAddNewMemberDelete">
         <methods>
           <include name="teardown"/>
-          <include name="aosBulkUploadDelete"/>
+          <include name="userRolesAddNewMemberDelete"/>
         </methods>
-      </class> <!-- test.AOS.AOSBulkUploadDelete -->
+      </class> <!-- UserRoles.UserRolesAddNewMemberDelete -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

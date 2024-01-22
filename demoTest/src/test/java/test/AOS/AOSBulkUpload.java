@@ -31,30 +31,30 @@ public class AOSBulkUpload extends BaseTest{
 	
 	{
 	
-	listeners.testStepDescription("Step 1: Login into the prohance application");
+	//listeners.testStepDescription("Step 1: Login into the prohance application");
 	driver=initializeDriver3333();
 	loginPage.clickLogin("adminp","1");
 	
-	listeners.testStepDescription("Step 2: Click on Side Navigation Page");
+	//listeners.testStepDescription("Step 2: Click on Side Navigation Page");
 	sidenavPage.clickSideNavigationBtn();
 	
-	listeners.testStepDescription("Step 3: Click on Activities");
+	//listeners.testStepDescription("Step 3: Click on Activities");
 	sidenavPage.clickActivitiesBtn();
 	
-	listeners.testStepDescription("Step 4: Click on AOS");
+	//listeners.testStepDescription("Step 4: Click on AOS");
 	sidenavPage.clickAOSBtn();
 	driver.switchTo().frame("contentFrame");
 	
 	Thread.sleep(2000);
-	listeners.testStepDescription("Step 5: Click on More Action");
+	//listeners.testStepDescription("Step 5: Click on More Action");
 	aos.clickMoreActionBtn();
 	
-	listeners.testStepDescription("Step 6: Click on Bulk Upload");
+	//listeners.testStepDescription("Step 6: Click on Bulk Upload");
 	driver.findElement(By.xpath("//a[contains(text(),'BULK UPLOAD')]")).click();
 	
 	driver.findElement(By.xpath("//label[contains(text(),'With Prefilled Data')]")).click();
 	
-	listeners.testStepDescription("Step 6: Click on Click Here to download BlankTemplate");
+	//listeners.testStepDescription("Step 6: Click on Click Here to download BlankTemplate");
 	aos.clickOnClickHereBtn();
 	
 	String result = aos.addActivityTagExcelBulckUpload();
@@ -68,12 +68,11 @@ public class AOSBulkUpload extends BaseTest{
 	aos.clickChooseFileInBulkUpload();
 	
 	aos.clickBackBtnAosPage();
-	
-	listeners.testStepDescription("Step 7: Validating the added text is in the web");
-	ArrayList<String> ActualList = userdomain.getElementsInRowToList();
-	Thread.sleep(1000);
-	//String result = aos.returnResult();
-	Assert.assertTrue(ActualList.contains(result));
+	Thread.sleep(2000);
+	aos.clickSearchBtn(result);
+	Thread.sleep(2000);
+	String actual = driver.findElement(By.xpath("//table[@id=\"CommonDataTableId\"]/tbody/tr/td[2]")).getText();
+	Assert.assertEquals(result,actual);
 
 	}
 }
