@@ -2,20 +2,20 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-01-22T10:47:26 IST" name="Default suite" finished-at="2024-01-22T10:47:53 IST" duration-ms="26545">
+  <suite started-at="2024-01-22T13:18:25 IST" name="Default suite" finished-at="2024-01-22T13:19:08 IST" duration-ms="43588">
     <groups>
     </groups>
-    <test started-at="2024-01-22T10:47:26 IST" name="Default test" finished-at="2024-01-22T10:47:53 IST" duration-ms="26545">
-      <class name="UserRoles.UserRolesBulkUpdateMember">
-        <test-method signature="userRolesBulkUpdateMember()[pri:0, instance:UserRoles.UserRolesBulkUpdateMember@3ae9d1e2]" started-at="2024-01-22T10:47:26 IST" name="userRolesBulkUpdateMember" finished-at="2024-01-22T10:47:53 IST" duration-ms="26461" status="PASS">
+    <test started-at="2024-01-22T13:18:25 IST" name="Default test" finished-at="2024-01-22T13:19:08 IST" duration-ms="43588">
+      <class name="UserRoles.UserRolesModifyMemberToManager">
+        <test-method signature="userRolesModifyMemberToManager()[pri:0, instance:UserRoles.UserRolesModifyMemberToManager@5477a1ca]" started-at="2024-01-22T13:18:25 IST" name="userRolesModifyMemberToManager" finished-at="2024-01-22T13:19:08 IST" duration-ms="43507" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- userRolesBulkUpdateMember -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:UserRoles.UserRolesBulkUpdateMember@3ae9d1e2]" started-at="2024-01-22T10:47:53 IST" name="teardown" finished-at="2024-01-22T10:47:53 IST" duration-ms="1" status="PASS">
+        </test-method> <!-- userRolesModifyMemberToManager -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:UserRoles.UserRolesModifyMemberToManager@5477a1ca]" started-at="2024-01-22T13:19:08 IST" name="teardown" finished-at="2024-01-22T13:19:08 IST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
-      </class> <!-- UserRoles.UserRolesBulkUpdateMember -->
+      </class> <!-- UserRoles.UserRolesModifyMemberToManager -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

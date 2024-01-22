@@ -3,12 +3,12 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="UserRoles.UserRolesAddNewMemberDelete">
+      <class name="UserRoles.UserRoleSorting">
         <methods>
           <include name="teardown"/>
-          <include name="userRolesAddNewMemberDelete"/>
+          <include name="userRoleSorting"/>
         </methods>
-      </class> <!-- UserRoles.UserRolesAddNewMemberDelete -->
+      </class> <!-- UserRoles.UserRoleSorting -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
