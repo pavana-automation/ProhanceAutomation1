@@ -48,6 +48,9 @@ public class SideNavigationMenuPage {
 	public
 	WebElement locator;
 	
+	@FindBy(xpath="//div[@id =\"arrow-top\"]/i")
+	WebElement workFlowSideNavigationArrow;
+	
 	 public SideNavigationMenuPage(WebDriver driver)
 	    {
 	 
@@ -134,6 +137,11 @@ public class SideNavigationMenuPage {
 		this.UsersBtn.click();
 		Thread.sleep(2000);
 		this.UserRoleBtn.click();
+	}
+	public void clickWorkFlowSideNavigationArrow()
+	{
+		this.workFlowSideNavigationArrow.click();
+
 	}
 
 
