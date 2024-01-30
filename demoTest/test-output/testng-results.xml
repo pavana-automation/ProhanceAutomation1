@@ -1,21 +1,1348 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results retried="12" ignored="51" total="115" passed="49" failed="3" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-01-22T13:18:25 IST" name="Default suite" finished-at="2024-01-22T13:19:08 IST" duration-ms="43588">
+  <suite started-at="2024-01-30T11:15:54 IST" name="MultipleSuite" finished-at="2024-01-30T11:37:59 IST" duration-ms="1324341">
     <groups>
     </groups>
-    <test started-at="2024-01-22T13:18:25 IST" name="Default test" finished-at="2024-01-22T13:19:08 IST" duration-ms="43588">
+    <test started-at="2024-01-30T11:15:54 IST" name="Test" finished-at="2024-01-30T11:37:59 IST" duration-ms="1324341">
+      <class name="UserRoles.UserRolesModifyManagerEditActivityRating">
+        <test-method retried="true" signature="userRolesModifyManagerEditActivityRating()[pri:0, instance:UserRoles.UserRolesModifyManagerEditActivityRating@49206065]" started-at="2024-01-30T11:36:59 IST" name="userRolesModifyManagerEditActivityRating" finished-at="2024-01-30T11:37:32 IST" duration-ms="33368" status="SKIP">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//b[contains(text(),'EDIT RATING')]"}
+  (Session info: chrome=120.0.6099.227)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.13.0', revision: 'ba948ece5b*'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.8.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [13fec77949428d5a90352ebb86219304, findElement {using=xpath, value=//b[contains(text(),'EDIT RATING')]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 120.0.6099.227, chrome: {chromedriverVersion: 120.0.6099.109 (3419140ab66..., userDataDir: C:\Users\pavana.c\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60695}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:60695/devtoo..., se:cdpVersion: 120.0.6099.227, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 13fec77949428d5a90352ebb86219304]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//b[contains(text(),'EDIT RATING')]"}
+  (Session info: chrome=120.0.6099.227)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.13.0', revision: 'ba948ece5b*'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.8.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [13fec77949428d5a90352ebb86219304, findElement {using=xpath, value=//b[contains(text(),'EDIT RATING')]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 120.0.6099.227, chrome: {chromedriverVersion: 120.0.6099.109 (3419140ab66..., userDataDir: C:\Users\pavana.c\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60695}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:60695/devtoo..., se:cdpVersion: 120.0.6099.227, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 13fec77949428d5a90352ebb86219304
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:359)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:353)
+at UserRoles.UserRolesModifyManagerEditActivityRating.userRolesModifyManagerEditActivityRating(UserRolesModifyManagerEditActivityRating.java:81)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- userRolesModifyManagerEditActivityRating -->
+        <test-method signature="userRolesModifyManagerEditActivityRating()[pri:0, instance:UserRoles.UserRolesModifyManagerEditActivityRating@49206065]" started-at="2024-01-30T11:37:32 IST" name="userRolesModifyManagerEditActivityRating" finished-at="2024-01-30T11:37:55 IST" duration-ms="23202" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- userRolesModifyManagerEditActivityRating -->
+      </class> <!-- UserRoles.UserRolesModifyManagerEditActivityRating -->
+      <class name="test.DataAggregation.DataAggregationForModificationOnSettingsTabForClearButton">
+        <test-method signature="modificationOnSettingsTabForClearButton()[pri:0, instance:test.DataAggregation.DataAggregationForModificationOnSettingsTabForClearButton@36061cf3]" started-at="2024-01-30T11:22:06 IST" name="modificationOnSettingsTabForClearButton" finished-at="2024-01-30T11:22:11 IST" duration-ms="4711" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- modificationOnSettingsTabForClearButton -->
+      </class> <!-- test.DataAggregation.DataAggregationForModificationOnSettingsTabForClearButton -->
+      <class name="UserRoles.UserRolesModifyManagerDefineNewActivity">
+        <test-method retried="true" signature="userRolesModifyManagerDefineNewActivity()[pri:0, instance:UserRoles.UserRolesModifyManagerDefineNewActivity@260a3a5e]" started-at="2024-01-30T11:36:00 IST" name="userRolesModifyManagerDefineNewActivity" finished-at="2024-01-30T11:36:33 IST" duration-ms="33219" status="SKIP">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//b[contains(text(),'EDIT RATING')]"}
+  (Session info: chrome=120.0.6099.227)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.13.0', revision: 'ba948ece5b*'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.8.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [13fec77949428d5a90352ebb86219304, findElement {using=xpath, value=//b[contains(text(),'EDIT RATING')]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 120.0.6099.227, chrome: {chromedriverVersion: 120.0.6099.109 (3419140ab66..., userDataDir: C:\Users\pavana.c\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60695}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:60695/devtoo..., se:cdpVersion: 120.0.6099.227, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 13fec77949428d5a90352ebb86219304]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//b[contains(text(),'EDIT RATING')]"}
+  (Session info: chrome=120.0.6099.227)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.13.0', revision: 'ba948ece5b*'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.8.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [13fec77949428d5a90352ebb86219304, findElement {using=xpath, value=//b[contains(text(),'EDIT RATING')]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 120.0.6099.227, chrome: {chromedriverVersion: 120.0.6099.109 (3419140ab66..., userDataDir: C:\Users\pavana.c\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60695}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:60695/devtoo..., se:cdpVersion: 120.0.6099.227, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 13fec77949428d5a90352ebb86219304
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:359)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:353)
+at UserRoles.UserRolesModifyManagerDefineNewActivity.userRolesModifyManagerDefineNewActivity(UserRolesModifyManagerDefineNewActivity.java:81)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- userRolesModifyManagerDefineNewActivity -->
+        <test-method signature="userRolesModifyManagerDefineNewActivity()[pri:0, instance:UserRoles.UserRolesModifyManagerDefineNewActivity@260a3a5e]" started-at="2024-01-30T11:36:33 IST" name="userRolesModifyManagerDefineNewActivity" finished-at="2024-01-30T11:36:59 IST" duration-ms="25983" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- userRolesModifyManagerDefineNewActivity -->
+      </class> <!-- UserRoles.UserRolesModifyManagerDefineNewActivity -->
+      <class name="test.AOS.AOSBulkUploadDelete">
+        <test-method signature="aosBulkUploadDelete()[pri:0, instance:test.AOS.AOSBulkUploadDelete@75fa1be3]" started-at="2024-01-30T11:16:26 IST" name="aosBulkUploadDelete" finished-at="2024-01-30T11:16:41 IST" duration-ms="15045" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- aosBulkUploadDelete -->
+      </class> <!-- test.AOS.AOSBulkUploadDelete -->
+      <class name="UserRoles.UserRolesModifyManagerToMeber">
+        <test-method signature="userRolesModifyManagerToMeber()[pri:0, instance:UserRoles.UserRolesModifyManagerToMeber@6629ad09]" started-at="2024-01-30T11:30:05 IST" name="userRolesModifyManagerToMeber" finished-at="2024-01-30T11:30:37 IST" duration-ms="32009" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- userRolesModifyManagerToMeber -->
+      </class> <!-- UserRoles.UserRolesModifyManagerToMeber -->
+      <class name="UserRoles.UserRolesAddNewMemberDelete">
+        <test-method signature="userRolesAddNewMemberDelete()[pri:0, instance:UserRoles.UserRolesAddNewMemberDelete@64469d8]" started-at="2024-01-30T11:27:52 IST" name="userRolesAddNewMemberDelete" finished-at="2024-01-30T11:28:17 IST" duration-ms="24486" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- userRolesAddNewMemberDelete -->
+      </class> <!-- UserRoles.UserRolesAddNewMemberDelete -->
+      <class name="test.DataAggregation.DataAggregationForAllType">
+        <test-method retried="true" signature="alltypeValidation()[pri:0, instance:test.DataAggregation.DataAggregationForAllType@55e2fe3c]" started-at="2024-01-30T11:26:07 IST" name="alltypeValidation" finished-at="2024-01-30T11:26:08 IST" duration-ms="1465" status="SKIP">
+          <exception class="org.openqa.selenium.UnhandledAlertException">
+            <message>
+              <![CDATA[unexpected alert open: {Alert text : }
+  (Session info: chrome=120.0.6099.227): {Alert text : 
+Build info: version: '4.13.0', revision: 'ba948ece5b*'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.8.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [13fec77949428d5a90352ebb86219304, findElement {using=xpath, value=//div[@class='large-duplicate-session']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 120.0.6099.227, chrome: {chromedriverVersion: 120.0.6099.109 (3419140ab66..., userDataDir: C:\Users\pavana.c\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60695}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:60695/devtoo..., se:cdpVersion: 120.0.6099.227, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 13fec77949428d5a90352ebb86219304]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.UnhandledAlertException: unexpected alert open: {Alert text : }
+  (Session info: chrome=120.0.6099.227): {Alert text : 
+Build info: version: '4.13.0', revision: 'ba948ece5b*'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.8.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [13fec77949428d5a90352ebb86219304, findElement {using=xpath, value=//div[@class='large-duplicate-session']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 120.0.6099.227, chrome: {chromedriverVersion: 120.0.6099.109 (3419140ab66..., userDataDir: C:\Users\pavana.c\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60695}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:60695/devtoo..., se:cdpVersion: 120.0.6099.227, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 13fec77949428d5a90352ebb86219304
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:131)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:359)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:353)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+at jdk.proxy2/jdk.proxy2.$Proxy16.isDisplayed(Unknown Source)
+at Pages.loginPage.clickLogin(loginPage.java:65)
+at test.DataAggregation.DataAggregationForAllType.alltypeValidation(DataAggregationForAllType.java:30)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.UnhandledAlertException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- alltypeValidation -->
+        <test-method signature="alltypeValidation()[pri:0, instance:test.DataAggregation.DataAggregationForAllType@55e2fe3c]" started-at="2024-01-30T11:26:08 IST" name="alltypeValidation" finished-at="2024-01-30T11:26:37 IST" duration-ms="28390" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- alltypeValidation -->
+      </class> <!-- test.DataAggregation.DataAggregationForAllType -->
+      <class name="UserRoles.UserRolePDFValidation">
+        <test-method signature="userRolePDFValidation()[pri:0, instance:UserRoles.UserRolePDFValidation@4c18621b]" started-at="2024-01-30T11:28:31 IST" name="userRolePDFValidation" finished-at="2024-01-30T11:28:48 IST" duration-ms="16438" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- userRolePDFValidation -->
+      </class> <!-- UserRoles.UserRolePDFValidation -->
       <class name="UserRoles.UserRolesModifyMemberToManager">
-        <test-method signature="userRolesModifyMemberToManager()[pri:0, instance:UserRoles.UserRolesModifyMemberToManager@5477a1ca]" started-at="2024-01-22T13:18:25 IST" name="userRolesModifyMemberToManager" finished-at="2024-01-22T13:19:08 IST" duration-ms="43507" status="PASS">
+        <test-method signature="userRolesModifyMemberToManager()[pri:0, instance:UserRoles.UserRolesModifyMemberToManager@43e1692f]" started-at="2024-01-30T11:30:37 IST" name="userRolesModifyMemberToManager" finished-at="2024-01-30T11:31:08 IST" duration-ms="30966" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- userRolesModifyMemberToManager -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:UserRoles.UserRolesModifyMemberToManager@5477a1ca]" started-at="2024-01-22T13:19:08 IST" name="teardown" finished-at="2024-01-22T13:19:08 IST" duration-ms="1" status="PASS">
+      </class> <!-- UserRoles.UserRolesModifyMemberToManager -->
+      <class name="test.AOS.AOSBulkUpload">
+        <test-method signature="aosBulkUpload()[pri:0, instance:test.AOS.AOSBulkUpload@2418ba04]" started-at="2024-01-30T11:15:54 IST" name="aosBulkUpload" finished-at="2024-01-30T11:16:26 IST" duration-ms="31408" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- aosBulkUpload -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:test.AOS.AOSBulkUpload@2418ba04]" started-at="2024-01-30T11:37:55 IST" name="teardown" finished-at="2024-01-30T11:37:59 IST" duration-ms="3175" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
-      </class> <!-- UserRoles.UserRolesModifyMemberToManager -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+      </class> <!-- test.AOS.AOSBulkUpload -->
+      <class name="UserRoles.UserRolesBulkUpdate">
+        <test-method signature="userRolesBulkUpdate()[pri:0, instance:UserRoles.UserRolesBulkUpdate@39c385d6]" started-at="2024-01-30T11:28:48 IST" name="userRolesBulkUpdate" finished-at="2024-01-30T11:29:18 IST" duration-ms="30855" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- userRolesBulkUpdate -->
+      </class> <!-- UserRoles.UserRolesBulkUpdate -->
+      <class name="UserRoles.UserRolesModifyManagerAllowUserToExportDataPDF">
+        <test-method signature="userRolesModifyManagerAllowUserToExportDataPDF()[pri:0, instance:UserRoles.UserRolesModifyManagerAllowUserToExportDataPDF@44550792]" started-at="2024-01-30T11:31:42 IST" name="userRolesModifyManagerAllowUserToExportDataPDF" finished-at="2024-01-30T11:32:15 IST" duration-ms="33199" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//img[@title='Export to PDF']"}
+  (Session info: chrome=120.0.6099.227)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.13.0', revision: 'ba948ece5b*'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.8.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [13fec77949428d5a90352ebb86219304, findElement {using=xpath, value=//img[@title='Export to PDF']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 120.0.6099.227, chrome: {chromedriverVersion: 120.0.6099.109 (3419140ab66..., userDataDir: C:\Users\pavana.c\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60695}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:60695/devtoo..., se:cdpVersion: 120.0.6099.227, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 13fec77949428d5a90352ebb86219304]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//img[@title='Export to PDF']"}
+  (Session info: chrome=120.0.6099.227)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.13.0', revision: 'ba948ece5b*'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.8.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [13fec77949428d5a90352ebb86219304, findElement {using=xpath, value=//img[@title='Export to PDF']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 120.0.6099.227, chrome: {chromedriverVersion: 120.0.6099.109 (3419140ab66..., userDataDir: C:\Users\pavana.c\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60695}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:60695/devtoo..., se:cdpVersion: 120.0.6099.227, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 13fec77949428d5a90352ebb86219304
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:359)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:353)
+at Pages.UserRolePage.exportPDFBtnToBeDisabled(UserRolePage.java:317)
+at UserRoles.UserRolesModifyManagerAllowUserToExportDataPDF.userRolesModifyManagerAllowUserToExportDataPDF(UserRolesModifyManagerAllowUserToExportDataPDF.java:74)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- userRolesModifyManagerAllowUserToExportDataPDF -->
+      </class> <!-- UserRoles.UserRolesModifyManagerAllowUserToExportDataPDF -->
+      <class name="UserRoles.UserRolesAddNewManager">
+        <test-method signature="userRolesAddNewManager()[pri:0, instance:UserRoles.UserRolesAddNewManager@6cd164a6]" started-at="2024-01-30T11:27:03 IST" name="userRolesAddNewManager" finished-at="2024-01-30T11:27:22 IST" duration-ms="18686" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- userRolesAddNewManager -->
+      </class> <!-- UserRoles.UserRolesAddNewManager -->
+      <class name="test.AOS.AOSUnknownApplicationAddingtoCreateNewProcessName">
+        <test-method signature="aosUnknownApplicationAddingtoCreateNewProcessName()[pri:0, instance:test.AOS.AOSUnknownApplicationAddingtoCreateNewProcessName@53ed09e8]" started-at="2024-01-30T11:19:01 IST" name="aosUnknownApplicationAddingtoCreateNewProcessName" finished-at="2024-01-30T11:19:10 IST" duration-ms="9393" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- aosUnknownApplicationAddingtoCreateNewProcessName -->
+      </class> <!-- test.AOS.AOSUnknownApplicationAddingtoCreateNewProcessName -->
+      <class name="UserRoles.UserRolesModifyManagerAllowUserToExportDataXLS">
+        <test-method signature="userRolesModifyManagerAllowUserToExportDataXLS()[pri:0, instance:UserRoles.UserRolesModifyManagerAllowUserToExportDataXLS@c35af2a]" started-at="2024-01-30T11:31:08 IST" name="userRolesModifyManagerAllowUserToExportDataXLS" finished-at="2024-01-30T11:31:42 IST" duration-ms="33345" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//img[@title="Export to Excel"]"}
+  (Session info: chrome=120.0.6099.227)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.13.0', revision: 'ba948ece5b*'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.8.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [13fec77949428d5a90352ebb86219304, findElement {using=xpath, value=//img[@title="Export to Excel"]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 120.0.6099.227, chrome: {chromedriverVersion: 120.0.6099.109 (3419140ab66..., userDataDir: C:\Users\pavana.c\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60695}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:60695/devtoo..., se:cdpVersion: 120.0.6099.227, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 13fec77949428d5a90352ebb86219304]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//img[@title="Export to Excel"]"}
+  (Session info: chrome=120.0.6099.227)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.13.0', revision: 'ba948ece5b*'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.8.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [13fec77949428d5a90352ebb86219304, findElement {using=xpath, value=//img[@title="Export to Excel"]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 120.0.6099.227, chrome: {chromedriverVersion: 120.0.6099.109 (3419140ab66..., userDataDir: C:\Users\pavana.c\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60695}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:60695/devtoo..., se:cdpVersion: 120.0.6099.227, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 13fec77949428d5a90352ebb86219304
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:359)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:353)
+at Pages.UserRolePage.exportexcelBtnToBeDisabled(UserRolePage.java:290)
+at UserRoles.UserRolesModifyManagerAllowUserToExportDataXLS.userRolesModifyManagerAllowUserToExportDataXLS(UserRolesModifyManagerAllowUserToExportDataXLS.java:74)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- userRolesModifyManagerAllowUserToExportDataXLS -->
+      </class> <!-- UserRoles.UserRolesModifyManagerAllowUserToExportDataXLS -->
+      <class name="test.DataAggregation.DataAggregation">
+        <test-method signature="aggregationForSingleType()[pri:0, instance:test.DataAggregation.DataAggregation@3e104d4b]" started-at="2024-01-30T11:25:38 IST" name="aggregationForSingleType" finished-at="2024-01-30T11:26:07 IST" duration-ms="28604" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- aggregationForSingleType -->
+      </class> <!-- test.DataAggregation.DataAggregation -->
+      <class name="test.WorkProfile.WorkProfileForDelete">
+        <test-method signature="deletionOnWorkProfiles()[pri:0, instance:test.WorkProfile.WorkProfileForDelete@45e1aa48]" started-at="2024-01-30T11:26:37 IST" name="deletionOnWorkProfiles" finished-at="2024-01-30T11:26:49 IST" duration-ms="11975" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- deletionOnWorkProfiles -->
+      </class> <!-- test.WorkProfile.WorkProfileForDelete -->
+      <class name="UserRoles.UserRolesModifyManagerModuleSelection">
+        <test-method signature="userRolesModifyManagerModuleSelection()[pri:0, instance:UserRoles.UserRolesModifyManagerModuleSelection@66213a0d]" started-at="2024-01-30T11:33:19 IST" name="userRolesModifyManagerModuleSelection" finished-at="2024-01-30T11:33:39 IST" duration-ms="19457" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- userRolesModifyManagerModuleSelection -->
+      </class> <!-- UserRoles.UserRolesModifyManagerModuleSelection -->
+      <class name="test.AOS.AOSAddNew">
+        <test-method retried="true" signature="addNewFunction()[pri:0, instance:test.AOS.AOSAddNew@3ce53f6a]" started-at="2024-01-30T11:17:41 IST" name="addNewFunction" finished-at="2024-01-30T11:17:58 IST" duration-ms="17912" status="SKIP">
+          <exception class="java.lang.AssertionError">
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError
+at org.junit.Assert.fail(Assert.java:86)
+at org.junit.Assert.assertTrue(Assert.java:41)
+at org.junit.Assert.assertTrue(Assert.java:52)
+at test.AOS.AOSAddNew.addNewFunction(AOSAddNew.java:73)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addNewFunction -->
+        <test-method retried="true" signature="addNewFunction()[pri:0, instance:test.AOS.AOSAddNew@3ce53f6a]" started-at="2024-01-30T11:17:58 IST" name="addNewFunction" finished-at="2024-01-30T11:18:17 IST" duration-ms="18350" status="SKIP">
+          <exception class="java.lang.AssertionError">
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError
+at org.junit.Assert.fail(Assert.java:86)
+at org.junit.Assert.assertTrue(Assert.java:41)
+at org.junit.Assert.assertTrue(Assert.java:52)
+at test.AOS.AOSAddNew.addNewFunction(AOSAddNew.java:73)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.retryFailed(TestInvoker.java:213)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:58)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addNewFunction -->
+        <test-method signature="addNewFunction()[pri:0, instance:test.AOS.AOSAddNew@3ce53f6a]" started-at="2024-01-30T11:18:17 IST" name="addNewFunction" finished-at="2024-01-30T11:18:34 IST" duration-ms="17270" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addNewFunction -->
+      </class> <!-- test.AOS.AOSAddNew -->
+      <class name="test.UserDomain.UserDomainModify">
+        <test-method signature="modifyFunction()[pri:0, instance:test.UserDomain.UserDomainModify@44c13103]" started-at="2024-01-30T11:20:57 IST" name="modifyFunction" finished-at="2024-01-30T11:21:10 IST" duration-ms="12820" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- modifyFunction -->
+      </class> <!-- test.UserDomain.UserDomainModify -->
+      <class name="test.AOS.AOSUnknownApplicationAddingtoCreateNew">
+        <test-method signature="aosUnknownApplicationAddingtoCreateNew()[pri:0, instance:test.AOS.AOSUnknownApplicationAddingtoCreateNew@2d82408]" started-at="2024-01-30T11:18:34 IST" name="aosUnknownApplicationAddingtoCreateNew" finished-at="2024-01-30T11:18:43 IST" duration-ms="9002" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- aosUnknownApplicationAddingtoCreateNew -->
+      </class> <!-- test.AOS.AOSUnknownApplicationAddingtoCreateNew -->
+      <class name="test.WorkProfile.WorkProfileForModification">
+        <test-method signature="modificationOnWorkProfiles()[pri:0, instance:test.WorkProfile.WorkProfileForModification@76889e60]" started-at="2024-01-30T11:23:02 IST" name="modificationOnWorkProfiles" finished-at="2024-01-30T11:23:12 IST" duration-ms="9165" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- modificationOnWorkProfiles -->
+      </class> <!-- test.WorkProfile.WorkProfileForModification -->
+      <class name="test.AOS.AOSUnknownApplicationAddingtoExistingProcessName">
+        <test-method signature="aosUnknownApplicationAddingtoExistingProcessName()[pri:0, instance:test.AOS.AOSUnknownApplicationAddingtoExistingProcessName@1daf3b44]" started-at="2024-01-30T11:19:45 IST" name="aosUnknownApplicationAddingtoExistingProcessName" finished-at="2024-01-30T11:19:56 IST" duration-ms="10178" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- aosUnknownApplicationAddingtoExistingProcessName -->
+      </class> <!-- test.AOS.AOSUnknownApplicationAddingtoExistingProcessName -->
+      <class name="test.WorkProfile.WorkProfilesDeleteWithDependency">
+        <test-method retried="true" signature="cloneOnWorkProfiles()[pri:0, instance:test.WorkProfile.WorkProfilesDeleteWithDependency@706fe5c6]" started-at="2024-01-30T11:23:12 IST" name="cloneOnWorkProfiles" finished-at="2024-01-30T11:24:44 IST" duration-ms="92108" status="SKIP">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"link text","selector":"×"}
+  (Session info: chrome=120.0.6099.227)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.13.0', revision: 'ba948ece5b*'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.8.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [13fec77949428d5a90352ebb86219304, findElement {using=link text, value=×}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 120.0.6099.227, chrome: {chromedriverVersion: 120.0.6099.109 (3419140ab66..., userDataDir: C:\Users\pavana.c\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60695}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:60695/devtoo..., se:cdpVersion: 120.0.6099.227, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 13fec77949428d5a90352ebb86219304]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"link text","selector":"×"}
+  (Session info: chrome=120.0.6099.227)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.13.0', revision: 'ba948ece5b*'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.8.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [13fec77949428d5a90352ebb86219304, findElement {using=link text, value=×}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 120.0.6099.227, chrome: {chromedriverVersion: 120.0.6099.109 (3419140ab66..., userDataDir: C:\Users\pavana.c\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60695}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:60695/devtoo..., se:cdpVersion: 120.0.6099.227, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 13fec77949428d5a90352ebb86219304
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:359)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:353)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+at jdk.proxy2/jdk.proxy2.$Proxy16.click(Unknown Source)
+at Pages.WorkProfilesPage.clickCloseAggregationPopUp(WorkProfilesPage.java:324)
+at test.WorkProfile.WorkProfilesDeleteWithDependency.cloneOnWorkProfiles(WorkProfilesDeleteWithDependency.java:48)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- cloneOnWorkProfiles -->
+        <test-method signature="cloneOnWorkProfiles()[pri:0, instance:test.WorkProfile.WorkProfilesDeleteWithDependency@706fe5c6]" started-at="2024-01-30T11:24:44 IST" name="cloneOnWorkProfiles" finished-at="2024-01-30T11:24:56 IST" duration-ms="12450" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- cloneOnWorkProfiles -->
+      </class> <!-- test.WorkProfile.WorkProfilesDeleteWithDependency -->
+      <class name="UserRoles.UserRolesModifyManagerDontAllowUserToExportDataXLS">
+        <test-method retried="true" signature="userRolesModifyManagerDontAllowUserToExportDataXLS()[pri:0, instance:UserRoles.UserRolesModifyManagerDontAllowUserToExportDataXLS@5c8e67b9]" started-at="2024-01-30T11:35:16 IST" name="userRolesModifyManagerDontAllowUserToExportDataXLS" finished-at="2024-01-30T11:35:41 IST" duration-ms="24503" status="SKIP">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//img[@title="Export to Excel"]"}
+  (Session info: chrome=120.0.6099.227)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.13.0', revision: 'ba948ece5b*'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.8.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [13fec77949428d5a90352ebb86219304, findElement {using=xpath, value=//img[@title="Export to Excel"]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 120.0.6099.227, chrome: {chromedriverVersion: 120.0.6099.109 (3419140ab66..., userDataDir: C:\Users\pavana.c\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60695}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:60695/devtoo..., se:cdpVersion: 120.0.6099.227, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 13fec77949428d5a90352ebb86219304]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//img[@title="Export to Excel"]"}
+  (Session info: chrome=120.0.6099.227)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.13.0', revision: 'ba948ece5b*'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.8.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [13fec77949428d5a90352ebb86219304, findElement {using=xpath, value=//img[@title="Export to Excel"]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 120.0.6099.227, chrome: {chromedriverVersion: 120.0.6099.109 (3419140ab66..., userDataDir: C:\Users\pavana.c\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60695}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:60695/devtoo..., se:cdpVersion: 120.0.6099.227, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 13fec77949428d5a90352ebb86219304
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:359)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:353)
+at Pages.UserRolePage.exportexcelBtnToBeDisabled(UserRolePage.java:290)
+at UserRoles.UserRolesModifyManagerDontAllowUserToExportDataXLS.userRolesModifyManagerDontAllowUserToExportDataXLS(UserRolesModifyManagerDontAllowUserToExportDataXLS.java:80)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- userRolesModifyManagerDontAllowUserToExportDataXLS -->
+        <test-method signature="userRolesModifyManagerDontAllowUserToExportDataXLS()[pri:0, instance:UserRoles.UserRolesModifyManagerDontAllowUserToExportDataXLS@5c8e67b9]" started-at="2024-01-30T11:35:41 IST" name="userRolesModifyManagerDontAllowUserToExportDataXLS" finished-at="2024-01-30T11:36:00 IST" duration-ms="19069" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- userRolesModifyManagerDontAllowUserToExportDataXLS -->
+      </class> <!-- UserRoles.UserRolesModifyManagerDontAllowUserToExportDataXLS -->
+      <class name="UserRoles.UserRolesAddNewMember">
+        <test-method signature="userRolesAddNewManager()[pri:0, instance:UserRoles.UserRolesAddNewMember@2e807c54]" started-at="2024-01-30T11:26:49 IST" name="userRolesAddNewManager" finished-at="2024-01-30T11:27:03 IST" duration-ms="14169" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- userRolesAddNewManager -->
+      </class> <!-- UserRoles.UserRolesAddNewMember -->
+      <class name="test.AOS.AOSDeleteFunction">
+        <test-method signature="aosDeleteFunction()[pri:0, instance:test.AOS.AOSDeleteFunction@42714a7]" started-at="2024-01-30T11:17:05 IST" name="aosDeleteFunction" finished-at="2024-01-30T11:17:31 IST" duration-ms="26365" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- aosDeleteFunction -->
+      </class> <!-- test.AOS.AOSDeleteFunction -->
+      <class name="test.AOS.AOSUnknownApplicationAddingtoExistingQualifierText">
+        <test-method signature="aosUnknownApplicationAddingtoExistingQualifierText()[pri:0, instance:test.AOS.AOSUnknownApplicationAddingtoExistingQualifierText@19650aa6]" started-at="2024-01-30T11:17:31 IST" name="aosUnknownApplicationAddingtoExistingQualifierText" finished-at="2024-01-30T11:17:41 IST" duration-ms="9256" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- aosUnknownApplicationAddingtoExistingQualifierText -->
+      </class> <!-- test.AOS.AOSUnknownApplicationAddingtoExistingQualifierText -->
+      <class name="test.UserDomain.UserDomainAddFunction">
+        <test-method signature="addNewFunction()[pri:0, instance:test.UserDomain.UserDomainAddFunction@7fd8c559]" started-at="2024-01-30T11:19:56 IST" name="addNewFunction" finished-at="2024-01-30T11:20:57 IST" duration-ms="61781" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addNewFunction -->
+      </class> <!-- test.UserDomain.UserDomainAddFunction -->
+      <class name="UserRoles.UserRolesModifyManagerExportDataPermissionAllowUserToMail">
+        <test-method signature="userRolesModifyManagerExportDataPermissionAllowUserToMail()[pri:0, instance:UserRoles.UserRolesModifyManagerExportDataPermissionAllowUserToMail@1835d3ed]" started-at="2024-01-30T11:32:15 IST" name="userRolesModifyManagerExportDataPermissionAllowUserToMail" finished-at="2024-01-30T11:32:36 IST" duration-ms="21406" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- userRolesModifyManagerExportDataPermissionAllowUserToMail -->
+      </class> <!-- UserRoles.UserRolesModifyManagerExportDataPermissionAllowUserToMail -->
+      <class name="test.WorkProfile.WorkProfilesExcelValidation">
+        <test-method signature="cloneOnWorkProfiles()[pri:0, instance:test.WorkProfile.WorkProfilesExcelValidation@6c15e8c7]" started-at="2024-01-30T11:24:56 IST" name="cloneOnWorkProfiles" finished-at="2024-01-30T11:25:14 IST" duration-ms="17750" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- cloneOnWorkProfiles -->
+      </class> <!-- test.WorkProfile.WorkProfilesExcelValidation -->
+      <class name="UserRoles.UserRolesModifyManagerHierarchyLevel">
+        <test-method signature="userRolesModifyManagerHierarchyLevel()[pri:0, instance:UserRoles.UserRolesModifyManagerHierarchyLevel@70c0a3d5]" started-at="2024-01-30T11:35:07 IST" name="userRolesModifyManagerHierarchyLevel" finished-at="2024-01-30T11:35:16 IST" duration-ms="8873" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- userRolesModifyManagerHierarchyLevel -->
+      </class> <!-- UserRoles.UserRolesModifyManagerHierarchyLevel -->
+      <class name="UserRoles.UserRoleExcelValidation">
+        <test-method signature="userRoleExcelValidation()[pri:0, instance:UserRoles.UserRoleExcelValidation@2b8bd798]" started-at="2024-01-30T11:28:17 IST" name="userRoleExcelValidation" finished-at="2024-01-30T11:28:31 IST" duration-ms="14162" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- userRoleExcelValidation -->
+      </class> <!-- UserRoles.UserRoleExcelValidation -->
+      <class name="test.DataAggregation.DataAggregationForModificationOnSettingsTab">
+        <test-method signature="modificationOnSettingsTab()[pri:0, instance:test.DataAggregation.DataAggregationForModificationOnSettingsTab@42b28ff1]" started-at="2024-01-30T11:21:57 IST" name="modificationOnSettingsTab" finished-at="2024-01-30T11:22:06 IST" duration-ms="9268" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- modificationOnSettingsTab -->
+      </class> <!-- test.DataAggregation.DataAggregationForModificationOnSettingsTab -->
+      <class name="test.WorkProfile.WorkProfileForAddingNew">
+        <test-method retried="true" signature="AddingNewWorkProfiles()[pri:0, instance:test.WorkProfile.WorkProfileForAddingNew@20134094]" started-at="2024-01-30T11:22:11 IST" name="AddingNewWorkProfiles" finished-at="2024-01-30T11:22:28 IST" duration-ms="17181" status="SKIP">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"(//input[@name='activityTagSelectCheckbox'])[1]"}
+  (Session info: chrome=120.0.6099.227)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.13.0', revision: 'ba948ece5b*'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.8.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [13fec77949428d5a90352ebb86219304, findElement {using=xpath, value=(//input[@name='activityTagSelectCheckbox'])[1]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 120.0.6099.227, chrome: {chromedriverVersion: 120.0.6099.109 (3419140ab66..., userDataDir: C:\Users\pavana.c\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60695}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:60695/devtoo..., se:cdpVersion: 120.0.6099.227, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 13fec77949428d5a90352ebb86219304]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"(//input[@name='activityTagSelectCheckbox'])[1]"}
+  (Session info: chrome=120.0.6099.227)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.13.0', revision: 'ba948ece5b*'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.8.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [13fec77949428d5a90352ebb86219304, findElement {using=xpath, value=(//input[@name='activityTagSelectCheckbox'])[1]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 120.0.6099.227, chrome: {chromedriverVersion: 120.0.6099.109 (3419140ab66..., userDataDir: C:\Users\pavana.c\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60695}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:60695/devtoo..., se:cdpVersion: 120.0.6099.227, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 13fec77949428d5a90352ebb86219304
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:359)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:353)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+at jdk.proxy2/jdk.proxy2.$Proxy16.isSelected(Unknown Source)
+at Pages.WorkProfilesPage.checkCheckBoxJavaScipt(WorkProfilesPage.java:180)
+at Pages.WorkProfilesPage.clickToAddActivityTag(WorkProfilesPage.java:275)
+at test.WorkProfile.WorkProfileForAddingNew.AddingNewWorkProfiles(WorkProfileForAddingNew.java:74)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AddingNewWorkProfiles -->
+        <test-method retried="true" signature="AddingNewWorkProfiles()[pri:0, instance:test.WorkProfile.WorkProfileForAddingNew@20134094]" started-at="2024-01-30T11:22:28 IST" name="AddingNewWorkProfiles" finished-at="2024-01-30T11:22:45 IST" duration-ms="17090" status="SKIP">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"(//input[@name='activityTagSelectCheckbox'])[1]"}
+  (Session info: chrome=120.0.6099.227)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.13.0', revision: 'ba948ece5b*'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.8.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [13fec77949428d5a90352ebb86219304, findElement {using=xpath, value=(//input[@name='activityTagSelectCheckbox'])[1]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 120.0.6099.227, chrome: {chromedriverVersion: 120.0.6099.109 (3419140ab66..., userDataDir: C:\Users\pavana.c\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60695}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:60695/devtoo..., se:cdpVersion: 120.0.6099.227, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 13fec77949428d5a90352ebb86219304]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"(//input[@name='activityTagSelectCheckbox'])[1]"}
+  (Session info: chrome=120.0.6099.227)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.13.0', revision: 'ba948ece5b*'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.8.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [13fec77949428d5a90352ebb86219304, findElement {using=xpath, value=(//input[@name='activityTagSelectCheckbox'])[1]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 120.0.6099.227, chrome: {chromedriverVersion: 120.0.6099.109 (3419140ab66..., userDataDir: C:\Users\pavana.c\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60695}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:60695/devtoo..., se:cdpVersion: 120.0.6099.227, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 13fec77949428d5a90352ebb86219304
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:359)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:353)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+at jdk.proxy2/jdk.proxy2.$Proxy16.isSelected(Unknown Source)
+at Pages.WorkProfilesPage.checkCheckBoxJavaScipt(WorkProfilesPage.java:180)
+at Pages.WorkProfilesPage.clickToAddActivityTag(WorkProfilesPage.java:275)
+at test.WorkProfile.WorkProfileForAddingNew.AddingNewWorkProfiles(WorkProfileForAddingNew.java:74)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.retryFailed(TestInvoker.java:213)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:58)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AddingNewWorkProfiles -->
+        <test-method signature="AddingNewWorkProfiles()[pri:0, instance:test.WorkProfile.WorkProfileForAddingNew@20134094]" started-at="2024-01-30T11:22:45 IST" name="AddingNewWorkProfiles" finished-at="2024-01-30T11:23:02 IST" duration-ms="16902" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"(//input[@name='activityTagSelectCheckbox'])[1]"}
+  (Session info: chrome=120.0.6099.227)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.13.0', revision: 'ba948ece5b*'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.8.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [13fec77949428d5a90352ebb86219304, findElement {using=xpath, value=(//input[@name='activityTagSelectCheckbox'])[1]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 120.0.6099.227, chrome: {chromedriverVersion: 120.0.6099.109 (3419140ab66..., userDataDir: C:\Users\pavana.c\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60695}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:60695/devtoo..., se:cdpVersion: 120.0.6099.227, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 13fec77949428d5a90352ebb86219304]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"(//input[@name='activityTagSelectCheckbox'])[1]"}
+  (Session info: chrome=120.0.6099.227)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.13.0', revision: 'ba948ece5b*'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.8.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [13fec77949428d5a90352ebb86219304, findElement {using=xpath, value=(//input[@name='activityTagSelectCheckbox'])[1]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 120.0.6099.227, chrome: {chromedriverVersion: 120.0.6099.109 (3419140ab66..., userDataDir: C:\Users\pavana.c\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60695}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:60695/devtoo..., se:cdpVersion: 120.0.6099.227, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 13fec77949428d5a90352ebb86219304
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:359)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:353)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+at jdk.proxy2/jdk.proxy2.$Proxy16.isSelected(Unknown Source)
+at Pages.WorkProfilesPage.checkCheckBoxJavaScipt(WorkProfilesPage.java:180)
+at Pages.WorkProfilesPage.clickToAddActivityTag(WorkProfilesPage.java:275)
+at test.WorkProfile.WorkProfileForAddingNew.AddingNewWorkProfiles(WorkProfileForAddingNew.java:74)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.retryFailed(TestInvoker.java:213)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:58)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AddingNewWorkProfiles -->
+      </class> <!-- test.WorkProfile.WorkProfileForAddingNew -->
+      <class name="test.AOS.AOSBulkUploadModify">
+        <test-method signature="aosBulkUploadModify()[pri:0, instance:test.AOS.AOSBulkUploadModify@7a389761]" started-at="2024-01-30T11:16:41 IST" name="aosBulkUploadModify" finished-at="2024-01-30T11:17:05 IST" duration-ms="24097" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- aosBulkUploadModify -->
+      </class> <!-- test.AOS.AOSBulkUploadModify -->
+      <class name="test.UserDomain.UserDomainExcelValidation">
+        <test-method signature="excelValidation()[pri:0, instance:test.UserDomain.UserDomainExcelValidation@55a88417]" started-at="2024-01-30T11:21:36 IST" name="excelValidation" finished-at="2024-01-30T11:21:46 IST" duration-ms="10514" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- excelValidation -->
+      </class> <!-- test.UserDomain.UserDomainExcelValidation -->
+      <class name="test.UserDomain.UserDomainDeleteFunction">
+        <test-method signature="deleteNewFunction()[pri:0, instance:test.UserDomain.UserDomainDeleteFunction@8f2098e]" started-at="2024-01-30T11:21:10 IST" name="deleteNewFunction" finished-at="2024-01-30T11:21:22 IST" duration-ms="12131" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- deleteNewFunction -->
+      </class> <!-- test.UserDomain.UserDomainDeleteFunction -->
+      <class name="UserRoles.UserRolesModifyMemberModuleSelection">
+        <test-method signature="userRolesModifyMemberModuleSelection()[pri:0, instance:UserRoles.UserRolesModifyMemberModuleSelection@aa4d8cc]" started-at="2024-01-30T11:33:39 IST" name="userRolesModifyMemberModuleSelection" finished-at="2024-01-30T11:34:05 IST" duration-ms="26324" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- userRolesModifyMemberModuleSelection -->
+      </class> <!-- UserRoles.UserRolesModifyMemberModuleSelection -->
+      <class name="test.AOS.AOSUnknownApplicationAddingtoCreateNewQualifierText">
+        <test-method signature="aosUnknownApplicationAddingtoCreateNewQualifierText()[pri:0, instance:test.AOS.AOSUnknownApplicationAddingtoCreateNewQualifierText@3ee69ad8]" started-at="2024-01-30T11:18:43 IST" name="aosUnknownApplicationAddingtoCreateNewQualifierText" finished-at="2024-01-30T11:18:52 IST" duration-ms="9004" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- aosUnknownApplicationAddingtoCreateNewQualifierText -->
+      </class> <!-- test.AOS.AOSUnknownApplicationAddingtoCreateNewQualifierText -->
+      <class name="test.WorkProfile.WorkProfileValidateWithTeams">
+        <test-method signature="cloneOnWorkProfiles()[pri:0, instance:test.WorkProfile.WorkProfileValidateWithTeams@282ffbf5]" started-at="2024-01-30T11:25:23 IST" name="cloneOnWorkProfiles" finished-at="2024-01-30T11:25:38 IST" duration-ms="15563" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- cloneOnWorkProfiles -->
+      </class> <!-- test.WorkProfile.WorkProfileValidateWithTeams -->
+      <class name="UserRoles.UserRolesBulkUpdateMember">
+        <test-method signature="userRolesBulkUpdateMember()[pri:0, instance:UserRoles.UserRolesBulkUpdateMember@1cec219f]" started-at="2024-01-30T11:29:18 IST" name="userRolesBulkUpdateMember" finished-at="2024-01-30T11:29:45 IST" duration-ms="26949" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- userRolesBulkUpdateMember -->
+      </class> <!-- UserRoles.UserRolesBulkUpdateMember -->
+      <class name="UserRoles.UserRolesModifyManagerDontAllowUserToExportDataPDF2">
+        <test-method retried="true" signature="userRolesModifyManagerDontAllowUserToExportDataPDF2()[pri:0, instance:UserRoles.UserRolesModifyManagerDontAllowUserToExportDataPDF2@3cb8c8ce]" started-at="2024-01-30T11:34:05 IST" name="userRolesModifyManagerDontAllowUserToExportDataPDF2" finished-at="2024-01-30T11:34:35 IST" duration-ms="30241" status="SKIP">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//img[@title='Export to PDF']"}
+  (Session info: chrome=120.0.6099.227)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.13.0', revision: 'ba948ece5b*'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.8.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [13fec77949428d5a90352ebb86219304, findElement {using=xpath, value=//img[@title='Export to PDF']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 120.0.6099.227, chrome: {chromedriverVersion: 120.0.6099.109 (3419140ab66..., userDataDir: C:\Users\pavana.c\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60695}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:60695/devtoo..., se:cdpVersion: 120.0.6099.227, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 13fec77949428d5a90352ebb86219304]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//img[@title='Export to PDF']"}
+  (Session info: chrome=120.0.6099.227)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.13.0', revision: 'ba948ece5b*'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.8.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [13fec77949428d5a90352ebb86219304, findElement {using=xpath, value=//img[@title='Export to PDF']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 120.0.6099.227, chrome: {chromedriverVersion: 120.0.6099.109 (3419140ab66..., userDataDir: C:\Users\pavana.c\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60695}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:60695/devtoo..., se:cdpVersion: 120.0.6099.227, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 13fec77949428d5a90352ebb86219304
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:359)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:353)
+at Pages.UserRolePage.exportPDFBtnToBeDisabled(UserRolePage.java:317)
+at UserRoles.UserRolesModifyManagerDontAllowUserToExportDataPDF2.userRolesModifyManagerDontAllowUserToExportDataPDF2(UserRolesModifyManagerDontAllowUserToExportDataPDF2.java:74)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- userRolesModifyManagerDontAllowUserToExportDataPDF2 -->
+        <test-method signature="userRolesModifyManagerDontAllowUserToExportDataPDF2()[pri:0, instance:UserRoles.UserRolesModifyManagerDontAllowUserToExportDataPDF2@3cb8c8ce]" started-at="2024-01-30T11:34:35 IST" name="userRolesModifyManagerDontAllowUserToExportDataPDF2" finished-at="2024-01-30T11:34:58 IST" duration-ms="22721" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- userRolesModifyManagerDontAllowUserToExportDataPDF2 -->
+      </class> <!-- UserRoles.UserRolesModifyManagerDontAllowUserToExportDataPDF2 -->
+      <class name="test.UserDomain.UserDomainSortingFuncton">
+        <test-method signature="sortingFunction()[pri:0, instance:test.UserDomain.UserDomainSortingFuncton@6c6366cf]" started-at="2024-01-30T11:21:22 IST" name="sortingFunction" finished-at="2024-01-30T11:21:36 IST" duration-ms="13216" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- sortingFunction -->
+      </class> <!-- test.UserDomain.UserDomainSortingFuncton -->
+      <class name="test.UserDomain.UserDomainPDFValidation">
+        <test-method signature="pdf()[pri:0, instance:test.UserDomain.UserDomainPDFValidation@18acfe88]" started-at="2024-01-30T11:21:46 IST" name="pdf" finished-at="2024-01-30T11:21:57 IST" duration-ms="11143" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- pdf -->
+      </class> <!-- test.UserDomain.UserDomainPDFValidation -->
+      <class name="test.AOS.AOSUnknownApplicationAddingtoExisting">
+        <test-method signature="aosUnknownApplicationAddingtoExisting()[pri:0, instance:test.AOS.AOSUnknownApplicationAddingtoExisting@f679798]" started-at="2024-01-30T11:18:52 IST" name="aosUnknownApplicationAddingtoExisting" finished-at="2024-01-30T11:19:01 IST" duration-ms="8662" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- aosUnknownApplicationAddingtoExisting -->
+      </class> <!-- test.AOS.AOSUnknownApplicationAddingtoExisting -->
+      <class name="test.AOS.AOSModifyFunction">
+        <test-method retried="true" signature="a0sModifyFunction()[pri:0, instance:test.AOS.AOSModifyFunction@60859f5a]" started-at="2024-01-30T11:19:10 IST" name="a0sModifyFunction" finished-at="2024-01-30T11:19:28 IST" duration-ms="17406" status="SKIP">
+          <exception class="java.lang.AssertionError">
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError
+at org.junit.Assert.fail(Assert.java:86)
+at org.junit.Assert.assertTrue(Assert.java:41)
+at org.junit.Assert.assertTrue(Assert.java:52)
+at test.AOS.AOSModifyFunction.a0sModifyFunction(AOSModifyFunction.java:63)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- a0sModifyFunction -->
+        <test-method signature="a0sModifyFunction()[pri:0, instance:test.AOS.AOSModifyFunction@60859f5a]" started-at="2024-01-30T11:19:28 IST" name="a0sModifyFunction" finished-at="2024-01-30T11:19:45 IST" duration-ms="17768" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- a0sModifyFunction -->
+      </class> <!-- test.AOS.AOSModifyFunction -->
+      <class name="test.WorkProfile.WorkProfilesForClone">
+        <test-method signature="cloneOnWorkProfiles()[pri:0, instance:test.WorkProfile.WorkProfilesForClone@6b3f6585]" started-at="2024-01-30T11:25:14 IST" name="cloneOnWorkProfiles" finished-at="2024-01-30T11:25:23 IST" duration-ms="8937" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- cloneOnWorkProfiles -->
+      </class> <!-- test.WorkProfile.WorkProfilesForClone -->
+      <class name="UserRoles.UserRolesModifyManagerExportDataPermissionNotAllowUserToDemandOnMail">
+        <test-method retried="true" signature="userRolesModifyManagerExportDataPermissionNotAllowUserToDemandOnMail()[pri:0, instance:UserRoles.UserRolesModifyManagerExportDataPermissionNotAllowUserToDemandOnMail@474c9131]" started-at="2024-01-30T11:32:36 IST" name="userRolesModifyManagerExportDataPermissionNotAllowUserToDemandOnMail" finished-at="2024-01-30T11:33:02 IST" duration-ms="25275" status="SKIP">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"css selector","selector":"#emailSpan"}
+  (Session info: chrome=120.0.6099.227)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.13.0', revision: 'ba948ece5b*'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.8.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [13fec77949428d5a90352ebb86219304, findElement {using=id, value=emailSpan}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 120.0.6099.227, chrome: {chromedriverVersion: 120.0.6099.109 (3419140ab66..., userDataDir: C:\Users\pavana.c\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60695}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:60695/devtoo..., se:cdpVersion: 120.0.6099.227, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 13fec77949428d5a90352ebb86219304]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"#emailSpan"}
+  (Session info: chrome=120.0.6099.227)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.13.0', revision: 'ba948ece5b*'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.8.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [13fec77949428d5a90352ebb86219304, findElement {using=id, value=emailSpan}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 120.0.6099.227, chrome: {chromedriverVersion: 120.0.6099.109 (3419140ab66..., userDataDir: C:\Users\pavana.c\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60695}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:60695/devtoo..., se:cdpVersion: 120.0.6099.227, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 13fec77949428d5a90352ebb86219304
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:359)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:353)
+at UserRoles.UserRolesModifyManagerExportDataPermissionNotAllowUserToDemandOnMail.userRolesModifyManagerExportDataPermissionNotAllowUserToDemandOnMail(UserRolesModifyManagerExportDataPermissionNotAllowUserToDemandOnMail.java:76)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- userRolesModifyManagerExportDataPermissionNotAllowUserToDemandOnMail -->
+        <test-method signature="userRolesModifyManagerExportDataPermissionNotAllowUserToDemandOnMail()[pri:0, instance:UserRoles.UserRolesModifyManagerExportDataPermissionNotAllowUserToDemandOnMail@474c9131]" started-at="2024-01-30T11:33:02 IST" name="userRolesModifyManagerExportDataPermissionNotAllowUserToDemandOnMail" finished-at="2024-01-30T11:33:19 IST" duration-ms="17642" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- userRolesModifyManagerExportDataPermissionNotAllowUserToDemandOnMail -->
+      </class> <!-- UserRoles.UserRolesModifyManagerExportDataPermissionNotAllowUserToDemandOnMail -->
+      <class name="UserRoles.UserRolesModifyMemberHierarchyLevel">
+        <test-method signature="userRolesModifyMemberHierarchyLevel()[pri:0, instance:UserRoles.UserRolesModifyMemberHierarchyLevel@1fde0371]" started-at="2024-01-30T11:34:58 IST" name="userRolesModifyMemberHierarchyLevel" finished-at="2024-01-30T11:35:07 IST" duration-ms="9084" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- userRolesModifyMemberHierarchyLevel -->
+      </class> <!-- UserRoles.UserRolesModifyMemberHierarchyLevel -->
+      <class name="UserRoles.UserRoleSorting">
+        <test-method signature="userRoleSorting()[pri:0, instance:UserRoles.UserRoleSorting@692e028d]" started-at="2024-01-30T11:29:45 IST" name="userRoleSorting" finished-at="2024-01-30T11:30:05 IST" duration-ms="20074" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- userRoleSorting -->
+      </class> <!-- UserRoles.UserRoleSorting -->
+      <class name="UserRoles.UserRolesAddNewManagerDelete">
+        <test-method signature="userRolesAddNewManagerDelete()[pri:0, instance:UserRoles.UserRolesAddNewManagerDelete@242a209e]" started-at="2024-01-30T11:27:22 IST" name="userRolesAddNewManagerDelete" finished-at="2024-01-30T11:27:52 IST" duration-ms="30813" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- userRolesAddNewManagerDelete -->
+      </class> <!-- UserRoles.UserRolesAddNewManagerDelete -->
+    </test> <!-- Test -->
+  </suite> <!-- MultipleSuite -->
 </testng-results>

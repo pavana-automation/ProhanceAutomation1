@@ -35,7 +35,7 @@
 <a href="#"><span class="badge badge-primary">Automation Result</span></a>
 </li>
 <li class="m-r-10">
-<a href="#"><span class="badge badge-primary">Jan 22, 2024 10:38:30 AM</span></a>
+<a href="#"><span class="badge badge-primary">Jan 30, 2024 11:15:47 AM</span></a>
 </li>
 </ul>
 </div>
@@ -45,6 +45,11 @@
 <li class="nav-item dropdown" onclick="toggleView('test-view')">
 <a id="nav-test" class="dropdown-toggle" href="#">
 <span class="ico"><i class="fa fa-list"></i></span>
+</a>
+</li>
+<li class="nav-item dropdown" onclick="toggleView('exception-view')">
+<a id="nav-exception" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-bug"></i></span>
 </a>
 </li>
 <li class="nav-item dropdown" onclick="toggleView('dashboard-view')">
@@ -67,6 +72,7 @@
 <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-exclamation-circle"></i></a>
 <ul id="status-toggle" class="dropdown-menu dropdown-md p-v-0">
 <a class="dropdown-item" status="pass" href="#"><span>Pass</span><span class="status success"></span></a>
+<a class="dropdown-item" status="fail" href="#"><span>Fail</span><span class="status danger"></span></a>
 <div class="dropdown-divider"></div>
 <a status="clear" class="dropdown-item" href="#"><span>Clear</span><span class="pull-right"><i class="fa fa-close"></i></span></a>
 </ul>
@@ -79,9 +85,9 @@
           tag=""
           device="">
           <div class="test-detail">
-            <p class="name">userRolesAddNewManager</p>
+            <p class="name">aosBulkUpload</p>
             <p class="text-sm">
-              <span>10:38:37 AM</span> / <span>00:00:14:317</span>
+              <span>11:15:54 AM</span> / <span>00:00:31:399</span>
               <span class="badge pass-bg log float-right">Pass</span>
             </p>
           </div>
@@ -89,10 +95,10 @@
 <div class="detail-head">
 <div class="p-v-10">
 <div class="info">
-<h5 class="test-status text-pass">userRolesAddNewManager</h5>
-<span class='badge badge-success'>01.22.2024 10:38:37 AM</span>
-<span class='badge badge-danger'>01.22.2024 10:38:51 AM</span>
-<span class='badge badge-default'>00:00:14:317</span>
+<h5 class="test-status text-pass">aosBulkUpload</h5>
+<span class='badge badge-success'>01.30.2024 11:15:54 AM</span>
+<span class='badge badge-danger'>01.30.2024 11:16:26 AM</span>
+<span class='badge badge-default'>00:00:31:399</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=1</span>
 <span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
 <span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
@@ -105,7 +111,7 @@
   <tbody>
       <tr class="event-row">
         <td><span class="badge log pass-bg">Pass</span></td>
-        <td>10:38:51 AM</td>
+        <td>11:16:26 AM</td>
         <td>
           Successfull
         </td>
@@ -120,9 +126,9 @@
           tag=""
           device="">
           <div class="test-detail">
-            <p class="name">userRolesAddNewManager</p>
+            <p class="name">aosBulkUploadDelete</p>
             <p class="text-sm">
-              <span>10:38:51 AM</span> / <span>00:00:15:571</span>
+              <span>11:16:26 AM</span> / <span>00:00:15:043</span>
               <span class="badge pass-bg log float-right">Pass</span>
             </p>
           </div>
@@ -130,10 +136,10 @@
 <div class="detail-head">
 <div class="p-v-10">
 <div class="info">
-<h5 class="test-status text-pass">userRolesAddNewManager</h5>
-<span class='badge badge-success'>01.22.2024 10:38:51 AM</span>
-<span class='badge badge-danger'>01.22.2024 10:39:07 AM</span>
-<span class='badge badge-default'>00:00:15:571</span>
+<h5 class="test-status text-pass">aosBulkUploadDelete</h5>
+<span class='badge badge-success'>01.30.2024 11:16:26 AM</span>
+<span class='badge badge-danger'>01.30.2024 11:16:41 AM</span>
+<span class='badge badge-default'>00:00:15:043</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=2</span>
 <span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
 <span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
@@ -145,8 +151,29 @@
   <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
   <tbody>
       <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>11:16:26 AM</td>
+        <td>
+          Step 1: Login into the prohance application
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>11:16:27 AM</td>
+        <td>
+          Step 2: Click on Side Navigation Page
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>11:16:29 AM</td>
+        <td>
+          Step 3: Click on Activities
+        </td>
+      </tr>
+      <tr class="event-row">
         <td><span class="badge log pass-bg">Pass</span></td>
-        <td>10:39:07 AM</td>
+        <td>11:16:41 AM</td>
         <td>
           Successfull
         </td>
@@ -161,9 +188,9 @@
           tag=""
           device="">
           <div class="test-detail">
-            <p class="name">userRolesAddNewManagerDelete</p>
+            <p class="name">aosBulkUploadModify</p>
             <p class="text-sm">
-              <span>10:39:07 AM</span> / <span>00:00:31:588</span>
+              <span>11:16:41 AM</span> / <span>00:00:24:096</span>
               <span class="badge pass-bg log float-right">Pass</span>
             </p>
           </div>
@@ -171,10 +198,10 @@
 <div class="detail-head">
 <div class="p-v-10">
 <div class="info">
-<h5 class="test-status text-pass">userRolesAddNewManagerDelete</h5>
-<span class='badge badge-success'>01.22.2024 10:39:07 AM</span>
-<span class='badge badge-danger'>01.22.2024 10:39:39 AM</span>
-<span class='badge badge-default'>00:00:31:588</span>
+<h5 class="test-status text-pass">aosBulkUploadModify</h5>
+<span class='badge badge-success'>01.30.2024 11:16:41 AM</span>
+<span class='badge badge-danger'>01.30.2024 11:17:05 AM</span>
+<span class='badge badge-default'>00:00:24:096</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=3</span>
 <span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
 <span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
@@ -186,8 +213,85 @@
   <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
   <tbody>
       <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>11:16:41 AM</td>
+        <td>
+          Step 1: Login into the prohance application
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>11:16:42 AM</td>
+        <td>
+          Step 2: Click on Side Navigation Page
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>11:16:45 AM</td>
+        <td>
+          Step 3: Click on Activities
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>11:16:45 AM</td>
+        <td>
+          Step 4: Click on AOS
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>11:16:50 AM</td>
+        <td>
+          Step 5: Click on More Action
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>11:16:50 AM</td>
+        <td>
+          Step 6: Click on Bulk Upload
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>11:16:51 AM</td>
+        <td>
+          Step 7: Click Here to download Pree Filled Template
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>11:16:52 AM</td>
+        <td>
+          Step 8: Click on 'click here' to download the excel
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>11:16:53 AM</td>
+        <td>
+          Step 9: Modify the data in excel ans upload the file
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>11:17:00 AM</td>
+        <td>
+          Step 10: Check whether modified data is saved in the application
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>11:17:05 AM</td>
+        <td>
+          Step 11: Modified data is uploaded successfully
+        </td>
+      </tr>
+      <tr class="event-row">
         <td><span class="badge log pass-bg">Pass</span></td>
-        <td>10:39:39 AM</td>
+        <td>11:17:05 AM</td>
         <td>
           Successfull
         </td>
@@ -202,9 +306,9 @@
           tag=""
           device="">
           <div class="test-detail">
-            <p class="name">userRolesAddNewMemberDelete</p>
+            <p class="name">aosDeleteFunction</p>
             <p class="text-sm">
-              <span>10:39:39 AM</span> / <span>00:00:24:484</span>
+              <span>11:17:05 AM</span> / <span>00:00:26:366</span>
               <span class="badge pass-bg log float-right">Pass</span>
             </p>
           </div>
@@ -212,10 +316,10 @@
 <div class="detail-head">
 <div class="p-v-10">
 <div class="info">
-<h5 class="test-status text-pass">userRolesAddNewMemberDelete</h5>
-<span class='badge badge-success'>01.22.2024 10:39:39 AM</span>
-<span class='badge badge-danger'>01.22.2024 10:40:03 AM</span>
-<span class='badge badge-default'>00:00:24:484</span>
+<h5 class="test-status text-pass">aosDeleteFunction</h5>
+<span class='badge badge-success'>01.30.2024 11:17:05 AM</span>
+<span class='badge badge-danger'>01.30.2024 11:17:31 AM</span>
+<span class='badge badge-default'>00:00:26:366</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=4</span>
 <span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
 <span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
@@ -227,8 +331,57 @@
   <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
   <tbody>
       <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>11:17:05 AM</td>
+        <td>
+          Step 1: Login into the prohance application
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>11:17:06 AM</td>
+        <td>
+          Step 2: Click on sideNavigation Page
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>11:17:08 AM</td>
+        <td>
+          Step 3: Click on AOS under Activities
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>11:17:14 AM</td>
+        <td>
+          Step 4: Select particular record and store the value
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>11:17:14 AM</td>
+        <td>
+          Step 5: click on delete
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>11:17:16 AM</td>
+        <td>
+          Step 6: Verify, Record should not be deleted
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>11:17:31 AM</td>
+        <td>
+          Step 7: Record cannot be deleted , as dependency are there hence verifying the same
+        </td>
+      </tr>
+      <tr class="event-row">
         <td><span class="badge log pass-bg">Pass</span></td>
-        <td>10:40:03 AM</td>
+        <td>11:17:31 AM</td>
         <td>
           Successfull
         </td>
@@ -243,9 +396,9 @@
           tag=""
           device="">
           <div class="test-detail">
-            <p class="name">userRoleExcelValidation</p>
+            <p class="name">aosUnknownApplicationAddingtoExistingQualifierText</p>
             <p class="text-sm">
-              <span>10:40:03 AM</span> / <span>00:00:15:241</span>
+              <span>11:17:31 AM</span> / <span>00:00:09:257</span>
               <span class="badge pass-bg log float-right">Pass</span>
             </p>
           </div>
@@ -253,10 +406,10 @@
 <div class="detail-head">
 <div class="p-v-10">
 <div class="info">
-<h5 class="test-status text-pass">userRoleExcelValidation</h5>
-<span class='badge badge-success'>01.22.2024 10:40:03 AM</span>
-<span class='badge badge-danger'>01.22.2024 10:40:18 AM</span>
-<span class='badge badge-default'>00:00:15:241</span>
+<h5 class="test-status text-pass">aosUnknownApplicationAddingtoExistingQualifierText</h5>
+<span class='badge badge-success'>01.30.2024 11:17:31 AM</span>
+<span class='badge badge-danger'>01.30.2024 11:17:41 AM</span>
+<span class='badge badge-default'>00:00:09:257</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=5</span>
 <span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
 <span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
@@ -268,8 +421,64 @@
   <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
   <tbody>
       <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>11:17:31 AM</td>
+        <td>
+          Step 1: Login into the prohance application
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>11:17:33 AM</td>
+        <td>
+          Step 2: Click on Side Navigation Page
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>11:17:34 AM</td>
+        <td>
+          Step 3: Click on Activities
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>11:17:35 AM</td>
+        <td>
+          Step 4: Click on AOS
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>11:17:37 AM</td>
+        <td>
+          Step 5: Click on More Action
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>11:17:37 AM</td>
+        <td>
+          Step 6: Click on Unknown Application
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>11:17:40 AM</td>
+        <td>
+          Step 7: Click on Qbutton and select one of the application to qualify the same
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>11:17:41 AM</td>
+        <td>
+          Step 8: There is no application to qulafy
+        </td>
+      </tr>
+      <tr class="event-row">
         <td><span class="badge log pass-bg">Pass</span></td>
-        <td>10:40:18 AM</td>
+        <td>11:17:41 AM</td>
         <td>
           Successfull
         </td>
@@ -279,14 +488,2768 @@
 </div>
           </div>
         </li>
-        <li class="test-item"  status="pass" test-id="6"
+        <li class="test-item"  status="pass" test-id="8"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">addNewFunction</p>
+            <p class="text-sm">
+              <span>11:18:17 AM</span> / <span>00:00:17:269</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">addNewFunction</h5>
+<span class='badge badge-success'>01.30.2024 11:18:17 AM</span>
+<span class='badge badge-danger'>01.30.2024 11:18:34 AM</span>
+<span class='badge badge-default'>00:00:17:269</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=8</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>11:18:17 AM</td>
+        <td>
+          Step 1: Login into the prohance application
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>11:18:19 AM</td>
+        <td>
+          Step 2: click on Activities
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>11:18:20 AM</td>
+        <td>
+          Step 3: click on AOS
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>11:18:23 AM</td>
+        <td>
+          Step 4: click on add new AOS
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>11:18:24 AM</td>
+        <td>
+          Step 5: Fill all the details and the expected result is :EHFSBZY
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>11:18:25 AM</td>
+        <td>
+          Step 6: click on Save Button
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>11:18:25 AM</td>
+        <td>
+          Step 7: Moves to the next Signature page and fill title
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>11:18:26 AM</td>
+        <td>
+          Step 8: Click on Add and save the added title and save it
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>11:18:28 AM</td>
+        <td>
+          Step 9: Check whether the newly added record in present in the list
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>11:18:34 AM</td>
+        <td>
+          Step 10: AOS added new one successfully
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>11:18:34 AM</td>
+        <td>
+          Successfull
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="9"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">aosUnknownApplicationAddingtoCreateNew</p>
+            <p class="text-sm">
+              <span>11:18:34 AM</span> / <span>00:00:09:004</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">aosUnknownApplicationAddingtoCreateNew</h5>
+<span class='badge badge-success'>01.30.2024 11:18:34 AM</span>
+<span class='badge badge-danger'>01.30.2024 11:18:43 AM</span>
+<span class='badge badge-default'>00:00:09:004</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=9</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>11:18:34 AM</td>
+        <td>
+          Step 1: Login into the prohance application
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>11:18:35 AM</td>
+        <td>
+          Step 2: Click on Side Navigation Page
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>11:18:37 AM</td>
+        <td>
+          Step 3: Click on Activities
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>11:18:37 AM</td>
+        <td>
+          Step 4: Click on AOS
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>11:18:39 AM</td>
+        <td>
+          Step 5: Click on More Action
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>11:18:40 AM</td>
+        <td>
+          Step 6: Click on Unknown Application
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>11:18:43 AM</td>
+        <td>
+          Step 7: Click on Qbutton and select one of the application to qualify the same
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>11:18:43 AM</td>
+        <td>
+          Step 8: There is no application to qulafy
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>11:18:43 AM</td>
+        <td>
+          Successfull
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="10"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">aosUnknownApplicationAddingtoCreateNewQualifierText</p>
+            <p class="text-sm">
+              <span>11:18:43 AM</span> / <span>00:00:09:004</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">aosUnknownApplicationAddingtoCreateNewQualifierText</h5>
+<span class='badge badge-success'>01.30.2024 11:18:43 AM</span>
+<span class='badge badge-danger'>01.30.2024 11:18:52 AM</span>
+<span class='badge badge-default'>00:00:09:004</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=10</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>11:18:43 AM</td>
+        <td>
+          Step 1: Login into the prohance application
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>11:18:44 AM</td>
+        <td>
+          Step 2: Click on Side Navigation Page
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>11:18:46 AM</td>
+        <td>
+          Step 3: Click on Activities
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>11:18:46 AM</td>
+        <td>
+          Step 4: Click on AOS
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>11:18:48 AM</td>
+        <td>
+          Step 5: Click on More Action
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>11:18:49 AM</td>
+        <td>
+          Step 6: Click on Unknown Application
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>11:18:52 AM</td>
+        <td>
+          Step 7: Click on Qbutton and select one of the application to qualify the same
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>11:18:52 AM</td>
+        <td>
+          Step 8: There is no application to qulafy
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>11:18:52 AM</td>
+        <td>
+          Successfull
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="11"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">aosUnknownApplicationAddingtoExisting</p>
+            <p class="text-sm">
+              <span>11:18:52 AM</span> / <span>00:00:08:665</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">aosUnknownApplicationAddingtoExisting</h5>
+<span class='badge badge-success'>01.30.2024 11:18:52 AM</span>
+<span class='badge badge-danger'>01.30.2024 11:19:01 AM</span>
+<span class='badge badge-default'>00:00:08:665</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=11</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>11:18:52 AM</td>
+        <td>
+          Step 1: Login into the prohance application
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>11:18:53 AM</td>
+        <td>
+          Step 2: Click on Side Navigation Page
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>11:18:55 AM</td>
+        <td>
+          Step 3: Click on Activities
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>11:18:55 AM</td>
+        <td>
+          Step 4: Click on AOS
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>11:18:57 AM</td>
+        <td>
+          Step 5: Click on More Action
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>11:18:57 AM</td>
+        <td>
+          Step 6: Click on Unknown Application
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>11:19:00 AM</td>
+        <td>
+          Step 7: Click on Qbutton and select one of the application to qualify the same
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>11:19:01 AM</td>
+        <td>
+          Step 8: There is no application to qulafy
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>11:19:01 AM</td>
+        <td>
+          Successfull
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="12"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">aosUnknownApplicationAddingtoCreateNewProcessName</p>
+            <p class="text-sm">
+              <span>11:19:01 AM</span> / <span>00:00:09:393</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">aosUnknownApplicationAddingtoCreateNewProcessName</h5>
+<span class='badge badge-success'>01.30.2024 11:19:01 AM</span>
+<span class='badge badge-danger'>01.30.2024 11:19:10 AM</span>
+<span class='badge badge-default'>00:00:09:393</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=12</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>11:19:01 AM</td>
+        <td>
+          Step 1: Login into the prohance application
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>11:19:02 AM</td>
+        <td>
+          Step 2: Click on Side Navigation Page
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>11:19:04 AM</td>
+        <td>
+          Step 3: Click on Activities
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>11:19:04 AM</td>
+        <td>
+          Step 4: Click on AOS
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>11:19:06 AM</td>
+        <td>
+          Step 5: Click on More Action
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>11:19:07 AM</td>
+        <td>
+          Step 6: Click on Unknown Application
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>11:19:10 AM</td>
+        <td>
+          Step 7: Click on Qbutton and select one of the application to qualify the same
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>11:19:10 AM</td>
+        <td>
+          Step 8: There is no application to qulafy
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>11:19:10 AM</td>
+        <td>
+          Successfull
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="14"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">a0sModifyFunction</p>
+            <p class="text-sm">
+              <span>11:19:28 AM</span> / <span>00:00:17:768</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">a0sModifyFunction</h5>
+<span class='badge badge-success'>01.30.2024 11:19:28 AM</span>
+<span class='badge badge-danger'>01.30.2024 11:19:45 AM</span>
+<span class='badge badge-default'>00:00:17:768</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=14</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>11:19:45 AM</td>
+        <td>
+          Successfull
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="15"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">aosUnknownApplicationAddingtoExistingProcessName</p>
+            <p class="text-sm">
+              <span>11:19:45 AM</span> / <span>00:00:10:179</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">aosUnknownApplicationAddingtoExistingProcessName</h5>
+<span class='badge badge-success'>01.30.2024 11:19:45 AM</span>
+<span class='badge badge-danger'>01.30.2024 11:19:56 AM</span>
+<span class='badge badge-default'>00:00:10:179</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=15</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>11:19:45 AM</td>
+        <td>
+          Step 1: Login into the prohance application
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>11:19:47 AM</td>
+        <td>
+          Step 2: Click on Side Navigation Page
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>11:19:49 AM</td>
+        <td>
+          Step 3: Click on Activities
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>11:19:49 AM</td>
+        <td>
+          Step 4: Click on AOS
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>11:19:51 AM</td>
+        <td>
+          Step 5: Click on More Action
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>11:19:51 AM</td>
+        <td>
+          Step 6: Click on Unknown Application
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>11:19:55 AM</td>
+        <td>
+          Step 7: Click on Qbutton and select one of the application to qualify the same
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>11:19:56 AM</td>
+        <td>
+          Step 8: There is no application to qulafy
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>11:19:56 AM</td>
+        <td>
+          Successfull
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="16"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">addNewFunction</p>
+            <p class="text-sm">
+              <span>11:19:56 AM</span> / <span>00:01:01:781</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">addNewFunction</h5>
+<span class='badge badge-success'>01.30.2024 11:19:56 AM</span>
+<span class='badge badge-danger'>01.30.2024 11:20:57 AM</span>
+<span class='badge badge-default'>00:01:01:781</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=16</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>11:19:56 AM</td>
+        <td>
+          Step 1: Login into the prohance application
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>11:19:58 AM</td>
+        <td>
+          Step 2: Click on UserDomain
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>11:20:01 AM</td>
+        <td>
+          Step 3: click on Add new User Domain
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>11:20:01 AM</td>
+        <td>
+          Step 4: Fill all the required details and save
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>11:20:54 AM</td>
+        <td>
+          Step 5: Verify whether the newly added user domain is added in the existing list
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>11:20:57 AM</td>
+        <td>
+          Step 6: Added new User Domain successfully
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>11:20:57 AM</td>
+        <td>
+          Successfull
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="17"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">modifyFunction</p>
+            <p class="text-sm">
+              <span>11:20:57 AM</span> / <span>00:00:12:820</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">modifyFunction</h5>
+<span class='badge badge-success'>01.30.2024 11:20:57 AM</span>
+<span class='badge badge-danger'>01.30.2024 11:21:10 AM</span>
+<span class='badge badge-default'>00:00:12:820</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=17</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>11:20:57 AM</td>
+        <td>
+          Step 1: Login into the prohance application
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>11:20:59 AM</td>
+        <td>
+          Step 2: Click on sideNavigation Page
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>11:21:00 AM</td>
+        <td>
+          Step 3: Click User Domain
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>11:21:05 AM</td>
+        <td>
+          Step 4: Select particular record and store the value
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>11:21:05 AM</td>
+        <td>
+          Step 5: Click on Modify button and after modifying click pn save
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>11:21:07 AM</td>
+        <td>
+          Step 6: Verify the Modified data is reflected in the list
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>11:21:10 AM</td>
+        <td>
+          Step 7: Modified data is reflected in the list successfully
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>11:21:10 AM</td>
+        <td>
+          Successfull
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="18"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">deleteNewFunction</p>
+            <p class="text-sm">
+              <span>11:21:10 AM</span> / <span>00:00:12:131</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">deleteNewFunction</h5>
+<span class='badge badge-success'>01.30.2024 11:21:10 AM</span>
+<span class='badge badge-danger'>01.30.2024 11:21:22 AM</span>
+<span class='badge badge-default'>00:00:12:131</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=18</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>11:21:10 AM</td>
+        <td>
+          Step 1: Login into the prohance application
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>11:21:11 AM</td>
+        <td>
+          Step 2: Click on sideNavigation Page
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>11:21:13 AM</td>
+        <td>
+          Step 3: Click on UserDomain under Organization
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>11:21:17 AM</td>
+        <td>
+          Step 4: Select particular record and store the value
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>11:21:17 AM</td>
+        <td>
+          Step 5: click on delete
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>11:21:19 AM</td>
+        <td>
+          Step 6: Verify, Deleted record should not be available in the list
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>11:21:22 AM</td>
+        <td>
+          Step 7: Record is deleted Successfully
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>11:21:22 AM</td>
+        <td>
+          Successfull
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="19"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">sortingFunction</p>
+            <p class="text-sm">
+              <span>11:21:22 AM</span> / <span>00:00:13:216</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">sortingFunction</h5>
+<span class='badge badge-success'>01.30.2024 11:21:22 AM</span>
+<span class='badge badge-danger'>01.30.2024 11:21:36 AM</span>
+<span class='badge badge-default'>00:00:13:216</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=19</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>11:21:22 AM</td>
+        <td>
+          Step 1: Login into the prohance application
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>11:21:23 AM</td>
+        <td>
+          Step 2: Click SideNavigation Page
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>11:21:25 AM</td>
+        <td>
+          Step 3: Click on UserDomain
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>11:21:29 AM</td>
+        <td>
+          Step 4: Store the WebElements of Name and apply sort function and save as Expected List
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>11:21:32 AM</td>
+        <td>
+          Step 5: Click on Sorting Button and save the list as actual List
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>11:21:36 AM</td>
+        <td>
+          Step 6: Compare Expected with Actual List
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>11:21:36 AM</td>
+        <td>
+          Step 7: Sorting is working as expected
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>11:21:36 AM</td>
+        <td>
+          Successfull
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="20"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">excelValidation</p>
+            <p class="text-sm">
+              <span>11:21:36 AM</span> / <span>00:00:10:514</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">excelValidation</h5>
+<span class='badge badge-success'>01.30.2024 11:21:36 AM</span>
+<span class='badge badge-danger'>01.30.2024 11:21:46 AM</span>
+<span class='badge badge-default'>00:00:10:514</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=20</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>11:21:36 AM</td>
+        <td>
+          Step 1: Login into the prohance application
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>11:21:37 AM</td>
+        <td>
+          Step 2: Click on side Navigation Page
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>11:21:38 AM</td>
+        <td>
+          Step 3: Click on User Domain
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>11:21:41 AM</td>
+        <td>
+          Step 4: Store all 'Name' WebElement into a List as Expected
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>11:21:44 AM</td>
+        <td>
+          Step 5: Click to download the Excel
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>11:21:44 AM</td>
+        <td>
+          Step 6: From excel get all 'Name' into Actual list and compare with Expected
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>11:21:46 AM</td>
+        <td>
+          Step 7: All the Actual record matches with the Expected record
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>11:21:46 AM</td>
+        <td>
+          Successfull
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="21"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">pdf</p>
+            <p class="text-sm">
+              <span>11:21:46 AM</span> / <span>00:00:11:144</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">pdf</h5>
+<span class='badge badge-success'>01.30.2024 11:21:46 AM</span>
+<span class='badge badge-danger'>01.30.2024 11:21:57 AM</span>
+<span class='badge badge-default'>00:00:11:144</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=21</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>11:21:46 AM</td>
+        <td>
+          Step 1: Login into the prohance application
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>11:21:47 AM</td>
+        <td>
+          Step 2: Click on Side Navigation Page
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>11:21:49 AM</td>
+        <td>
+          Step 3: Click on User Domain
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>11:21:51 AM</td>
+        <td>
+          Step 4: Store all the 'Name' in expected list
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>11:21:54 AM</td>
+        <td>
+          Step 5: Click on download Pdf
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>11:21:54 AM</td>
+        <td>
+          Step 6: Get Data from PDF file and store in Actual List and compare with expected
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>11:21:57 AM</td>
+        <td>
+          Step 7: All the Actual record matches with the Expected record 
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>11:21:57 AM</td>
+        <td>
+          Successfull
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="22"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">modificationOnSettingsTab</p>
+            <p class="text-sm">
+              <span>11:21:57 AM</span> / <span>00:00:09:263</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">modificationOnSettingsTab</h5>
+<span class='badge badge-success'>01.30.2024 11:21:57 AM</span>
+<span class='badge badge-danger'>01.30.2024 11:22:06 AM</span>
+<span class='badge badge-default'>00:00:09:263</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=22</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>11:21:58 AM</td>
+        <td>
+          Step 1: Login to ProHance Application
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>11:21:59 AM</td>
+        <td>
+          Step 2: Open Side NavigationMenuBar
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>11:22:00 AM</td>
+        <td>
+          Step 3: Open Data Aggregation
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>11:22:02 AM</td>
+        <td>
+          Step 4: Click settings tab
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>11:22:03 AM</td>
+        <td>
+          Step 5: Select hour for running cumulative hourly aggregation
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>11:22:03 AM</td>
+        <td>
+          Step 6: Select minutes for running cumulative hourly aggregation
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>11:22:03 AM</td>
+        <td>
+          Step 7: Select hour for running daily hourly aggregation
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>11:22:03 AM</td>
+        <td>
+          Step 8: Select minutes for running daily hourly aggregation
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>11:22:03 AM</td>
+        <td>
+          Step 9: Click on add image
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>11:22:03 AM</td>
+        <td>
+          Step 10: Select interval time
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>11:22:03 AM</td>
+        <td>
+          Step 11: Unselect Email success checkbox
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>11:22:03 AM</td>
+        <td>
+          Step 12: Unselect Email failure checkbox
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>11:22:03 AM</td>
+        <td>
+          Step 13: Select Email success checkbox
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>11:22:04 AM</td>
+        <td>
+          Step 14: Select Email failure checkbox
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>11:22:04 AM</td>
+        <td>
+          Step 15: Click SAVE button
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>11:22:04 AM</td>
+        <td>
+          Step 16: Close the popup
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>11:22:04 AM</td>
+        <td>
+          Step 17: Drag and drop module
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>11:22:05 AM</td>
+        <td>
+          Step 18: Delete the newly added interval
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>11:22:05 AM</td>
+        <td>
+          Step 19: Click SAVE button
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>11:22:06 AM</td>
+        <td>
+          Step 20: Displaying success messgae
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>11:22:06 AM</td>
+        <td>
+          Step 21: Close success message popup
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>11:22:06 AM</td>
+        <td>
+          Successfull
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="23"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">modificationOnSettingsTabForClearButton</p>
+            <p class="text-sm">
+              <span>11:22:06 AM</span> / <span>00:00:04:711</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">modificationOnSettingsTabForClearButton</h5>
+<span class='badge badge-success'>01.30.2024 11:22:06 AM</span>
+<span class='badge badge-danger'>01.30.2024 11:22:11 AM</span>
+<span class='badge badge-default'>00:00:04:711</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=23</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>11:22:07 AM</td>
+        <td>
+          Step 1: Login to ProHance Application
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>11:22:08 AM</td>
+        <td>
+          Step 2: Open Side NavigationMenuBar
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>11:22:09 AM</td>
+        <td>
+          Step 3: Open Data Aggregation
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>11:22:11 AM</td>
+        <td>
+          Step 4: Click settings tab
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>11:22:11 AM</td>
+        <td>
+          Step 5: Click CLEAR button
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>11:22:11 AM</td>
+        <td>
+          Successfull
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="fail" test-id="26"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">AddingNewWorkProfiles</p>
+            <p class="text-sm">
+              <span>11:22:45 AM</span> / <span>00:00:16:904</span>
+              <span class="badge fail-bg log float-right">Fail</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-fail">AddingNewWorkProfiles</h5>
+<span class='badge badge-success'>01.30.2024 11:22:45 AM</span>
+<span class='badge badge-danger'>01.30.2024 11:23:02 AM</span>
+<span class='badge badge-default'>00:00:16:904</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=26</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>11:22:46 AM</td>
+        <td>
+          Step 1: Login to ProHance Application
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>11:22:47 AM</td>
+        <td>
+          Step 2: Click on SideNavigationMenuBar
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>11:22:48 AM</td>
+        <td>
+          Step 3: Click on Activities
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>11:22:48 AM</td>
+        <td>
+          Step 4: Click on Work Profiles
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>11:22:50 AM</td>
+        <td>
+          Step 5: Click on AddNew Button
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>11:22:51 AM</td>
+        <td>
+          Step 6: Enter the name
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>11:22:51 AM</td>
+        <td>
+          Step 7: Enter the description
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>11:22:51 AM</td>
+        <td>
+          Step 8: Click on Activity On System
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>11:22:51 AM</td>
+        <td>
+          Step 9: Select application name in  Activity On System
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>11:22:51 AM</td>
+        <td>
+          Step 10: Click on ADD button
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>11:22:51 AM</td>
+        <td>
+          Step 11: Click on Activity Away From System
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>11:22:52 AM</td>
+        <td>
+          Step 12: Select any onr activity away from system
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>11:22:52 AM</td>
+        <td>
+          Step 13: Click onADD button
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>11:22:52 AM</td>
+        <td>
+          Step 14: Give rating for selected AWFS
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>11:22:52 AM</td>
+        <td>
+          Step 15: Click on Activity Tags
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>11:22:52 AM</td>
+        <td>
+          Step 16: Click on ADD button
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>11:22:52 AM</td>
+        <td>
+          Step 17: Slect anyone activity tag
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log fail-bg">Fail</span></td>
+        <td>11:23:02 AM</td>
+        <td>
+          <textarea readonly class="code-block">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"(//input[@name='activityTagSelectCheckbox'])[1]"}
+  (Session info: chrome=120.0.6099.227)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.13.0', revision: 'ba948ece5b*'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.8.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [13fec77949428d5a90352ebb86219304, findElement {using=xpath, value=(//input[@name='activityTagSelectCheckbox'])[1]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 120.0.6099.227, chrome: {chromedriverVersion: 120.0.6099.109 (3419140ab66..., userDataDir: C:\Users\pavana.c\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60695}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:60695/devtoo..., se:cdpVersion: 120.0.6099.227, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 13fec77949428d5a90352ebb86219304
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:359)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:353)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy16.isSelected(Unknown Source)
+	at Pages.WorkProfilesPage.checkCheckBoxJavaScipt(WorkProfilesPage.java:180)
+	at Pages.WorkProfilesPage.clickToAddActivityTag(WorkProfilesPage.java:275)
+	at test.WorkProfile.WorkProfileForAddingNew.AddingNewWorkProfiles(WorkProfileForAddingNew.java:74)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.retryFailed(TestInvoker.java:213)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:58)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</textarea>
+          
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="27"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">modificationOnWorkProfiles</p>
+            <p class="text-sm">
+              <span>11:23:02 AM</span> / <span>00:00:09:165</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">modificationOnWorkProfiles</h5>
+<span class='badge badge-success'>01.30.2024 11:23:02 AM</span>
+<span class='badge badge-danger'>01.30.2024 11:23:12 AM</span>
+<span class='badge badge-default'>00:00:09:165</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=27</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>11:23:03 AM</td>
+        <td>
+          Step 1: Login to ProHance Application
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>11:23:04 AM</td>
+        <td>
+          Step 2: Click on SideNavigationMenuBar
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>11:23:06 AM</td>
+        <td>
+          Step 3: Click on Activities
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>11:23:06 AM</td>
+        <td>
+          Step 4: Click on Work Profiles
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>11:23:07 AM</td>
+        <td>
+          Step 5: Click on Modify button
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>11:23:09 AM</td>
+        <td>
+          Step 6: Chance the description
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>11:23:09 AM</td>
+        <td>
+          Step 7: Click on SAVE button
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>11:23:11 AM</td>
+        <td>
+          Step 8: Close Success message popup
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>11:23:12 AM</td>
+        <td>
+          Successfull
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="29"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">cloneOnWorkProfiles</p>
+            <p class="text-sm">
+              <span>11:24:44 AM</span> / <span>00:00:12:449</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">cloneOnWorkProfiles</h5>
+<span class='badge badge-success'>01.30.2024 11:24:44 AM</span>
+<span class='badge badge-danger'>01.30.2024 11:24:56 AM</span>
+<span class='badge badge-default'>00:00:12:449</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=29</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>11:24:44 AM</td>
+        <td>
+          Step 1: Login to ProHance Application
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>11:24:45 AM</td>
+        <td>
+          Step 2: Click on SideNavigationMenuBar
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>11:24:47 AM</td>
+        <td>
+          Step 3: Click on Acitivites
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>11:24:47 AM</td>
+        <td>
+          Step 4: Click on Acitivites
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>11:24:48 AM</td>
+        <td>
+          Step 5: Click on Teams Sorting
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>11:24:49 AM</td>
+        <td>
+          Step 6: Click on DELETE button
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>11:24:52 AM</td>
+        <td>
+          Step 7: Click on YES button
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>11:24:55 AM</td>
+        <td>
+          Step 8: Click on CLICK HERE button
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>11:24:56 AM</td>
+        <td>
+          Step 5: Close the message
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>11:24:56 AM</td>
+        <td>
+          Successfull
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="30"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">cloneOnWorkProfiles</p>
+            <p class="text-sm">
+              <span>11:24:56 AM</span> / <span>00:00:17:746</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">cloneOnWorkProfiles</h5>
+<span class='badge badge-success'>01.30.2024 11:24:56 AM</span>
+<span class='badge badge-danger'>01.30.2024 11:25:14 AM</span>
+<span class='badge badge-default'>00:00:17:746</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=30</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>11:24:56 AM</td>
+        <td>
+          Step 1: Login to ProHance Application
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>11:24:57 AM</td>
+        <td>
+          Step 2: Click on SideNavbigationMenubar
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>11:24:59 AM</td>
+        <td>
+          Step 3: Click on Activities
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>11:24:59 AM</td>
+        <td>
+          Step 4: Click on Work Profiles
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>11:25:01 AM</td>
+        <td>
+          Step 5: Click on ALL WORK PROFILES CONFIGURATION excel to download
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>11:25:09 AM</td>
+        <td>
+          Step 6: Get List from excel
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>11:25:11 AM</td>
+        <td>
+          Step 7: Get List from web
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>11:25:14 AM</td>
+        <td>
+          Step 8: Comparing List from Excel and List from Web
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>11:25:14 AM</td>
+        <td>
+          Successfull
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="31"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">cloneOnWorkProfiles</p>
+            <p class="text-sm">
+              <span>11:25:14 AM</span> / <span>00:00:08:939</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">cloneOnWorkProfiles</h5>
+<span class='badge badge-success'>01.30.2024 11:25:14 AM</span>
+<span class='badge badge-danger'>01.30.2024 11:25:23 AM</span>
+<span class='badge badge-default'>00:00:08:939</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=31</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>11:25:14 AM</td>
+        <td>
+          Step 1: Login to ProHance Application
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>11:25:15 AM</td>
+        <td>
+          Step 2: Click on SideNavigationMenuBar
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>11:25:18 AM</td>
+        <td>
+          Step 3: Click on Activities
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>11:25:18 AM</td>
+        <td>
+          Step 4: Click on Work Profiles
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>11:25:20 AM</td>
+        <td>
+          Step 5: Click on Clone button
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>11:25:21 AM</td>
+        <td>
+          Step 6: Enter the name
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>11:25:21 AM</td>
+        <td>
+          Step 7: Click on SAVE button
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>11:25:22 AM</td>
+        <td>
+          Step 8: Close success message popup
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>11:25:23 AM</td>
+        <td>
+          Successfull
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="32"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">cloneOnWorkProfiles</p>
+            <p class="text-sm">
+              <span>11:25:23 AM</span> / <span>00:00:15:562</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">cloneOnWorkProfiles</h5>
+<span class='badge badge-success'>01.30.2024 11:25:23 AM</span>
+<span class='badge badge-danger'>01.30.2024 11:25:38 AM</span>
+<span class='badge badge-default'>00:00:15:562</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=32</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>11:25:23 AM</td>
+        <td>
+          Step 1: Login to ProHance Application
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>11:25:24 AM</td>
+        <td>
+          Step 2: Click on SideNavigationMenuBar
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>11:25:26 AM</td>
+        <td>
+          Step 3: Click on USERS
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>11:25:26 AM</td>
+        <td>
+          Step 4: Click on Teams
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>11:25:31 AM</td>
+        <td>
+          Step 7:Click on BACk button
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>11:25:33 AM</td>
+        <td>
+          Step 8:Click on bottom arrow
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>11:25:34 AM</td>
+        <td>
+          Step 9: Click on Activities
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>11:25:34 AM</td>
+        <td>
+          Step 10: Click on Work Profiles
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>11:25:35 AM</td>
+        <td>
+          Step 11: Get Work Profiles list from Work Profiles
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>11:25:38 AM</td>
+        <td>
+          Step 12: Compare list from Teams and list from Workprofiles
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>11:25:38 AM</td>
+        <td>
+          Successfull
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="33"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">aggregationForSingleType</p>
+            <p class="text-sm">
+              <span>11:25:38 AM</span> / <span>00:00:28:604</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">aggregationForSingleType</h5>
+<span class='badge badge-success'>01.30.2024 11:25:38 AM</span>
+<span class='badge badge-danger'>01.30.2024 11:26:07 AM</span>
+<span class='badge badge-default'>00:00:28:604</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=33</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>11:25:39 AM</td>
+        <td>
+          Step 1: Login to ProHance Application
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>11:25:40 AM</td>
+        <td>
+          Step 2: Open Side NavigationMenuBar
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>11:25:41 AM</td>
+        <td>
+          Step 3: Open Data Aggregation
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>11:25:43 AM</td>
+        <td>
+          Step 4: Click on month
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>11:25:43 AM</td>
+        <td>
+          Step 5: Select any year which is wanted to do aggregation
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>11:25:43 AM</td>
+        <td>
+          Step 6: Select any month which is wanted to do aggregation
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>11:25:43 AM</td>
+        <td>
+          Step 7: Click on GO button
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>11:25:45 AM</td>
+        <td>
+          Step 8: Select particular date
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>11:25:45 AM</td>
+        <td>
+          Step 9: Select anyone type of aggregation 
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>11:25:46 AM</td>
+        <td>
+          Step 10: Click aggregation for all users
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>11:25:46 AM</td>
+        <td>
+          Step 11: Click RUN Button
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>11:25:46 AM</td>
+        <td>
+          Step 12: Go to Audit Logs page
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>11:25:48 AM</td>
+        <td>
+          Step 13:Click Fetch Button
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>11:25:48 AM</td>
+        <td>
+          Step 14: Check starting and completeing of aggregation
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>11:26:07 AM</td>
+        <td>
+          Step 15: Aggregation for Single Date and Single Type Completed Sucessfully
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>11:26:07 AM</td>
+        <td>
+          Successfull
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="35"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">alltypeValidation</p>
+            <p class="text-sm">
+              <span>11:26:08 AM</span> / <span>00:00:28:390</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">alltypeValidation</h5>
+<span class='badge badge-success'>01.30.2024 11:26:08 AM</span>
+<span class='badge badge-danger'>01.30.2024 11:26:37 AM</span>
+<span class='badge badge-default'>00:00:28:390</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=35</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>11:26:09 AM</td>
+        <td>
+          Step 1: Login to ProHance Application
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>11:26:10 AM</td>
+        <td>
+          Step 2: Open Side NavigationMenuBar
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>11:26:11 AM</td>
+        <td>
+          Step 3: Click Data Aggregation
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>11:26:13 AM</td>
+        <td>
+          Step 4: Click on month
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>11:26:13 AM</td>
+        <td>
+          Step 5: Select any year which is wanted to do aggregation
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>11:26:14 AM</td>
+        <td>
+          Step 6: Select any month which is wanted to do aggregation
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>11:26:14 AM</td>
+        <td>
+          Step 7: Click on GO button
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>11:26:15 AM</td>
+        <td>
+          Step 4: Select particular date
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>11:26:15 AM</td>
+        <td>
+          Step 5: Select all type of aggregation
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>11:26:16 AM</td>
+        <td>
+          Step 6: Click aggregation for all users
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>11:26:17 AM</td>
+        <td>
+          Step 7: Click RUN button
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>11:26:17 AM</td>
+        <td>
+          Step 8: Go to Audit logs page
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>11:26:18 AM</td>
+        <td>
+          Step 9:Click Fetch Button
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>11:26:18 AM</td>
+        <td>
+          Step 10: Check starting and completeing of aggregation
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>11:26:37 AM</td>
+        <td>
+          Step 11: Aggregation for Single Date and All Type Completed Sucessfully
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>11:26:37 AM</td>
+        <td>
+          Successfull
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="36"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">deletionOnWorkProfiles</p>
+            <p class="text-sm">
+              <span>11:26:37 AM</span> / <span>00:00:11:975</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">deletionOnWorkProfiles</h5>
+<span class='badge badge-success'>01.30.2024 11:26:37 AM</span>
+<span class='badge badge-danger'>01.30.2024 11:26:49 AM</span>
+<span class='badge badge-default'>00:00:11:975</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=36</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>11:26:37 AM</td>
+        <td>
+          Step 1: Login to ProHance Application
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>11:26:39 AM</td>
+        <td>
+          Step 2: Click on SideNavigationMenuBar
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>11:26:41 AM</td>
+        <td>
+          Step 3: Click on Activities
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>11:26:41 AM</td>
+        <td>
+          Step 4: Click on WorkProfiles
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>11:26:42 AM</td>
+        <td>
+          Step 5: Click on Work Profiles
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>11:26:43 AM</td>
+        <td>
+          Step 6: Click on Delete button
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>11:26:47 AM</td>
+        <td>
+          Step 7: Click on YES button on the popup
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>11:26:48 AM</td>
+        <td>
+          Step 8: Close the Success message popup
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>11:26:49 AM</td>
+        <td>
+          Successfull
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="37"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">userRolesAddNewManager</p>
+            <p class="text-sm">
+              <span>11:26:49 AM</span> / <span>00:00:14:169</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">userRolesAddNewManager</h5>
+<span class='badge badge-success'>01.30.2024 11:26:49 AM</span>
+<span class='badge badge-danger'>01.30.2024 11:27:03 AM</span>
+<span class='badge badge-default'>00:00:14:169</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=37</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>11:27:03 AM</td>
+        <td>
+          Successfull
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="38"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">userRolesAddNewManager</p>
+            <p class="text-sm">
+              <span>11:27:03 AM</span> / <span>00:00:18:687</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">userRolesAddNewManager</h5>
+<span class='badge badge-success'>01.30.2024 11:27:03 AM</span>
+<span class='badge badge-danger'>01.30.2024 11:27:22 AM</span>
+<span class='badge badge-default'>00:00:18:687</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=38</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>11:27:22 AM</td>
+        <td>
+          Successfull
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="39"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">userRolesAddNewManagerDelete</p>
+            <p class="text-sm">
+              <span>11:27:22 AM</span> / <span>00:00:30:813</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">userRolesAddNewManagerDelete</h5>
+<span class='badge badge-success'>01.30.2024 11:27:22 AM</span>
+<span class='badge badge-danger'>01.30.2024 11:27:52 AM</span>
+<span class='badge badge-default'>00:00:30:813</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=39</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>11:27:52 AM</td>
+        <td>
+          Successfull
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="40"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">userRolesAddNewMemberDelete</p>
+            <p class="text-sm">
+              <span>11:27:52 AM</span> / <span>00:00:24:488</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">userRolesAddNewMemberDelete</h5>
+<span class='badge badge-success'>01.30.2024 11:27:52 AM</span>
+<span class='badge badge-danger'>01.30.2024 11:28:17 AM</span>
+<span class='badge badge-default'>00:00:24:488</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=40</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>11:28:17 AM</td>
+        <td>
+          Successfull
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="41"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">userRoleExcelValidation</p>
+            <p class="text-sm">
+              <span>11:28:17 AM</span> / <span>00:00:14:162</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">userRoleExcelValidation</h5>
+<span class='badge badge-success'>01.30.2024 11:28:17 AM</span>
+<span class='badge badge-danger'>01.30.2024 11:28:31 AM</span>
+<span class='badge badge-default'>00:00:14:162</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=41</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>11:28:31 AM</td>
+        <td>
+          Successfull
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="42"
           author=""
           tag=""
           device="">
           <div class="test-detail">
             <p class="name">userRolePDFValidation</p>
             <p class="text-sm">
-              <span>10:40:18 AM</span> / <span>00:00:15:656</span>
+              <span>11:28:31 AM</span> / <span>00:00:16:438</span>
               <span class="badge pass-bg log float-right">Pass</span>
             </p>
           </div>
@@ -295,10 +3258,10 @@
 <div class="p-v-10">
 <div class="info">
 <h5 class="test-status text-pass">userRolePDFValidation</h5>
-<span class='badge badge-success'>01.22.2024 10:40:18 AM</span>
-<span class='badge badge-danger'>01.22.2024 10:40:34 AM</span>
-<span class='badge badge-default'>00:00:15:656</span>
-&middot; <span class='uri-anchor badge badge-default'>#test-id=6</span>
+<span class='badge badge-success'>01.30.2024 11:28:31 AM</span>
+<span class='badge badge-danger'>01.30.2024 11:28:48 AM</span>
+<span class='badge badge-default'>00:00:16:438</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=42</span>
 <span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
 <span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
 <span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
@@ -310,7 +3273,7 @@
   <tbody>
       <tr class="event-row">
         <td><span class="badge log pass-bg">Pass</span></td>
-        <td>10:40:34 AM</td>
+        <td>11:28:48 AM</td>
         <td>
           Successfull
         </td>
@@ -320,14 +3283,14 @@
 </div>
           </div>
         </li>
-        <li class="test-item"  status="pass" test-id="7"
+        <li class="test-item"  status="pass" test-id="43"
           author=""
           tag=""
           device="">
           <div class="test-detail">
             <p class="name">userRolesBulkUpdate</p>
             <p class="text-sm">
-              <span>10:40:34 AM</span> / <span>00:00:36:083</span>
+              <span>11:28:48 AM</span> / <span>00:00:30:855</span>
               <span class="badge pass-bg log float-right">Pass</span>
             </p>
           </div>
@@ -336,10 +3299,10 @@
 <div class="p-v-10">
 <div class="info">
 <h5 class="test-status text-pass">userRolesBulkUpdate</h5>
-<span class='badge badge-success'>01.22.2024 10:40:34 AM</span>
-<span class='badge badge-danger'>01.22.2024 10:41:10 AM</span>
-<span class='badge badge-default'>00:00:36:083</span>
-&middot; <span class='uri-anchor badge badge-default'>#test-id=7</span>
+<span class='badge badge-success'>01.30.2024 11:28:48 AM</span>
+<span class='badge badge-danger'>01.30.2024 11:29:18 AM</span>
+<span class='badge badge-default'>00:00:30:855</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=43</span>
 <span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
 <span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
 <span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
@@ -351,7 +3314,824 @@
   <tbody>
       <tr class="event-row">
         <td><span class="badge log pass-bg">Pass</span></td>
-        <td>10:41:10 AM</td>
+        <td>11:29:18 AM</td>
+        <td>
+          Successfull
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="44"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">userRolesBulkUpdateMember</p>
+            <p class="text-sm">
+              <span>11:29:18 AM</span> / <span>00:00:26:950</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">userRolesBulkUpdateMember</h5>
+<span class='badge badge-success'>01.30.2024 11:29:18 AM</span>
+<span class='badge badge-danger'>01.30.2024 11:29:45 AM</span>
+<span class='badge badge-default'>00:00:26:950</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=44</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>11:29:45 AM</td>
+        <td>
+          Successfull
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="45"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">userRoleSorting</p>
+            <p class="text-sm">
+              <span>11:29:45 AM</span> / <span>00:00:20:075</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">userRoleSorting</h5>
+<span class='badge badge-success'>01.30.2024 11:29:45 AM</span>
+<span class='badge badge-danger'>01.30.2024 11:30:05 AM</span>
+<span class='badge badge-default'>00:00:20:075</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=45</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>11:29:45 AM</td>
+        <td>
+          Step 1: Login into the prohance application
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>11:29:47 AM</td>
+        <td>
+          Step 2: Click SideNavigation Page
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>11:29:48 AM</td>
+        <td>
+          Step 3: Click on UserDomain
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>11:29:55 AM</td>
+        <td>
+          Step 4: Store the WebElements of Name and apply sort function and save as Expected List
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>11:30:00 AM</td>
+        <td>
+          Step 5: Click on Sorting Button and save the list as actual List
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>11:30:05 AM</td>
+        <td>
+          Step 6: Compare Expected with Actual List
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>11:30:05 AM</td>
+        <td>
+          Step 7: Sorting is working as expected
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>11:30:05 AM</td>
+        <td>
+          Successfull
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="46"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">userRolesModifyManagerToMeber</p>
+            <p class="text-sm">
+              <span>11:30:05 AM</span> / <span>00:00:32:009</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">userRolesModifyManagerToMeber</h5>
+<span class='badge badge-success'>01.30.2024 11:30:05 AM</span>
+<span class='badge badge-danger'>01.30.2024 11:30:37 AM</span>
+<span class='badge badge-default'>00:00:32:009</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=46</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>11:30:37 AM</td>
+        <td>
+          Successfull
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="47"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">userRolesModifyMemberToManager</p>
+            <p class="text-sm">
+              <span>11:30:37 AM</span> / <span>00:00:30:966</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">userRolesModifyMemberToManager</h5>
+<span class='badge badge-success'>01.30.2024 11:30:37 AM</span>
+<span class='badge badge-danger'>01.30.2024 11:31:08 AM</span>
+<span class='badge badge-default'>00:00:30:966</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=47</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>11:31:08 AM</td>
+        <td>
+          Successfull
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="fail" test-id="48"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">userRolesModifyManagerAllowUserToExportDataXLS</p>
+            <p class="text-sm">
+              <span>11:31:08 AM</span> / <span>00:00:33:347</span>
+              <span class="badge fail-bg log float-right">Fail</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-fail">userRolesModifyManagerAllowUserToExportDataXLS</h5>
+<span class='badge badge-success'>01.30.2024 11:31:08 AM</span>
+<span class='badge badge-danger'>01.30.2024 11:31:42 AM</span>
+<span class='badge badge-default'>00:00:33:347</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=48</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log fail-bg">Fail</span></td>
+        <td>11:31:42 AM</td>
+        <td>
+          <textarea readonly class="code-block">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//img[@title="Export to Excel"]"}
+  (Session info: chrome=120.0.6099.227)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.13.0', revision: 'ba948ece5b*'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.8.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [13fec77949428d5a90352ebb86219304, findElement {using=xpath, value=//img[@title="Export to Excel"]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 120.0.6099.227, chrome: {chromedriverVersion: 120.0.6099.109 (3419140ab66..., userDataDir: C:\Users\pavana.c\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60695}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:60695/devtoo..., se:cdpVersion: 120.0.6099.227, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 13fec77949428d5a90352ebb86219304
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:359)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:353)
+	at Pages.UserRolePage.exportexcelBtnToBeDisabled(UserRolePage.java:290)
+	at UserRoles.UserRolesModifyManagerAllowUserToExportDataXLS.userRolesModifyManagerAllowUserToExportDataXLS(UserRolesModifyManagerAllowUserToExportDataXLS.java:74)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</textarea>
+          
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="fail" test-id="49"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">userRolesModifyManagerAllowUserToExportDataPDF</p>
+            <p class="text-sm">
+              <span>11:31:42 AM</span> / <span>00:00:33:201</span>
+              <span class="badge fail-bg log float-right">Fail</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-fail">userRolesModifyManagerAllowUserToExportDataPDF</h5>
+<span class='badge badge-success'>01.30.2024 11:31:42 AM</span>
+<span class='badge badge-danger'>01.30.2024 11:32:15 AM</span>
+<span class='badge badge-default'>00:00:33:201</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=49</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log fail-bg">Fail</span></td>
+        <td>11:32:15 AM</td>
+        <td>
+          <textarea readonly class="code-block">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//img[@title='Export to PDF']"}
+  (Session info: chrome=120.0.6099.227)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.13.0', revision: 'ba948ece5b*'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.8.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [13fec77949428d5a90352ebb86219304, findElement {using=xpath, value=//img[@title='Export to PDF']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 120.0.6099.227, chrome: {chromedriverVersion: 120.0.6099.109 (3419140ab66..., userDataDir: C:\Users\pavana.c\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60695}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:60695/devtoo..., se:cdpVersion: 120.0.6099.227, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 13fec77949428d5a90352ebb86219304
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:359)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:353)
+	at Pages.UserRolePage.exportPDFBtnToBeDisabled(UserRolePage.java:317)
+	at UserRoles.UserRolesModifyManagerAllowUserToExportDataPDF.userRolesModifyManagerAllowUserToExportDataPDF(UserRolesModifyManagerAllowUserToExportDataPDF.java:74)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</textarea>
+          
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="50"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">userRolesModifyManagerExportDataPermissionAllowUserToMail</p>
+            <p class="text-sm">
+              <span>11:32:15 AM</span> / <span>00:00:21:412</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">userRolesModifyManagerExportDataPermissionAllowUserToMail</h5>
+<span class='badge badge-success'>01.30.2024 11:32:15 AM</span>
+<span class='badge badge-danger'>01.30.2024 11:32:36 AM</span>
+<span class='badge badge-default'>00:00:21:412</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=50</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>11:32:36 AM</td>
+        <td>
+          Successfull
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="52"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">userRolesModifyManagerExportDataPermissionNotAllowUserToDemandOnMail</p>
+            <p class="text-sm">
+              <span>11:33:02 AM</span> / <span>00:00:17:642</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">userRolesModifyManagerExportDataPermissionNotAllowUserToDemandOnMail</h5>
+<span class='badge badge-success'>01.30.2024 11:33:02 AM</span>
+<span class='badge badge-danger'>01.30.2024 11:33:19 AM</span>
+<span class='badge badge-default'>00:00:17:642</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=52</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>11:33:19 AM</td>
+        <td>
+          Successfull
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="53"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">userRolesModifyManagerModuleSelection</p>
+            <p class="text-sm">
+              <span>11:33:19 AM</span> / <span>00:00:19:458</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">userRolesModifyManagerModuleSelection</h5>
+<span class='badge badge-success'>01.30.2024 11:33:19 AM</span>
+<span class='badge badge-danger'>01.30.2024 11:33:39 AM</span>
+<span class='badge badge-default'>00:00:19:458</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=53</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>11:33:39 AM</td>
+        <td>
+          Successfull
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="54"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">userRolesModifyMemberModuleSelection</p>
+            <p class="text-sm">
+              <span>11:33:39 AM</span> / <span>00:00:26:322</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">userRolesModifyMemberModuleSelection</h5>
+<span class='badge badge-success'>01.30.2024 11:33:39 AM</span>
+<span class='badge badge-danger'>01.30.2024 11:34:05 AM</span>
+<span class='badge badge-default'>00:00:26:322</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=54</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>11:34:05 AM</td>
+        <td>
+          Successfull
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="56"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">userRolesModifyManagerDontAllowUserToExportDataPDF2</p>
+            <p class="text-sm">
+              <span>11:34:35 AM</span> / <span>00:00:22:732</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">userRolesModifyManagerDontAllowUserToExportDataPDF2</h5>
+<span class='badge badge-success'>01.30.2024 11:34:35 AM</span>
+<span class='badge badge-danger'>01.30.2024 11:34:58 AM</span>
+<span class='badge badge-default'>00:00:22:732</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=56</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>11:34:58 AM</td>
+        <td>
+          Successfull
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="57"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">userRolesModifyMemberHierarchyLevel</p>
+            <p class="text-sm">
+              <span>11:34:58 AM</span> / <span>00:00:09:083</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">userRolesModifyMemberHierarchyLevel</h5>
+<span class='badge badge-success'>01.30.2024 11:34:58 AM</span>
+<span class='badge badge-danger'>01.30.2024 11:35:07 AM</span>
+<span class='badge badge-default'>00:00:09:083</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=57</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>11:35:07 AM</td>
+        <td>
+          Successfull
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="58"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">userRolesModifyManagerHierarchyLevel</p>
+            <p class="text-sm">
+              <span>11:35:07 AM</span> / <span>00:00:08:873</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">userRolesModifyManagerHierarchyLevel</h5>
+<span class='badge badge-success'>01.30.2024 11:35:07 AM</span>
+<span class='badge badge-danger'>01.30.2024 11:35:16 AM</span>
+<span class='badge badge-default'>00:00:08:873</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=58</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>11:35:16 AM</td>
+        <td>
+          Successfull
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="60"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">userRolesModifyManagerDontAllowUserToExportDataXLS</p>
+            <p class="text-sm">
+              <span>11:35:41 AM</span> / <span>00:00:19:079</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">userRolesModifyManagerDontAllowUserToExportDataXLS</h5>
+<span class='badge badge-success'>01.30.2024 11:35:41 AM</span>
+<span class='badge badge-danger'>01.30.2024 11:36:00 AM</span>
+<span class='badge badge-default'>00:00:19:079</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=60</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>11:36:00 AM</td>
+        <td>
+          Successfull
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="62"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">userRolesModifyManagerDefineNewActivity</p>
+            <p class="text-sm">
+              <span>11:36:33 AM</span> / <span>00:00:25:983</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">userRolesModifyManagerDefineNewActivity</h5>
+<span class='badge badge-success'>01.30.2024 11:36:33 AM</span>
+<span class='badge badge-danger'>01.30.2024 11:36:59 AM</span>
+<span class='badge badge-default'>00:00:25:983</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=62</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>11:36:59 AM</td>
+        <td>
+          Successfull
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="64"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">userRolesModifyManagerEditActivityRating</p>
+            <p class="text-sm">
+              <span>11:37:32 AM</span> / <span>00:00:23:202</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">userRolesModifyManagerEditActivityRating</h5>
+<span class='badge badge-success'>01.30.2024 11:37:32 AM</span>
+<span class='badge badge-danger'>01.30.2024 11:37:55 AM</span>
+<span class='badge badge-default'>00:00:23:202</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=64</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>11:37:55 AM</td>
         <td>
           Successfull
         </td>
@@ -370,30 +4150,231 @@
 </div>
 <div class="test-content-detail"><div class="detail-body"></div></div>
 </div></div>
-<div class="container-fluid p-4 view dashboard-view">
+<div class="test-wrapper row view exception-view attributes-view">
+<div class="test-list">
+<div class="test-list-tools">
+<ul class="tools pull-left"><li><a href=""><span class="font-size-14">Exception</span></a></li></ul>
+<ul class="tools text-right"><li><a href="#"><span class="badge badge-primary">3</span></a></li></ul>
+</div>
+<div class="test-list-wrapper scrollable">
+<ul class="test-list-item">
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log badge-danger'>3</span>
+<span class='badge log badge-skip'>8</span>
+</span>
+<p class="name">org.openqa.selenium.NoSuchElementException</p>
+<p class="duration text-sm">11 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>org.openqa.selenium.NoSuchElementException</h4>
+<span status="fail" class='badge log badge-danger'>3 failed</span>
+<span status="skip" class='badge log badge-skip'>8 skipped</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="skip">
+<td><span class="badge log skip-bg">Skip</span></td>
+<td>11:22:11 AM</td>
+<td>
+<a href="#" class="linked" test-id='24' id='24'>AddingNewWorkProfiles</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="skip">
+<td><span class="badge log skip-bg">Skip</span></td>
+<td>11:22:28 AM</td>
+<td>
+<a href="#" class="linked" test-id='25' id='25'>AddingNewWorkProfiles</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>11:22:45 AM</td>
+<td>
+<a href="#" class="linked" test-id='26' id='26'>AddingNewWorkProfiles</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="skip">
+<td><span class="badge log skip-bg">Skip</span></td>
+<td>11:23:12 AM</td>
+<td>
+<a href="#" class="linked" test-id='28' id='28'>cloneOnWorkProfiles</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>11:31:08 AM</td>
+<td>
+<a href="#" class="linked" test-id='48' id='48'>userRolesModifyManagerAllowUserToExportDataXLS</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>11:31:42 AM</td>
+<td>
+<a href="#" class="linked" test-id='49' id='49'>userRolesModifyManagerAllowUserToExportDataPDF</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="skip">
+<td><span class="badge log skip-bg">Skip</span></td>
+<td>11:32:36 AM</td>
+<td>
+<a href="#" class="linked" test-id='51' id='51'>userRolesModifyManagerExportDataPermissionNotAllowUserToDemandOnMail</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="skip">
+<td><span class="badge log skip-bg">Skip</span></td>
+<td>11:34:05 AM</td>
+<td>
+<a href="#" class="linked" test-id='55' id='55'>userRolesModifyManagerDontAllowUserToExportDataPDF2</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="skip">
+<td><span class="badge log skip-bg">Skip</span></td>
+<td>11:35:16 AM</td>
+<td>
+<a href="#" class="linked" test-id='59' id='59'>userRolesModifyManagerDontAllowUserToExportDataXLS</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="skip">
+<td><span class="badge log skip-bg">Skip</span></td>
+<td>11:36:00 AM</td>
+<td>
+<a href="#" class="linked" test-id='61' id='61'>userRolesModifyManagerDefineNewActivity</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="skip">
+<td><span class="badge log skip-bg">Skip</span></td>
+<td>11:36:59 AM</td>
+<td>
+<a href="#" class="linked" test-id='63' id='63'>userRolesModifyManagerEditActivityRating</a>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log badge-skip'>1</span>
+</span>
+<p class="name">org.openqa.selenium.UnhandledAlertException</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>org.openqa.selenium.UnhandledAlertException</h4>
+<span status="skip" class='badge log badge-skip'>1 skipped</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="skip">
+<td><span class="badge log skip-bg">Skip</span></td>
+<td>11:26:07 AM</td>
+<td>
+<a href="#" class="linked" test-id='34' id='34'>alltypeValidation</a>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log badge-skip'>3</span>
+</span>
+<p class="name">java.lang.AssertionError</p>
+<p class="duration text-sm">3 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>java.lang.AssertionError</h4>
+<span status="skip" class='badge log badge-skip'>3 skipped</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="skip">
+<td><span class="badge log skip-bg">Skip</span></td>
+<td>11:17:41 AM</td>
+<td>
+<a href="#" class="linked" test-id='6' id='6'>addNewFunction</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="skip">
+<td><span class="badge log skip-bg">Skip</span></td>
+<td>11:17:58 AM</td>
+<td>
+<a href="#" class="linked" test-id='7' id='7'>addNewFunction</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="skip">
+<td><span class="badge log skip-bg">Skip</span></td>
+<td>11:19:10 AM</td>
+<td>
+<a href="#" class="linked" test-id='13' id='13'>a0sModifyFunction</a>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="test-content scrollable">
+<div class="test-content-detail">
+<div class="detail-body"></div>
+</div>
+</div>
+</div><div class="container-fluid p-4 view dashboard-view">
 <div class="row">
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0">Started</p>
-<h3>Jan 22, 2024 10:38:30 AM</h3>
+<h3>Jan 30, 2024 11:15:47 AM</h3>
 </div></div>
 </div>
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0">Ended</p>
-<h3>Jan 22, 2024 10:41:10 AM</h3>
+<h3>Jan 30, 2024 11:37:59 AM</h3>
 </div></div>
 </div>
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0 text-pass">Tests Passed</p>
-<h3>7</h3>
+<h3>49</h3>
 </div></div>
 </div>
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0 text-fail">Tests Failed</p>
-<h3>0</h3>
+<h3>3</h3>
 </div></div>
 </div>
 </div>
@@ -409,12 +4390,12 @@
 </div>
 </div>
 <div class="card-footer">
-<div><small data-tooltip='100%'>
-<b>7</b> tests passed
+<div><small data-tooltip='94%'>
+<b>49</b> tests passed
 </small>
 </div>
 <div>
-<small data-tooltip='0%'><b>0</b> tests failed,
+<small data-tooltip='5%'><b>3</b> tests failed,
 <b>0</b> skipped, <b data-tooltip='0%'>0</b> others
 </small>
 </div>
@@ -432,10 +4413,10 @@
 </div>
 </div>
 <div class="card-footer">
-<div><small data-tooltip='100%'><b>7</b> events passed</small></div>
+<div><small data-tooltip='16%'><b>49</b> events passed</small></div>
 <div>
-<small data-tooltip='0%'><b>0</b> events failed,
-<b data-tooltip='%'>0</b> others
+<small data-tooltip='0%'><b>3</b> events failed,
+<b data-tooltip='%'>251</b> others
 </small>
 </div>
 </div>
@@ -451,7 +4432,7 @@
 </div></div>
 <script>
 var timeline = {
-"userRolesAddNewManager":14.317,"userRolesAddNewManager":15.571,"userRolesAddNewManagerDelete":31.588,"userRolesAddNewMemberDelete":24.484,"userRoleExcelValidation":15.241,"userRolePDFValidation":15.656,"userRolesBulkUpdate":36.083
+"aosBulkUpload":31.399,"aosBulkUploadDelete":15.043,"aosBulkUploadModify":24.096,"aosDeleteFunction":26.366,"aosUnknownApplicationAddingtoExistingQualifierText":9.257,"addNewFunction":17.269,"aosUnknownApplicationAddingtoCreateNew":9.004,"aosUnknownApplicationAddingtoCreateNewQualifierText":9.004,"aosUnknownApplicationAddingtoExisting":8.665,"aosUnknownApplicationAddingtoCreateNewProcessName":9.393,"a0sModifyFunction":17.768,"aosUnknownApplicationAddingtoExistingProcessName":10.179,"addNewFunction":61.781,"modifyFunction":12.82,"deleteNewFunction":12.131,"sortingFunction":13.216,"excelValidation":10.514,"pdf":11.144,"modificationOnSettingsTab":9.263,"modificationOnSettingsTabForClearButton":4.711,"AddingNewWorkProfiles":16.904,"modificationOnWorkProfiles":9.165,"cloneOnWorkProfiles":12.449,"cloneOnWorkProfiles":17.746,"cloneOnWorkProfiles":8.939,"cloneOnWorkProfiles":15.562,"aggregationForSingleType":28.604,"alltypeValidation":28.39,"deletionOnWorkProfiles":11.975,"userRolesAddNewManager":14.169,"userRolesAddNewManager":18.687,"userRolesAddNewManagerDelete":30.813,"userRolesAddNewMemberDelete":24.488,"userRoleExcelValidation":14.162,"userRolePDFValidation":16.438,"userRolesBulkUpdate":30.855,"userRolesBulkUpdateMember":26.95,"userRoleSorting":20.075,"userRolesModifyManagerToMeber":32.009,"userRolesModifyMemberToManager":30.966,"userRolesModifyManagerAllowUserToExportDataXLS":33.347,"userRolesModifyManagerAllowUserToExportDataPDF":33.201,"userRolesModifyManagerExportDataPermissionAllowUserToMail":21.412,"userRolesModifyManagerExportDataPermissionNotAllowUserToDemandOnMail":17.642,"userRolesModifyManagerModuleSelection":19.458,"userRolesModifyMemberModuleSelection":26.322,"userRolesModifyManagerDontAllowUserToExportDataPDF2":22.732,"userRolesModifyMemberHierarchyLevel":9.083,"userRolesModifyManagerHierarchyLevel":8.873,"userRolesModifyManagerDontAllowUserToExportDataXLS":19.079,"userRolesModifyManagerDefineNewActivity":25.983,"userRolesModifyManagerEditActivityRating":23.202
 };
 </script>
 <div class="row">
@@ -474,8 +4455,8 @@ var timeline = {
 <script>
 var statusGroup = {
 parentCount: 5,
-passParent: 7,
-failParent: 0,
+passParent: 49,
+failParent: 3,
 warningParent: 0,
 skipParent: 0,
 childCount: 5,
@@ -491,11 +4472,11 @@ warningGrandChild: 0,
 skipGrandChild: 0,
 infoGrandChild: 0,
 eventsCount: 5,
-passEvents: 7,
-failEvents: 0,
+passEvents: 49,
+failEvents: 3,
 warningEvents: 0,
 skipEvents: 0,
-infoEvents: 0
+infoEvents: 251
 };
 </script>        </div>
       </div>

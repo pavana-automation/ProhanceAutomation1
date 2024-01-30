@@ -25,8 +25,8 @@ public class AOSBulkUpload extends BaseTest{
 	Listeners listeners = new Listeners();
 	AOSPage aos = new AOSPage(BaseTest.driver);
 	
-	//@Test(retryAnalyzer = Pages.RetryAnalyzer.class)
-	@Test
+	@Test(retryAnalyzer = Pages.RetryAnalyzer.class)
+	//@Test
 	public void aosBulkUpload() throws InterruptedException, IOException
 	
 	{
@@ -45,7 +45,7 @@ public class AOSBulkUpload extends BaseTest{
 	sidenavPage.clickAOSBtn();
 	driver.switchTo().frame("contentFrame");
 	
-	Thread.sleep(2000);
+	Thread.sleep(4000);
 	//listeners.testStepDescription("Step 5: Click on More Action");
 	aos.clickMoreActionBtn();
 	
@@ -70,7 +70,7 @@ public class AOSBulkUpload extends BaseTest{
 	aos.clickBackBtnAosPage();
 	Thread.sleep(2000);
 	aos.clickSearchBtn(result);
-	Thread.sleep(2000);
+	Thread.sleep(4000);
 	String actual = driver.findElement(By.xpath("//table[@id=\"CommonDataTableId\"]/tbody/tr/td[2]")).getText();
 	Assert.assertEquals(result,actual);
 

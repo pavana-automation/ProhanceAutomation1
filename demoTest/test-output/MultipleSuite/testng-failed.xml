@@ -6,24 +6,78 @@
   </listeners>
   <test thread-count="7" name="Test(failed)">
     <classes>
-      <class name="test.UserDomain.UserDomainModify">
+      <class name="test.AOS.AOSModifyFunction">
         <methods>
           <include name="teardown"/>
-          <include name="modifyFunction"/>
+          <include name="a0sModifyFunction"/>
         </methods>
-      </class> <!-- test.UserDomain.UserDomainModify -->
-      <class name="test.WorkProfile.WorkProfileForDelete">
+      </class> <!-- test.AOS.AOSModifyFunction -->
+      <class name="UserRoles.UserRolesModifyManagerDontAllowUserToExportDataPDF2">
         <methods>
           <include name="teardown"/>
-          <include name="deletionOnWorkProfiles"/>
+          <include name="userRolesModifyManagerDontAllowUserToExportDataPDF2"/>
         </methods>
-      </class> <!-- test.WorkProfile.WorkProfileForDelete -->
+      </class> <!-- UserRoles.UserRolesModifyManagerDontAllowUserToExportDataPDF2 -->
+      <class name="test.WorkProfile.WorkProfilesDeleteWithDependency">
+        <methods>
+          <include name="teardown"/>
+          <include name="cloneOnWorkProfiles"/>
+        </methods>
+      </class> <!-- test.WorkProfile.WorkProfilesDeleteWithDependency -->
+      <class name="UserRoles.UserRolesModifyManagerEditActivityRating">
+        <methods>
+          <include name="teardown"/>
+          <include name="userRolesModifyManagerEditActivityRating"/>
+        </methods>
+      </class> <!-- UserRoles.UserRolesModifyManagerEditActivityRating -->
+      <class name="UserRoles.UserRolesModifyManagerDefineNewActivity">
+        <methods>
+          <include name="teardown"/>
+          <include name="userRolesModifyManagerDefineNewActivity"/>
+        </methods>
+      </class> <!-- UserRoles.UserRolesModifyManagerDefineNewActivity -->
+      <class name="UserRoles.UserRolesModifyManagerAllowUserToExportDataPDF">
+        <methods>
+          <include name="teardown"/>
+          <include name="userRolesModifyManagerAllowUserToExportDataPDF"/>
+        </methods>
+      </class> <!-- UserRoles.UserRolesModifyManagerAllowUserToExportDataPDF -->
+      <class name="test.AOS.AOSAddNew">
+        <methods>
+          <include name="teardown"/>
+          <include name="addNewFunction"/>
+        </methods>
+      </class> <!-- test.AOS.AOSAddNew -->
+      <class name="test.DataAggregation.DataAggregationForAllType">
+        <methods>
+          <include name="teardown"/>
+          <include name="alltypeValidation"/>
+        </methods>
+      </class> <!-- test.DataAggregation.DataAggregationForAllType -->
       <class name="test.WorkProfile.WorkProfileForAddingNew">
         <methods>
           <include name="teardown"/>
           <include name="AddingNewWorkProfiles"/>
         </methods>
       </class> <!-- test.WorkProfile.WorkProfileForAddingNew -->
+      <class name="UserRoles.UserRolesModifyManagerAllowUserToExportDataXLS">
+        <methods>
+          <include name="teardown"/>
+          <include name="userRolesModifyManagerAllowUserToExportDataXLS"/>
+        </methods>
+      </class> <!-- UserRoles.UserRolesModifyManagerAllowUserToExportDataXLS -->
+      <class name="UserRoles.UserRolesModifyManagerDontAllowUserToExportDataXLS">
+        <methods>
+          <include name="teardown"/>
+          <include name="userRolesModifyManagerDontAllowUserToExportDataXLS"/>
+        </methods>
+      </class> <!-- UserRoles.UserRolesModifyManagerDontAllowUserToExportDataXLS -->
+      <class name="UserRoles.UserRolesModifyManagerExportDataPermissionNotAllowUserToDemandOnMail">
+        <methods>
+          <include name="userRolesModifyManagerExportDataPermissionNotAllowUserToDemandOnMail"/>
+          <include name="teardown"/>
+        </methods>
+      </class> <!-- UserRoles.UserRolesModifyManagerExportDataPermissionNotAllowUserToDemandOnMail -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [MultipleSuite] -->

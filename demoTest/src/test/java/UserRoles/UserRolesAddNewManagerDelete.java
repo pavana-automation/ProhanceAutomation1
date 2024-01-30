@@ -31,9 +31,9 @@ public class UserRolesAddNewManagerDelete extends BaseTest {
 	UserRolePage userRole = new UserRolePage(BaseTest.driver);
 	String txt1;
 
-	// @Test(retryAnalyzer = Pages.RetryAnalyzer.class)
+	@Test(retryAnalyzer = Pages.RetryAnalyzer.class)
 
-	@Test
+	//@Test
 	public void userRolesAddNewManagerDelete() throws InterruptedException
 	{
 		driver=initializeDriver3333();

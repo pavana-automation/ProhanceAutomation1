@@ -31,41 +31,41 @@ public class AOSBulkUploadModify extends BaseTest {
 
 	{
 
-		//listeners.testStepDescription("Step 1: Login into the prohance application");
+		listeners.testStepDescription("Step 1: Login into the prohance application");
 		driver = initializeDriver3333();
 		loginPage.clickLogin("adminp", "1");
 
-		//listeners.testStepDescription("Step 2: Click on Side Navigation Page");
+		listeners.testStepDescription("Step 2: Click on Side Navigation Page");
 		sidenavPage.clickSideNavigationBtn();
 
-		//listeners.testStepDescription("Step 3: Click on Activities");
+		listeners.testStepDescription("Step 3: Click on Activities");
 		sidenavPage.clickActivitiesBtn();
 
-		//listeners.testStepDescription("Step 4: Click on AOS");
+		listeners.testStepDescription("Step 4: Click on AOS");
 		sidenavPage.clickAOSBtn();
 		driver.switchTo().frame("contentFrame");
 		
 		Thread.sleep(3000);
 
-		//listeners.testStepDescription("Step 5: Click on More Action");
+		listeners.testStepDescription("Step 5: Click on More Action");
 		aos.clickMoreActionBtn();
 
-		//listeners.testStepDescription("Step 6: Click on Bulk Upload");
+		listeners.testStepDescription("Step 6: Click on Bulk Upload");
 		driver.findElement(By.xpath("//a[contains(text(),'BULK UPLOAD')]")).click();
 
-		//listeners.testStepDescription("Step 7: Click Here to download Pree Filled Template");
+		listeners.testStepDescription("Step 7: Click Here to download Pree Filled Template");
 		driver.findElement(By.xpath("//label[contains(text(),'With Prefilled Data')]")).click();
 
-		//listeners.testStepDescription("Step 8: Click on 'click here' to download the excel");
+		listeners.testStepDescription("Step 8: Click on 'click here' to download the excel");
 		aos.clickOnClickHereBtn();
 
-		//listeners.testStepDescription("Step 9: Modify the data in excel ans upload the file");
-		Thread.sleep(1000);
+		listeners.testStepDescription("Step 9: Modify the data in excel ans upload the file");
+		Thread.sleep(2000);
 		String result1 = aos.addActivityTagExcelBulkUploadWorkProfileModify();
 		aos.clickChooseFileInBulkUpload();
 		aos.clickBackBtnAosPage();
 
-		//listeners.testStepDescription("Step 10: Check whether modified data is saved in the application");
+		listeners.testStepDescription("Step 10: Check whether modified data is saved in the application");
 		//Thread.sleep(5000);
 		//ArrayList<String> ActualList1 = userdomain.getElementsInRowToList();
 		//System.out.println("the actual list is******"+ActualList1);
@@ -77,6 +77,6 @@ public class AOSBulkUploadModify extends BaseTest {
 		String actual = driver.findElement(By.xpath("//table[@id=\"CommonDataTableId\"]/tbody/tr/td[2]")).getText();
 		Assert.assertEquals(result1,actual);
 		
-		//listeners.testStepDescription("Step 11: Modified data is uploaded successfully");
+		listeners.testStepDescription("Step 11: Modified data is uploaded successfully");
 	}
 }

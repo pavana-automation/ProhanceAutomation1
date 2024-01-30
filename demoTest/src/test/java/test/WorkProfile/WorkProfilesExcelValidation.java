@@ -43,6 +43,7 @@ public class WorkProfilesExcelValidation  extends BaseTest{
 		nav.clickWorkProfilestab();
 		driver.switchTo().frame("contentFrame");
 		listeners.testStepDescription("Step 5: Click on ALL WORK PROFILES CONFIGURATION excel to download");
+		Thread.sleep(2000);
 		workProfile.clickAllWorkProfileExcel();
 		Thread.sleep(5000);
 		listeners.testStepDescription("Step 6: Get List from excel");

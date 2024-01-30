@@ -30,8 +30,9 @@ public class UserRolesModifyManagerModuleSelection extends BaseTest{
 	Listeners listeners = new Listeners();
 	UserRolePage userRole = new UserRolePage(BaseTest.driver);
 	
-	@Test(retryAnalyzer = Pages.RetryAnalyzer.class)
-	public void userRolesModifyManagerToMeber() throws InterruptedException
+	//@Test(retryAnalyzer = Pages.RetryAnalyzer.class)
+	@Test
+	public void userRolesModifyManagerModuleSelection() throws InterruptedException
 	{
 		driver=initializeDriver3333();
 
@@ -48,8 +49,12 @@ public class UserRolesModifyManagerModuleSelection extends BaseTest{
 		
 		userRole.selectModule();
 		
+		Thread.sleep(1000);
+		
 		userRole.clickOnSaveBtn();
 		driver.findElement(By.xpath("//label[contains(text(),'BACK')]")).click();
+		
+		
 		
 		driver=initializeDriver3333();
 
@@ -59,13 +64,7 @@ public class UserRolesModifyManagerModuleSelection extends BaseTest{
 		
 		int size = driver.findElements(By.xpath("//ul[@id=\"workTimeFontSize\"]/table/tbody/tr/td")).size();
 		
-		for(int i=0;i<=size;i++)
-		{
-			
-		}
-		
-		
-		
+		Assert.assertEquals(3, size);
 		
 	}
 }

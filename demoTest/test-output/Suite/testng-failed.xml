@@ -6,18 +6,36 @@
   </listeners>
   <test thread-count="5" name="Test(failed)">
     <classes>
-      <class name="test.AOS.AOSModifyFunction">
+      <class name="UserRoles.UserRolesModifyManagerDontAllowUserToExportDataXLS">
         <methods>
           <include name="teardown"/>
-          <include name="a0sModifyFunction"/>
+          <include name="userRolesModifyManagerDontAllowUserToExportDataXLS"/>
         </methods>
-      </class> <!-- test.AOS.AOSModifyFunction -->
-      <class name="test.AOS.AOSUnknownApplicationAddingtoCreateNewProcessName">
+      </class> <!-- UserRoles.UserRolesModifyManagerDontAllowUserToExportDataXLS -->
+      <class name="UserRoles.UserRolesModifyManagerExportDataPermissionAllowUserToMail">
         <methods>
           <include name="teardown"/>
-          <include name="aosUnknownApplicationAddingtoCreateNewProcessName"/>
+          <include name="userRolesModifyManagerExportDataPermissionAllowUserToMail"/>
         </methods>
-      </class> <!-- test.AOS.AOSUnknownApplicationAddingtoCreateNewProcessName -->
+      </class> <!-- UserRoles.UserRolesModifyManagerExportDataPermissionAllowUserToMail -->
+      <class name="UserRoles.UserRolesAddNewMemberDelete">
+        <methods>
+          <include name="teardown"/>
+          <include name="userRolesAddNewMemberDelete"/>
+        </methods>
+      </class> <!-- UserRoles.UserRolesAddNewMemberDelete -->
+      <class name="UserRoles.UserRolesModifyManagerDontAllowUserToExportDataPDF2">
+        <methods>
+          <include name="teardown"/>
+          <include name="userRolesModifyManagerDontAllowUserToExportDataPDF2"/>
+        </methods>
+      </class> <!-- UserRoles.UserRolesModifyManagerDontAllowUserToExportDataPDF2 -->
+      <class name="UserRoles.UserRolesModifyManagerExportDataPermissionNotAllowUserToDemandOnMail">
+        <methods>
+          <include name="userRolesModifyManagerExportDataPermissionNotAllowUserToDemandOnMail"/>
+          <include name="teardown"/>
+        </methods>
+      </class> <!-- UserRoles.UserRolesModifyManagerExportDataPermissionNotAllowUserToDemandOnMail -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->
