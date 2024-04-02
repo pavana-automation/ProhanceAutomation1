@@ -77,7 +77,7 @@ public class BaseTest {
 	 
 	@AfterTest
 	public void teardown() {
-		//driver.quit();
+		driver.quit();
 	}
 	
 	/*public String getScreenshotPath(String TestCaseName, WebDriver driver) throws IOException
