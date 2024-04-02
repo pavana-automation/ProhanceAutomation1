@@ -47,29 +47,27 @@ public class SideNavigationMenuPage {
 	@FindBy(xpath="//div[@class='slimScrollBar']")
 	public
 	WebElement locator;
-	
+
 	@FindBy(xpath="//div[@id =\"arrow-top\"]/i")
 	WebElement workFlowSideNavigationArrow;
 	
-	 public SideNavigationMenuPage(WebDriver driver)
-	    {
-	 
-	        this.driver=driver;
-	        PageFactory.initElements(driver,this); 
-	             
-	}
+	@FindBy(xpath="//div[@id =\"arrow-top\"]/i")
+	WebElement advanceSideNavigationArrow;
+	
+	
+	
 	@FindBy(xpath ="//a[contains(text(),'Activities')]")
 	WebElement activityTab;
 	
 	@FindBy(xpath ="//li[contains(text(),'Work Profiles')]")
 	WebElement workProfilesTab;
-	/*
-	 * public SideNavigationMenuPage(WebDriver driver) {
-	 * 
-	 * this.driver=driver; PageFactory.initElements(driver,this);
-	 * 
-	 * }
-	 */
+	
+	  public SideNavigationMenuPage(WebDriver driver) {
+	  
+	  this.driver=driver; PageFactory.initElements(driver,this);
+	  
+	  }
+	 
 
 	
 	public void clickSideNavigationBtn()
@@ -128,6 +126,7 @@ public class SideNavigationMenuPage {
 		 
 	}
 	
+	
 	public void ClickOnUserRoleBtn() throws InterruptedException
 	{
 		JavascriptExecutor js = (JavascriptExecutor) driver;
@@ -138,11 +137,18 @@ public class SideNavigationMenuPage {
 		Thread.sleep(2000);
 		this.UserRoleBtn.click();
 	}
+
 	public void clickWorkFlowSideNavigationArrow()
 	{
 		this.workFlowSideNavigationArrow.click();
 
 	}
+	
+	
+	public void clickAdvanceSideNavigationArrow()
+	{
+		this.advanceSideNavigationArrow.click();
 
+	}
 
 }

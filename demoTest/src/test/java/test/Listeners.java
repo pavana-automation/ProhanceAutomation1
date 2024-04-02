@@ -33,6 +33,7 @@ public class Listeners  extends TestListenerAdapter implements ITestListener {
 
 	}
 	
+	
 	public String getScreenshotPath(String TestCaseName, WebDriver driver) throws IOException
 	{
 		TakesScreenshot ts=(TakesScreenshot)driver;
@@ -49,6 +50,7 @@ public class Listeners  extends TestListenerAdapter implements ITestListener {
 		WebDriver driver = null;
 		//WebDriver driver;
 			extentTest.get().fail(result.getThrowable());
+
 			/*Object testObject = result.getInstance();
 			Class clazz = result.getTestClass().getRealClass();
 			try {
@@ -63,6 +65,23 @@ public class Listeners  extends TestListenerAdapter implements ITestListener {
 				// TODO Auto-generated catch block
 				e.printStackTrace();*/
 			}
+
+//			Object testObject = result.getInstance();
+//			Class clazz = result.getTestClass().getRealClass();
+//			try {
+//				driver = (WebDriver) clazz.getDeclaredField("driver").get(testObject);
+//			} catch (Exception e) {
+//			}
+//			try {
+//				extentTest.get().addScreenCaptureFromPath(getScreenshotPath(result.getMethod().getMethodName(), driver),
+//						result.getMethod().getMethodName());
+//				
+//			} catch (IOException e) {
+//				// TODO Auto-generated catch block
+//				e.printStackTrace();
+//			}
+	
+	
 
 	public void testStepDescription(String Message) 
 	{

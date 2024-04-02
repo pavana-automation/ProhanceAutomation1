@@ -61,6 +61,10 @@ public class BaseTest {
 	driver.get("http://10.10.10.128:6969/prohance/"); 
 	return driver;
 	}
+
+	
+	
+
 	
 	
 	
@@ -85,6 +89,7 @@ public class BaseTest {
 		File file = new File(destpath);
 		FileUtils.copyFile(source, file);
 		return destpath;
+		
 		
 	}*/
 	

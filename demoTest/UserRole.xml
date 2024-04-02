@@ -16,9 +16,6 @@
       <class name="UserRoles.UserRolePDFValidation"></class>
       <class name="UserRoles.UserRolesBulkUpdate"></class>
       <class name="UserRoles.selectMemberRadioBtn"/>
-      <class name="UserRoles.UserRoleSorting"/>
-      <class name="UserRoles.UserRolesModifyManagerToMeber"/>
-      <class name="UserRoles.UserRolesModifyMemberToManager"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

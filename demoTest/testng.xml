@@ -4,11 +4,13 @@
 <suite  name="MultipleSuite" thread-count="7">
 		<listeners>
 		<listener class-name="test.Listeners"></listener>
+		
 	</listeners>
 	
  <test thread-count="7" name="Test">
     <classes>
-		<!--<class name="test.AOS.AOSBulkUpload"/>
+
+		<class name="test.AOS.AOSBulkUpload"/>
 		<class name="test.AOS.AOSBulkUploadDelete"></class>
         <class name="test.AOS.AOSBulkUploadModify"></class>
         <class name="test.AOS.AOSDeleteFunction"/>
@@ -19,7 +21,7 @@
         <class name="test.AOS.AOSUnknownApplicationAddingtoExisting"/>
         <class name="test.AOS.AOSUnknownApplicationAddingtoCreateNewProcessName"/>
         <class name="test.AOS.AOSModifyFunction"/>
-        <class name="test.AOS.AOSUnknownApplicationAddingtoExistingProcessName"/>-->
+        <class name="test.AOS.AOSUnknownApplicationAddingtoExistingProcessName"/>
 		<class name="test.UserDomain.UserDomainAddFunction"/>
 		<class name="test.UserDomain.UserDomainModify"/>
 		<class name="test.UserDomain.UserDomainDeleteFunction"/>
@@ -37,6 +39,107 @@
 		<class name="test.DataAggregation.DataAggregation"/>
 		<class name="test.DataAggregation.DataAggregationForAllType"/>
 		<class name="test.WorkProfile.WorkProfileForDelete"/>
+
+		<!--<class name="test.AOSUnknownApplicationAddingtoCreateNew"/>-->
+		<!--<class name="test.UserDomainAddFunction"/>-->
+		<!--<class name="test.UserDomainModify"/>
+		<class name="test.UserDomainDeleteFunction"/>
+		<class name="test.UserDomainSortingFuncton"/>
+		<class name="test.UserDomainExcelValidation"/>
+		<class name="test.AOSAddNew"/>
+		<class name="test.AOSUnknownApplicationAddingtoExisting"/>
+		<class name="test.AOSDeleteFunction"></class>
+		<class name="test.AOSModifyFunction"/>
+		<class name="test.UserDomainPDFValidation"/>
+		-->
+      	<!--<class name="test.DataAggregationForModificationOnSettingsTab"/>
+     	<class name="test.DataAggregationForModificationOnSettingsTabForClearButton"/>
+     	
+		<class name="test.WorkProfileForAddingNew"/> 
+		<class name="test.WorkProfileForModification"/> 
+		<class name="test.WorkProfilesDeleteWithDependency"/> 
+		<class name="test.WorkProfileForDelete"/>
+		<class name="test.WorkProfilesExcelValidation"/> 
+		<class name="test.WorkProfilesForClone"/> 
+		<class name="test.DataAggregation"/>
+		<class name="test.DataAggregationForAllType"/>
+		<class name="test.WorkProfileValidateWithTeams"/> -->
+		
+			<class name="test.Users.UsersEmailExportWithMissingRecipients"/>
+		<class name="test.Users.UsersEmailexportWithMissingReportViewBy"/>
+			<class name="test.Users.UsersLoggedinUsersByOperatingSystem"/>
+		<class name="test.Users.UsersExcelValidation"/>
+		<class name="test.Users.UsersEmailExportWithMoreRecipients"/>
+		<class name="test.Users.UsersPDFValidation"/>
+		<class name="test.Users.UsersLoggedinUsersByActivity"/>
+		<class name="test.Users.UsersLoggedinUsersByClientMode"/>
+		<class name="test.Users.UsersLoggedinUsersByDotNetVersion"/>
+		<class name="test.Users.UsersLoggedinUsersByHeartbeat"/>
+		<class name="test.Users.UsersLoggedinUsersByOSflavour"/>
+		<class name="test.Users.UsersLoggedinUsersByProxy"/>
+		<class name="test.Users.UsersLoggedinUsersByServiceCPU"/>
+		<class name="test.Users.UsersLoggedinUsersByServiceMemory"/>
+		<class name="test.Users.UsersLoggedinUsersByTrayMemory"/>
+		<class name="test.Users.UsersBulkUploadForInactiveUsers"/>
+		<class name="test.Users.UsersBulkUploadForActiveUsers"/>
+		<class name="test.Users.UsersLoggedinUsersBytrayCPU"/>
+		<class name="test.Users.UsersBulkUploadForAllUsers"/>
+		<class name="test.Users.UsersLicenseReport"/>
+		<class name="test.Users.UsersDefineTenureRangeWithMissingFields"/>
+		<class name="test.Users.UsersAttributesForInactiveUsers"/>
+		<class name="test.Users.UsersAttributesForActiveUsers"/>
+		<class name="test.Users.UsersDeleteWithDependency"/>
+		<class name="test.Users.UsersBulkUploadForAllUsersWithMissingFileds"/>
+		<class name="test.Users.UsersBulkUploadForInactiveUsersWithMissingFields"/>
+		<class name="test.Users.UsersBulkUploadForActiveUsersWithMissingFields"/>
+		<class name="test.Users.UsersEmailExportForPdf"/>
+		
+		<class name="test.Users.UsersEmailExportClose"/>
+		<class name="test.Users.UsersReportColumn"/>
+		<class name="test.Users.UsersAddingNew"/>
+		<class name="test.Users.UsersLoggedinUsersByClientVersion"/>
+		<class name="test.Users.UsersDefineTenureRangeAdd"/>
+		<class name="test.Users.UsersEmailExportForExcel"/>
+		
+		<class name="test.WorkFlow.CustomAttributeBulkUpload"/>
+		<class name="test.WorkFlow.CustomAttributeWithDeleteWithDependency"/>
+		<class name="test.WorkFlow.CustomAttributeWithDuplicateName"/>
+		<class name="test.WorkFlow.CustomAttributeWithFilterbyProcess"/>
+		<class name="test.WorkFlow.CustomAttributeWithMissingField"/>
+		<class name="test.WorkFlow.CustomAttributeWithModifyFieldType"/>
+		
+		
+		<class name="test.AssertOptimization.SoftwareDefinitationWithMissingAssociatedProcessesField"/>
+		<class name="test.AssertOptimization.SoftwareDefinitationWithMissingNameField"/>
+		<class name="test.AssertOptimization.SoftwareDefinitationForSoftwareTagsClear"/>
+		<class name="test.AssertOptimization.SoftwareDefinitationClear"/>
+		<class name="test.AssertOptimization.SoftwareDefinitationCURD"/>
+		<class name="test.AssertOptimization.SoftwareDefinitationForSoftwareTagsWithMissingSoftwareTag"/>
+		<class name="test.AssertOptimization.WorkStationGroupsClear"/>
+		<class name="test.AssertOptimization.WorkStationGroupsCURD"/>
+		<class name="test.AssertOptimization.WorkStationwithMissingNameFiled"/>
+		<class name="test.AssertOptimization.WorkStationwithMissingScanField"/>
+		<class name="test.AssertOptimization.SoftwaredefinitionForActivityTagPresent"/>
+		<class name="test.AssertOptimization.SoftwareDefinitionActivityTagEnableInSoftwareTagPage"/>
+		<class name="test.AssertOptimization.SoftwareDefinitationForSoftwareTagsCURD"/>
+		
+		<!--<class name="test.BusinessHierarchy.BusinessHierarchyClear"/>
+      <class name="test.BusinessHierarchy.BusinessHierarchyRequiredField"/>
+      <class name="test.BusinessHierarchy.BusinessHierarchyPdfExport"/>
+      <class name="test.BusinessHierarchy.BusinessHierarchyExcelExport"/>
+      <class name="test.BusinessHierarchy.BusinessHierarchCRUD"/>
+      <class name="test.BusinessHierarchy.BusinessHierarchyCompareWithAdvancesAnalytics"/>
+      -->
+      <class name="UserRoles.UserRolesAddNewMember"/>
+      <class name="UserRoles.UserRolesAddNewManager"/>
+      <class name="UserRoles.UserRolesAddNewManagerDelete"/>
+      <class name="UserRoles.UserRolesAddNewMemberDelete"/>
+      <class name="UserRoles.UserRoleExcelValidation"/>
+      <class name="UserRoles.UserRolePDFValidation"></class>
+      <class name="UserRoles.UserRolesBulkUpdate"></class>
+     <!-- <class name="UserRoles.selectMemberRadioBtn"/>-->
+		
+
     </classes>
   </test> 
 </suite> 

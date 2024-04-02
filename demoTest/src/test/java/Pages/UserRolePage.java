@@ -52,21 +52,6 @@ WebDriver driver;
 	@FindBy(xpath="//label[contains(text(),'BULK UPDATE')]")
 	WebElement bulkUpdateBtn;
 	
-	@FindBy(xpath="//table[@id=\"tab_table\"]/tbody/tr[2]")
-	WebElement rolePermissionBtn;
-	
-	@FindBy(xpath="//i[@title='Modify']")
-	WebElement modifyBtn;
-	
-	@FindBy(xpath="//table[@id='CommonDataTableId']/tbody/tr/td[5]")
-	WebElement roleTypeData;
-	
-	@FindBy(id="workTime")
-	WebElement workTimeChkBox;
-	
-	@FindBy(id="workTimeLi")
-	WebElement workTimeModuleBtn;
-	
 	
 	
 	 public UserRolePage(WebDriver driver)
@@ -122,12 +107,31 @@ WebDriver driver;
 	 }
 	 
 	 public String getTextHierarchy()
-	 { 
+	 {
+		 //return this.hierarchyLevel.getText();
+		 //Select hierarchyLevel = new Select(this.hierarchyLevel);
+		 //return ((WebElement) hierarchyLevel).getText();
+		 
 		 Select comboBox = new Select(this.hierarchyLevel);
 		 System.out.println(comboBox);
 		 String selectedComboValue = comboBox.getFirstSelectedOption().getText();
 		 System.out.println("the value is :"+selectedComboValue);
 		 return selectedComboValue;
+		 
+		//JavascriptExecutor js = (JavascriptExecutor) driver;
+		//String element = driver.findElement(By.xpath("//select[@class='combobox']")).getText();
+		//return element;
+		
+		//return null;
+		//return null;
+		 
+		 //JavascriptExecutor executor = (JavascriptExecutor)driver;
+		//return (String) executor.executeScript("arguments[0].click();", this.hierarchyLevel.getText());
+		
+		/*JavascriptExecutor js = (JavascriptExecutor) driver;
+		WebElement element = driver.findElement(By.id("select_811"));
+		String elementText = (String) js.executeScript("return arguments[0].innerText;", element);*/
+		//return elementText;
 		 
 	 }
 	 
@@ -143,44 +147,6 @@ WebDriver driver;
 	 {
 		 this.bulkUpdateBtn.click();
 	 }
-	 
-	 public void clickRolePermissionBtn()
-	 {
-		 this.rolePermissionBtn.click();
-	 }
-	 
-	 public void clickModifyBtn()
-	 {
-		 this.modifyBtn.click();
-	 }
-	 
-	 public String getRoleTypeData()
-	 {
-		 return this.roleTypeData.getText();
-	 }
-	 
-	 public void selectModule()
-	 {
-		 if(this.workTimeChkBox.isEnabled())
-		 {
-			 this.workTimeChkBox.click();
-			 driver.findElement(By.id("module_1")).click();
-			 driver.findElement(By.id("module_100")).click();
-			 driver.findElement(By.id("module_96")).click();
-		 }
-		 else
-		 {
-			 this.workTimeChkBox.click();
-			 this.workTimeChkBox.click();
-			 driver.findElement(By.id("module_1")).click();
-			 driver.findElement(By.id("module_100")).click();
-			 driver.findElement(By.id("module_96")).click();
-		 }
-	 }
-	 
-	 public void selectWorkTimeModule()
-	 {
-		 this.workTimeModuleBtn.click();
-	 }
+
 	 
 }

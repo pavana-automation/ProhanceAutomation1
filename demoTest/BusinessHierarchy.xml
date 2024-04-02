@@ -1,0 +1,19 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+
+<suite  name="MultipleSuite" thread-count="7">
+		<listeners>
+		<listener class-name="test.Listeners"></listener>
+		
+	</listeners>
+	
+ <test thread-count="7" name="Test">
+    <classes>
+      <class name="test.BusinessHierarchy.BusinessHierarchyClear"/>
+      <class name="test.BusinessHierarchy.BusinessHierarchyRequiredField"/>
+      <class name="test.BusinessHierarchy.BusinessHierarchyPdfExport"/>
+      <class name="test.BusinessHierarchy.BusinessHierarchyExcelExport"/>
+      <class name="test.BusinessHierarchy.BusinessHierarchCRUD"/>
+      <class name="test.BusinessHierarchy.BusinessHierarchyCompareWithAdvancesAnalytics"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

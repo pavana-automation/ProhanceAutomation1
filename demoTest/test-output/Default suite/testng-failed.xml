@@ -3,12 +3,12 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="UserRoles.UserRoleSorting">
+      <class name="test.Users.UsersEmailExportForExcel">
         <methods>
           <include name="teardown"/>
-          <include name="userRoleSorting"/>
+          <include name="usersEmailExcelExport"/>
         </methods>
-      </class> <!-- UserRoles.UserRoleSorting -->
+      </class> <!-- test.Users.UsersEmailExportForExcel -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
