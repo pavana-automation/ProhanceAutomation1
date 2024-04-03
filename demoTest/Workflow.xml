@@ -13,7 +13,7 @@
       <class name="test.WorkFlow.CustomAttributeWithModifyFieldType"/>
       <class name="test.WorkFlow.CustomAttributeWithMissingField"/>
       <class name="test.WorkFlow.CustomAttributeBulkUpload"/>
-    
+     <class name="test.WorkFlow.CustomAttributeWithDuplicateName"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->
