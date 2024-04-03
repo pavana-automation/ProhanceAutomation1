@@ -28,7 +28,7 @@ public class SoftwareDefinitationForSoftwareTagsWithMissingSoftwareTag extends B
 	List<String> hostNameList = null;
 	List<String> hostNameExcelList = null;
 
-	@Test(retryAnalyzer = Pages.RetryAnalyzer.class)
+	@Test
 	public void softwareDefinitationForSoftwareTagsCURD() throws InterruptedException, EncryptedDocumentException, IOException {
 		driver = initializeDriver6688();
 		 listeners.testStepDescription("Step 1: Login to ProHance Application");

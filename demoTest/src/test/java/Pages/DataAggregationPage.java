@@ -214,16 +214,8 @@ public class DataAggregationPage {
 		  {
 			  msg = "Aggregation Completed";
 	  	  }
-
-		  else if(aggregationStartMsg.equals("Aggregation Started for 02 Nov 2023 [ Activity On System ]") 
-				  && aggregationEndMsg.equals("Aggregation Completed for 02 Nov 2023 [Status: Success | Completed In: 00s ]"))
-		  {
-
-			  msg = "Aggregation Completed";
-	  	  }
 		  
 	  }
-		  
 		  catch(StaleElementReferenceException ex)
 		  {
 			  ex.getMessage();
@@ -262,16 +254,16 @@ public class DataAggregationPage {
 			  aggregationStartMsg= this.aggregationStarted.get(1).getText();
 			  System.out.println(aggregationStartMsg);
 		  }
-		  if(aggregationStartMsg.equals(aggregationStartMsg)
-			&& aggregationEndMsg.equals(aggregationEndMsg) )
+		  if(aggregationStartMsg.equals("Aggregation Completed for 02 Nov 2023 [Status: Success | Completed In: 02s")
+			&& aggregationEndMsg.equals("Aggregation Started for 02 Nov 2023 [ Activity On System, Activity Away From System, Hourly Activity Raw, Hourly Work Time Metrics, Software Usage, Schedule Adherence, Workflow Activity , Work Output Normalization, Work Output Raw, Work Time Metrics, Activity Goals, Early Logout Computation, Asset Usage ]")) 
 		  { 
 				  msg = "Aggregation Completed"; 
 		  } 
-//		 else if(aggregationStartMsg.equals("Aggregation Completed for 02 Nov 2023 [Status: Success | Completed In: 03s")
-//				 && aggregationEndMsg.equals("Aggregation Started for 02 Nov 2023 [ Activity On System, Activity Away From System, Hourly Activity Raw, Hourly Work Time Metrics, Software Usage, Schedule Adherence, Workflow Activity , Work Output Normalization, Work Output Raw, Work Time Metrics, Activity Goals, Early Logout Computation, Asset Usage ]")) 
-//		 {
-//			 	msg = "Aggregation Completed"; 
-//		 }
+		 else if(aggregationStartMsg.equals("Aggregation Completed for 02 Nov 2023 [Status: Success | Completed In: 03s")
+				 && aggregationEndMsg.equals("Aggregation Started for 02 Nov 2023 [ Activity On System, Activity Away From System, Hourly Activity Raw, Hourly Work Time Metrics, Software Usage, Schedule Adherence, Workflow Activity , Work Output Normalization, Work Output Raw, Work Time Metrics, Activity Goals, Early Logout Computation, Asset Usage ]")) 
+		 {
+			 	msg = "Aggregation Completed"; 
+		 }
 	  }
 		  catch(StaleElementReferenceException ex)
 		  {

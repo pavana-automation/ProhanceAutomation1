@@ -14,6 +14,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
+
 import Pages.DataAggregationPage;
 import Pages.SideNavigationMenuPage;
 import Pages.loginPage;
@@ -63,33 +64,8 @@ public class DataAggregation extends BaseTest {
 		listeners.testStepDescription("Step 14: Check starting and completeing of aggregation");
 		Thread.sleep(1000);
 		aggregation.getAggregationStarted();
+
 		listeners.testStepDescription("Step 15: Aggregation for Single Date and Single Type Completed Sucessfully");
-		//listeners.testStepDescription("Step 4: Click on month");
-		aggregation.clickcalenderBtn();
-		//listeners.testStepDescription("Step 5: Select any year which is wanted to do aggregation");
-		aggregation.selectYear("2023");
-		//listeners.testStepDescription("Step 6: Select any month which is wanted to do aggregation");
-		aggregation.selectMonth("November");
-		//listeners.testStepDescription("Step 7: Click on GO button");
-		aggregation.clickGoBtn();
-		//listeners.testStepDescription("Step 8: Select particular date");
-		aggregation.clickDateChkBoxChkBox();
-	//	listeners.testStepDescription("Step 9: Select anyone type of aggregation ");
-		aggregation.clickTypeChkBox();
-		//listeners.testStepDescription("Step 10: Click aggregation for all users");
-		aggregation.clickAggregationForAllUsers();
-		//listeners.testStepDescription("Step 11: Click RUN Button");
-		aggregation.clickRunAggregation();
-		//listeners.testStepDescription("Step 12: Go to Audit Logs page");
-		aggregation.clickAuditLogBtn();
-		//listeners.testStepDescription("Step 13:Click Fetch Button");
-		//aggregation.clickFetchBtn();
-
-		//listeners.testStepDescription("Step 14: Check starting and completeing of aggregation");
-		Thread.sleep(1000);
-		aggregation.getAggregationStarted();
-
-		//listeners.testStepDescription("Step 15: Aggregation for Single Date and Single Type Completed Sucessfully");
 		
 	}
 

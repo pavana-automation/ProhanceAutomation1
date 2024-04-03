@@ -6,36 +6,18 @@
   </listeners>
   <test thread-count="5" name="Test(failed)">
     <classes>
-      <class name="test.AOS.AOSBulkUpload">
+      <class name="test.AOS.AOSModifyFunction">
         <methods>
           <include name="teardown"/>
-          <include name="aosBulkUpload"/>
+          <include name="a0sModifyFunction"/>
         </methods>
-      </class> <!-- test.AOS.AOSBulkUpload -->
-      <class name="test.AOS.AOSUnknownApplicationAddingtoExisting">
+      </class> <!-- test.AOS.AOSModifyFunction -->
+      <class name="test.AOS.AOSUnknownApplicationAddingtoCreateNewProcessName">
         <methods>
           <include name="teardown"/>
-          <include name="aosUnknownApplicationAddingtoExisting"/>
+          <include name="aosUnknownApplicationAddingtoCreateNewProcessName"/>
         </methods>
-      </class> <!-- test.AOS.AOSUnknownApplicationAddingtoExisting -->
-      <class name="test.AOS.AOSAddNew">
-        <methods>
-          <include name="teardown"/>
-          <include name="addNewFunction"/>
-        </methods>
-      </class> <!-- test.AOS.AOSAddNew -->
-      <class name="test.AOS.AOSUnknownApplicationAddingtoCreateNew">
-        <methods>
-          <include name="teardown"/>
-          <include name="aosUnknownApplicationAddingtoCreateNew"/>
-        </methods>
-      </class> <!-- test.AOS.AOSUnknownApplicationAddingtoCreateNew -->
-      <class name="test.AOS.AOSUnknownApplicationAddingtoCreateNewQualifierText">
-        <methods>
-          <include name="teardown"/>
-          <include name="aosUnknownApplicationAddingtoCreateNewQualifierText"/>
-        </methods>
-      </class> <!-- test.AOS.AOSUnknownApplicationAddingtoCreateNewQualifierText -->
+      </class> <!-- test.AOS.AOSUnknownApplicationAddingtoCreateNewProcessName -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

@@ -3,7 +3,6 @@ package AssertOptimizationPage;
 import java.time.Duration;
 import java.util.ArrayList;
 import java.util.Iterator;
-import java.util.List;
 import java.util.Set;
 
 import org.openqa.selenium.By;
@@ -92,24 +91,6 @@ public class WorkStationGroupsPages {
 	@FindBy(xpath = "//table[@id=\"CommonDataTableId\"]/tbody/tr[1]/td/span[1]")
 	WebElement Clearmodify;
 	
-	@FindBy(xpath = "//table[@id =\"CommonDataTableId\"]/tbody/tr/td[2]/div")
-	List<WebElement> workStationList;
-	
-	@FindBy(xpath = "//img[@src='/phworkstation/images/excel.png']")
-	WebElement workStationExcel;
-
-	@FindBy(xpath = "//img[@src='/phworkstation/images/pdf.png']")
-	WebElement workStationPdf;
-	
-	@FindBy(xpath = "//img[@src='/phworkstation/images/excel.png']")
-	WebElement softeareDefinitionExcel;
-	
-	@FindBy(xpath = "//img[@src='/phworkstation/images/pdf.png']")
-	WebElement softeareDefinitionPdf;
-	
-	@FindBy(xpath = "//table[@id =\"CommonDataTableId\"]/tbody/tr/td[2]/div")
-	List<WebElement> softwareDefinitionList;
-	
 	
 	public WorkStationGroupsPages(WebDriver driver) {
 
@@ -126,7 +107,6 @@ public class WorkStationGroupsPages {
 		System.out.println("Page title of new tab: " + driver.getTitle());
 
 	}
-	
 
 	public void scrollSideNavigationBar() {
 		JavascriptExecutor js = (JavascriptExecutor) driver;
@@ -285,7 +265,6 @@ public class WorkStationGroupsPages {
 			return check;
 	 }
 	
-	
 	public void clickCloseXIconBtn()
 	{
 		this.closeXIconBtn.click();
@@ -327,55 +306,4 @@ public class WorkStationGroupsPages {
 			return check;
 	 }
 	
-	public List<String> getWorkStationList() throws InterruptedException {
-
-		List<WebElement> col = null;
-		List<String> teamsList = new ArrayList();
-		col = this.workStationList;
-		int len = col.size();
-		System.out.println(len);
-		Thread.sleep(1000);
-		for (int i = 0; i < len; i++) {
-			teamsList.add(this.workStationList.get(i).getText().replaceAll("\\s+", ""));
-			// System.out.println( teamsList.add(this.getUserArrtribute.get(i).getText()));
-		}
-		System.out.println(teamsList);
-		return teamsList;
-	}
-	
-	public void clickWorkStationExcel()
-	{
-		this.workStationExcel.click();
-	}
-	
-	public void clickWorkStationPdf()
-	{
-		this.workStationPdf.click();
-	}
-	
-	public void clickWSoftwareDefinitionPdf()
-	{
-		this.softeareDefinitionPdf.click();
-	}
-	
-	public void clickWSoftwareDefinitionExcel()
-	{
-		this.softeareDefinitionExcel.click();
-	}
-	
-	public List<String> getSoftwareDefinitionList() throws InterruptedException {
-
-		List<WebElement> col = null;
-		List<String> teamsList = new ArrayList();
-		col = this.workStationList;
-		int len = col.size();
-		System.out.println(len);
-		Thread.sleep(1000);
-		for (int i = 0; i < len; i++) {
-			teamsList.add(this.workStationList.get(i).getText().replaceAll("\\s+", ""));
-			// System.out.println( teamsList.add(this.getUserArrtribute.get(i).getText()));
-		}
-		System.out.println(teamsList);
-		return teamsList;
-	}
 }

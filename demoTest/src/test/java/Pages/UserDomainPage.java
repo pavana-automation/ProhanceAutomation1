@@ -86,6 +86,9 @@ public class UserDomainPage {
 	@FindBy(xpath="//button[@class='btn btn-save btn-save-padded alert-btn-save']")
 	WebElement deleteConfirmationBtn;
 	
+	@FindBy(xpath="//table[@class='dataTable no-footer']/thead/tr/th[3]")
+	WebElement UserRoleName;
+	
 	 public UserDomainPage(WebDriver driver)
 	 {
 		 this.driver=driver;
@@ -242,6 +245,11 @@ public class UserDomainPage {
 	 public void clickDomainAliasHeaderBtn()
 	 {
 		 this.domainAliasHeaderBtn.click();
+	 }
+	 
+	 public void clickUserRoleNameBtn()
+	 {
+		 this.UserRoleName.click();
 	 }
 	 
 	 public ArrayList<String> getElementsInRowToList1() throws InterruptedException

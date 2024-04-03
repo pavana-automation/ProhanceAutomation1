@@ -25,7 +25,8 @@ public class UserRoleSorting extends BaseTest{
 	RandomStringGeneration randomStringGenerator = new RandomStringGeneration();
 	Listeners listeners = new Listeners();
 	
-	@Test(retryAnalyzer = Pages.RetryAnalyzer.class)
+	//@Test(retryAnalyzer = Pages.RetryAnalyzer.class)
+	@Test
 	public void userRoleSorting() throws InterruptedException
 	{
 		listeners.testStepDescription("Step 1: Login into the prohance application");
@@ -35,7 +36,7 @@ public class UserRoleSorting extends BaseTest{
 		sidenavPage.clickSideNavigationBtn();
 		
 		listeners.testStepDescription("Step 3: Click on UserDomain");
-		sidenavPage.clickUserDomainBtn();
+		sidenavPage.ClickOnUserRoleBtn();
 		driver.switchTo().frame("contentFrame");
 		Thread.sleep(2000);
 		
@@ -43,7 +44,7 @@ public class UserRoleSorting extends BaseTest{
 		String expectedList = userdomain.getElementsInRowToList().toString();
 		
 		listeners.testStepDescription("Step 5: Click on Sorting Button and save the list as actual List");
-		userdomain.clickDomainAliasHeaderBtn();
+		userdomain.clickUserRoleNameBtn();
 		//Thread.sleep(1000);
 		String actualList = userdomain.getElementsInRowToList().toString();
 		

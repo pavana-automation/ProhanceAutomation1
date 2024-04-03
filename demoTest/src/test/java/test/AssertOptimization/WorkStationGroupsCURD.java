@@ -27,9 +27,8 @@ public class WorkStationGroupsCURD extends BaseTest {
 	Listeners listeners = new Listeners();
 	List<String> hostNameList = null;
 	List<String> hostNameExcelList = null;
-	
 
-	@Test(retryAnalyzer = Pages.RetryAnalyzer.class)
+	@Test
 	public void workStationGroups() throws InterruptedException, EncryptedDocumentException, IOException {
 		driver = initializeDriver6688();
 		 listeners.testStepDescription("Step 1: Login to ProHance Application");
