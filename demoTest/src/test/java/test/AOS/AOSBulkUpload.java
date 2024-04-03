@@ -1,4 +1,3 @@
-
 package test.AOS;
 
 import java.io.IOException;
@@ -77,4 +76,3 @@ public class AOSBulkUpload extends BaseTest{
 
 	}
 }
-

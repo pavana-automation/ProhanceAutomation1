@@ -1,4 +1,3 @@
-
 package Pages;
 
 import java.time.Duration;
@@ -151,4 +150,3 @@ WebDriver driver;
 
 	 
 }
-

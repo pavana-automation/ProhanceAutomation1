@@ -40,7 +40,6 @@ public class WorkProfilesDeleteWithDependency extends BaseTest {
 		Thread.sleep(3000);
 		listeners.testStepDescription("Step 7: Click on YES button");
 		workProfile.clickYesBtn();
-		Thread.sleep(2000);
 		listeners.testStepDescription("Step 8: Click on CLICK HERE button");
 		workProfile.clickClickHereBtn();
 		workProfile.moveToparentWindow();

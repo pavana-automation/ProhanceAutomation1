@@ -9,6 +9,7 @@
 	
  <test thread-count="7" name="Test">
     <classes>
+
 		<class name="test.AOS.AOSBulkUpload"/>
 		<class name="test.AOS.AOSBulkUploadDelete"></class>
         <class name="test.AOS.AOSBulkUploadModify"></class>
@@ -29,7 +30,6 @@
 		<class name="test.UserDomain.UserDomainPDFValidation"/>
       	<class name="test.DataAggregation.DataAggregationForModificationOnSettingsTab"/>
      	<class name="test.DataAggregation.DataAggregationForModificationOnSettingsTabForClearButton"/>
-
 		<class name="test.WorkProfile.WorkProfileForAddingNew"/> 
 		<class name="test.WorkProfile.WorkProfileForModification"/> 
 		<class name="test.WorkProfile.WorkProfilesDeleteWithDependency"/>  
@@ -138,16 +138,7 @@
       <class name="UserRoles.UserRolePDFValidation"></class>
       <class name="UserRoles.UserRolesBulkUpdate"></class>
      <!-- <class name="UserRoles.selectMemberRadioBtn"/>-->
-	    <class name="test.WorkProfile.WorkProfileForAddingNew"/> 
-	  	<class name="test.WorkProfile.WorkProfileForModification"/> 
-	  	<class name="test.WorkProfile.WorkProfilesDeleteWithDependency"/>  
-	  	<class name="test.WorkProfile.WorkProfilesExcelValidation"/> 
-	  	<class name="test.WorkProfile.WorkProfilesForClone"/> 
-	  	<class name="test.WorkProfile.WorkProfileValidateWithTeams"/>
-	  	<class name="test.DataAggregation.DataAggregation"/>
-	  	<class name="test.DataAggregation.DataAggregationForAllType"/>
-	  	<class name="test.WorkProfile.WorkProfileForDelete"/>
-	  	
+		
 
     </classes>
   </test> 
